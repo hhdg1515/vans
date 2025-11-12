@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LazyBackgroundImage from '../../LazyBackgroundImage';
 import styles from './BrandGrid.module.css';
 
-export default function BrandCard({ brand, accentColor, groupLabel }) {
+function BrandCard({ brand, accentColor, groupLabel }) {
   const models = (brand.spotlightModels || []).slice(0, 2).join(' / ');
   const highlights = (brand.serviceHighlights || []).slice(0, 2);
   const brandPath = brand.link || (brand.slug ? `/brands/${brand.slug}` : '#');
@@ -15,10 +16,10 @@ export default function BrandCard({ brand, accentColor, groupLabel }) {
       data-brand={brand.slug}
       aria-label={`View ${brand.name} marque details`}
     >
-      <div
+      <LazyBackgroundImage
+        src={brand.image}
         className={styles.brandCardImage}
-        style={{ backgroundImage: `url(${brand.image})` }}
-        role="presentation"
+        style={{ role: 'presentation' }}
       />
 
       <div className={styles.brandCardOverlay} />
@@ -43,3 +44,6 @@ export default function BrandCard({ brand, accentColor, groupLabel }) {
     </Link>
   );
 }
+
+// Memoize to prevent re-renders when brand grid updates
+export default React.memo(BrandCard);

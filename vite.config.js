@@ -17,5 +17,50 @@ export default defineConfig({
 			'Referrer-Policy': 'strict-origin-when-cross-origin',
 			'Permissions-Policy': 'geolocation=(), microphone=(), camera=()'
 		}
+	},
+	// Build optimization configuration
+	build: {
+		// Optimize for production bundle
+		minify: 'terser',
+		terserOptions: {
+			compress: {
+				drop_console: true, // Remove console.log in production
+				drop_debugger: true // Remove debugger statements
+			}
+		},
+		// Configure rollup for code splitting and chunking
+		rollupOptions: {
+			output: {
+				manualChunks: {
+					// Split vendor libraries into separate chunks for better caching
+					'vendor': [
+						'react',
+						'react-dom',
+						'react-router-dom'
+					]
+				}
+			}
+		},
+		// Reporting compression stats
+		reportCompressedSize: true,
+		// Chunk size warnings
+		chunkSizeWarningLimit: 500
+	},
+	// Optimize CSS
+	css: {
+		postcss: {
+			plugins: [
+				{
+					postcssPlugin: 'internal:charset-removal',
+					Once(root) {
+						root.walkAtRules('charset', (rule) => {
+							if (rule.parent.type === 'root' && rule !== root.first) {
+								rule.remove();
+							}
+						});
+					}
+				}
+			]
+		}
 	}
 })

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './ServiceGrid.module.css';
 
-export default function DataCard({ stats, className }) {
+function DataCard({ stats, className }) {
   return (
     <div className={`${styles.dataCard} ${className || ''}`}>
       {/* Title */}
@@ -47,3 +47,6 @@ export default function DataCard({ stats, className }) {
     </div>
   );
 }
+
+// Memoize to prevent re-renders when data updates
+export default React.memo(DataCard);

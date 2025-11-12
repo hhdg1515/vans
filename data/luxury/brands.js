@@ -349,3 +349,23 @@ export const brandTiers = {
   },
 };
 
+/**
+ * Brand Index Map - O(1) Lookup
+ * Creates a slug-based index for instant brand lookups
+ * Instead of searching through the array O(n), we can now access directly O(1)
+ * This significantly improves performance for brand detail pages
+ */
+export const brandIndex = luxuryBrands.reduce((index, brand) => {
+  index[brand.slug] = brand;
+  return index;
+}, {});
+
+/**
+ * Helper function to get a brand by slug with O(1) complexity
+ * @param {string} slug - The brand slug (e.g., 'maybach')
+ * @returns {Object|null} The brand object or null if not found
+ */
+export function getBrandBySlugOptimized(slug) {
+  return brandIndex[slug] || null;
+}
+

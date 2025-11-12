@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from '../../../src/hooks/useTranslation';
 import styles from './HeroCarousel.module.css';
 
-export default function HeroSlide({ slide, isActive, isPrev, isNext }) {
+function HeroSlide({ slide, isActive, isPrev, isNext }) {
   const { t } = useTranslation();
   const slideClasses = [
     styles.slide,
@@ -86,3 +86,6 @@ export default function HeroSlide({ slide, isActive, isPrev, isNext }) {
     </div>
   );
 }
+
+// Memoize to prevent re-renders when parent updates but props haven't changed
+export default React.memo(HeroSlide);

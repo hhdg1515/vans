@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from '../../../src/hooks/useTranslation';
 import styles from './ServiceGrid.module.css';
 
-export default function ServiceCard({ service, className }) {
+function ServiceCard({ service, className }) {
   const [isHovered, setIsHovered] = useState(false);
   const { t } = useTranslation();
 
@@ -98,3 +98,6 @@ export default function ServiceCard({ service, className }) {
     </Link>
   );
 }
+
+// Memoize to prevent re-renders when service grid updates
+export default React.memo(ServiceCard);

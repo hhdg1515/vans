@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from '../../../src/hooks/useTranslation';
+import LazyBackgroundImage from '../../LazyBackgroundImage';
 import styles from './ArticleCard.module.css';
 
-export default function ArticleCard({ article, size = 'medium', link }) {
+function ArticleCard({ article, size = 'medium', link }) {
   const { t } = useTranslation();
 
   const categoryLabels = {
@@ -22,10 +23,10 @@ export default function ArticleCard({ article, size = 'medium', link }) {
 
   return (
     <Link to={link} className={`${styles.articleCard} ${styles[size]}`}>
-      {/* Background Image */}
-      <div
+      {/* Background Image - Lazy Loaded */}
+      <LazyBackgroundImage
+        src={article.coverImage || '/images/placeholder-article.jpg'}
         className={styles.cardImage}
-        style={{ backgroundImage: `url(${article.coverImage || '/images/placeholder-article.jpg'})` }}
       />
 
       {/* Gradient Overlay */}
@@ -79,3 +80,6 @@ export default function ArticleCard({ article, size = 'medium', link }) {
     </Link>
   );
 }
+
+// Memoize to prevent re-renders when article list updates
+export default React.memo(ArticleCard);
