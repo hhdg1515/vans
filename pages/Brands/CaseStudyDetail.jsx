@@ -9,8 +9,11 @@ import { validateUrlParam } from '../../utils/inputValidator';
 
 export default function CaseStudyDetail() {
   const { brandSlug, caseStudySlug } = useParams();
-  const caseStudy = getCaseStudyBySlug(caseStudySlug);
-  const brand = getBrandBySlug(brandSlug);
+  // Sanitize URL parameters to prevent injection attacks
+  const sanitizedBrandSlug = validateUrlParam(brandSlug);
+  const sanitizedCaseSlug = validateUrlParam(caseStudySlug);
+  const caseStudy = getCaseStudyBySlug(sanitizedCaseSlug);
+  const brand = getBrandBySlug(sanitizedBrandSlug);
   const relatedCases = caseStudy ? getRelatedCaseStudies(caseStudy.id, 2) : [];
   const { t } = useTranslation();
   const getLocalized = (path, fallback) => {
@@ -25,7 +28,7 @@ export default function CaseStudyDetail() {
   const brandDisplayName =
     brandContent.name ||
     brand?.name ||
-    brandSlug
+    sanitizedBrandSlug
       .split('-')
       .map((segment) => segment.charAt(0).toUpperCase() + segment.slice(1))
       .join(' ');
@@ -98,12 +101,12 @@ export default function CaseStudyDetail() {
   const mechanicSummaryAuthor = mechanicSummaryData?.author || '';
 
   // 404 handling
-  if (!caseStudy || caseStudy.brandSlug !== brandSlug) {
+  if (!caseStudy || caseStudy.brandSlug !== sanitizedBrandSlug) {
     return (
       <div className={styles.notFound}>
         <h1>{t('brands.caseStudy.not_found.title')}</h1>
         <p>{t('brands.caseStudy.not_found.message')}</p>
-        <Link to={`/brands/${brandSlug}`}>{t('brands.caseStudy.not_found.back', { brand: brandDisplayName })}</Link>
+        <Link to={`/brands/${sanitizedBrandSlug}`}>{t('brands.caseStudy.not_found.back', { brand: brandDisplayName })}</Link>
       </div>
     );
   }
@@ -114,7 +117,7 @@ export default function CaseStudyDetail() {
       <nav className={styles.breadcrumb}>
         <Link to="/brands">{t('brands.caseStudy.breadcrumb.all_brands')}</Link>
         <span className={styles.breadcrumbSeparator}>/</span>
-        <Link to={`/brands/${brandSlug}`}>{brandDisplayName}</Link>
+        <Link to={`/brands/${sanitizedBrandSlug}`}>{brandDisplayName}</Link>
         <span className={styles.breadcrumbSeparator}>/</span>
         <span className={styles.breadcrumbCurrent}>{t('brands.caseStudy.breadcrumb.case')}</span>
       </nav>
@@ -413,7 +416,7 @@ export default function CaseStudyDetail() {
             <a href="#booking" className={styles.primaryButton}>
               {t('brands.caseStudy.sections.cta.book')}
             </a>
-            <Link to={`/brands/${brandSlug}`} className={styles.secondaryButton}>
+            <Link to={`/brands/${sanitizedBrandSlug}`} className={styles.secondaryButton}>
               {t('brands.caseStudy.sections.cta.more', { brand: brandDisplayName })}
             </Link>
           </div>

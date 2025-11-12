@@ -9,8 +9,10 @@ import { validateUrlParam } from '../../utils/inputValidator';
 
 export default function BrandDetail() {
   const { brandSlug } = useParams();
-  const brand = getBrandBySlug(brandSlug);
-  const caseStudies = getCaseStudiesByBrand(brandSlug);
+  // Sanitize URL parameters to prevent injection attacks
+  const sanitizedSlug = validateUrlParam(brandSlug);
+  const brand = getBrandBySlug(sanitizedSlug);
+  const caseStudies = getCaseStudiesByBrand(sanitizedSlug);
   const { t } = useTranslation();
 
   const getLocalized = (path, fallback) => {
@@ -254,7 +256,7 @@ export default function BrandDetail() {
               return (
                 <Link
                   key={caseStudy.id}
-                  to={`/brands/${brandSlug}/${caseStudy.slug}`}
+                  to={`/brands/${sanitizedSlug}/${caseStudy.slug}`}
                   className={styles.caseStudyCard}
                 >
                   {/* Image */}
