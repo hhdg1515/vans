@@ -4,6 +4,8 @@ import { getBrandBySlug } from '../../data/luxury/brand-details';
 import { getCaseStudiesByBrand } from '../../data/luxury/case-studies';
 import { useTranslation } from '../../src/hooks/useTranslation';
 import styles from './BrandDetail.module.css';
+import SafeLink from '../../components/SafeLink';
+import { validateUrlParam } from '../../utils/inputValidator';
 
 export default function BrandDetail() {
   const { brandSlug } = useParams();
@@ -287,10 +289,9 @@ export default function BrandDetail() {
             })}
 
             {/* "See More" CTA Card - 6th position */}
-            <a
+            <SafeLink
               href="https://www.xiaohongshu.com/user/profile/wscauto"
-              target="_blank"
-              rel="noopener noreferrer"
+              external
               className={`${styles.caseStudyCard} ${styles.caseStudyCardCta}`}
             >
               <div className={styles.ctaCardContent}>
@@ -313,7 +314,7 @@ export default function BrandDetail() {
                   </svg>
                 </div>
               </div>
-            </a>
+            </SafeLink>
             </div>
           </div>
         </section>

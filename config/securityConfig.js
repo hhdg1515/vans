@@ -3,12 +3,24 @@
  * Centralized security settings for the application
  */
 
-// Whitelist of trusted external URLs
+// Whitelist of trusted external URLs and domains
 export const TRUSTED_EXTERNAL_URLS = {
   github: 'https://github.com',
   scrimba: 'https://scrimba.com',
+  xiaohongshu: 'https://www.xiaohongshu.com',
   // Add more trusted URLs here
 };
+
+// Whitelist of trusted domains (for domain-based validation)
+export const TRUSTED_DOMAINS = [
+  'github.com',
+  'scrimba.com',
+  'xiaohongshu.com',
+  'www.xiaohongshu.com',
+  'localhost',
+  'localhost:3000',
+  'localhost:5173',
+];
 
 // Content Security Policy directives
 export const CSP_DIRECTIVES = {
@@ -85,6 +97,7 @@ export const VALIDATION_RULES = {
 
 export default {
   TRUSTED_EXTERNAL_URLS,
+  TRUSTED_DOMAINS,
   CSP_DIRECTIVES,
   SECURITY_HEADERS,
   LINK_SECURITY_ATTRIBUTES,

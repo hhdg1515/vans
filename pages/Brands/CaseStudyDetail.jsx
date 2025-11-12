@@ -4,6 +4,8 @@ import { getCaseStudyBySlug, getRelatedCaseStudies } from '../../data/luxury/cas
 import { getBrandBySlug } from '../../data/luxury/brand-details';
 import { useTranslation } from '../../src/hooks/useTranslation';
 import styles from './CaseStudyDetail.module.css';
+import SafeLink from '../../components/SafeLink';
+import { validateUrlParam } from '../../utils/inputValidator';
 
 export default function CaseStudyDetail() {
   const { brandSlug, caseStudySlug } = useParams();
