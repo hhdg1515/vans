@@ -3,6 +3,8 @@
  * Magazine-style technical stories about complex repairs and service work
  */
 
+import { additionalCaseStudies } from './additional-case-studies.js';
+
 export const caseStudies = [
   // ==================== MERCEDES-MAYBACH ====================
   {
@@ -3458,6 +3460,7 @@ export const caseStudies = [
   },
 
   // Add more case studies for other brands here...
+  ...additionalCaseStudies,
 ];
 
 // Helper function to get case study by slug
