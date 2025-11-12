@@ -1,0 +1,86 @@
+/*
+ * 404 Not Found Page - Luxury Style
+ * Mercedes-Benz Design System
+ */
+
+.notFoundPage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0f1f 0%, #000000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.errorCode {
+  font-family: var(--font-headline);
+  font-size: 120px;
+  font-weight: var(--font-weight-black);
+  line-height: 1;
+  color: var(--mb-purple);
+  margin-bottom: var(--space-lg);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.title {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--mb-white);
+  margin: 0 0 var(--space-lg) 0;
+}
+
+.message {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 var(--space-xxl) 0;
+}
+
+.homeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md) var(--space-xl);
+  font-family: var(--font-headline);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--mb-white);
+  color: var(--mb-black);
+  border: 1px solid var(--mb-white);
+  border-radius: var(--radius-none);
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.homeButton:hover {
+  background-color: var(--mb-purple);
+  border-color: var(--mb-purple);
+  color: var(--mb-white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(176, 38, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .errorCode {
+    font-size: 80px;
+  }
+
+  .title {
+    font-size: var(--font-size-lg);
+  }
+
+  .message {
+    font-size: var(--font-size-sm);
+  }
+}

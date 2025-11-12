@@ -1,0 +1,267 @@
+/*
+ * Luxury Footer Styles
+ * Mercedes-Benz Stage Design
+ */
+
+/* ========================================
+   FOOTER CONTAINER
+   ======================================== */
+
+.footer {
+  background-color: var(--mb-black);
+  color: var(--mb-white);
+  position: relative;
+  width: 100%;
+}
+
+/* ========================================
+   MAIN FOOTER CONTENT
+   ======================================== */
+
+.footerMain {
+  padding: var(--space-huge) var(--space-lg);
+  padding-bottom: var(--space-massive); /* Extra bottom padding */
+}
+
+.footerContainer {
+  max-width: var(--container-xxl);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xxl);
+  align-items: start; /* Align columns to top */
+}
+
+/* ========================================
+   FOOTER COLUMNS
+   ======================================== */
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.footerHeading {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--mb-white);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-sm);
+}
+
+.footerText {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  color: var(--mb-silver);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+
+/* ========================================
+   SOCIAL LINKS
+   ======================================== */
+
+.footerSocial {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.footerSocial a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--mb-white);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.footerSocial a:hover {
+  border-color: var(--mb-blue);
+  background-color: var(--mb-blue);
+  color: var(--mb-white);
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   FOOTER LINKS
+   ======================================== */
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.footerLinks li a {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  color: var(--mb-silver);
+  text-decoration: none;
+  transition: color var(--duration-normal) var(--ease-out);
+  display: inline-block;
+}
+
+.footerLinks li a:hover {
+  color: var(--mb-blue);
+}
+
+/* ========================================
+   CONTACT INFO
+   ======================================== */
+
+.footerContact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.footerContact li {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  color: var(--mb-silver);
+  line-height: var(--line-height-normal);
+}
+
+.footerContact li a {
+  color: var(--mb-silver);
+  text-decoration: none;
+  transition: color var(--duration-normal) var(--ease-out);
+}
+
+.footerContact li a:hover {
+  color: var(--mb-blue);
+}
+
+/* ========================================
+   BOTTOM BAR
+   ======================================== */
+
+.footerBottom {
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.footerBottom .footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-lg);
+  max-width: var(--container-xxl);
+  margin: 0 auto;
+}
+
+.footerCopyright {
+  font-family: var(--font-body);
+  font-size: var(--font-size-xs);
+  color: var(--mb-silver);
+  margin: 0;
+}
+
+.footerLegal {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-family: var(--font-body);
+  font-size: var(--font-size-xs);
+}
+
+.footerLegal a {
+  color: var(--mb-silver);
+  text-decoration: none;
+  transition: color var(--duration-normal) var(--ease-out);
+}
+
+.footerLegal a:hover {
+  color: var(--mb-blue);
+}
+
+.footerDivider {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .footerContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+  }
+
+  .footerMain {
+    padding: var(--space-xxl) var(--space-lg);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .footerMain {
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .footerBottom .footerContainer {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-md);
+  }
+
+  .footerCopyright {
+    order: 2;
+  }
+
+  .footerLegal {
+    order: 1;
+  }
+
+  .footerSocial {
+    justify-content: center;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+.footerLinks li a:focus-visible,
+.footerContact li a:focus-visible,
+.footerSocial a:focus-visible,
+.footerLegal a:focus-visible {
+  outline: 2px solid var(--mb-blue);
+  outline-offset: 4px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .footerLinks li a,
+  .footerContact li a,
+  .footerSocial a,
+  .footerLegal a {
+    transition: none !important;
+  }
+
+  .footerSocial a:hover {
+    transform: none;
+  }
+}

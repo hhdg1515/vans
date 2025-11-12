@@ -1,0 +1,409 @@
+/*
+ * Mercedes-Benz Stage Design System
+ * Official MB Design Guidelines Implementation
+ * Reference: MB-Web-Guide-Combined.md (Oct 2023)
+ */
+
+/* ========================================
+   STAGE CONTAINER
+   ======================================== */
+
+/*
+ * Stage Design: Mercedes-Benz signature layout
+ * Features: 24px bars on top/bottom + 1px keyline separator
+ */
+
+.mb-stage {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--mb-black);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Stage Bar (24px) */
+.mb-stage__bar-top {
+  height: var(--mb-stage-bar);
+  background-color: var(--mb-black);
+  border-bottom: var(--mb-keyline) solid var(--mb-white);
+  flex-shrink: 0;
+}
+
+/* Bottom Stage Bar (24px) */
+.mb-stage__bar-bottom {
+  height: var(--mb-stage-bar);
+  background-color: var(--mb-black);
+  border-top: var(--mb-keyline) solid var(--mb-white);
+  flex-shrink: 0;
+}
+
+/* Main Content Area */
+.mb-stage__content {
+  flex: 1;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ========================================
+   50/50 SPLIT LAYOUT
+   ======================================== */
+
+/*
+ * 50/50 Split: Common MB pattern for content/image layouts
+ * Used in: Credentials section, About pages
+ */
+
+.mb-split {
+  display: flex;
+  width: 100%;
+  min-height: 600px;
+}
+
+.mb-split__left,
+.mb-split__right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left side - typically content */
+.mb-split__left {
+  background-color: var(--mb-black);
+  padding: var(--space-huge);
+}
+
+/* Right side - typically image */
+.mb-split__right {
+  background-color: var(--mb-dark-gray);
+  overflow: hidden;
+}
+
+/* Keyline separator between left/right */
+.mb-split__keyline {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: var(--mb-keyline);
+  height: 100%;
+  background-color: var(--mb-white);
+  z-index: var(--z-base);
+}
+
+/* Content within split sections */
+.mb-split__content {
+  max-width: 540px;
+  width: 100%;
+}
+
+.mb-split__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ========================================
+   STAGE VARIANTS
+   ======================================== */
+
+/* Full-screen stage (for hero sections) */
+.mb-stage--fullscreen {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+/* Minimal stage (no bars, just content) */
+.mb-stage--minimal .mb-stage__bar-top,
+.mb-stage--minimal .mb-stage__bar-bottom {
+  display: none;
+}
+
+/* Stage with background image */
+.mb-stage--image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Stage with overlay */
+.mb-stage--overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--overlay-forest);
+  z-index: var(--z-base);
+}
+
+.mb-stage--overlay .mb-stage__content {
+  position: relative;
+  z-index: calc(var(--z-base) + 1);
+}
+
+/* ========================================
+   KEYLINE ELEMENTS
+   ======================================== */
+
+/*
+ * Keyline: 1px white separator (MB signature element)
+ * Usage: Section dividers, borders
+ */
+
+.mb-keyline-horizontal {
+  width: 100%;
+  height: var(--mb-keyline);
+  background-color: var(--mb-white);
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.mb-keyline-vertical {
+  width: var(--mb-keyline);
+  height: 100%;
+  background-color: var(--mb-white);
+}
+
+/* Keyline with fade effect */
+.mb-keyline-fade {
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--mb-white) 20%,
+    var(--mb-white) 80%,
+    transparent 100%
+  );
+}
+
+/* ========================================
+   STAGE GRID SYSTEM
+   ======================================== */
+
+/*
+ * MB Grid: 12-column grid system with keyline separators
+ */
+
+.mb-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap-md);
+  width: 100%;
+}
+
+.mb-grid__col-1 { grid-column: span 1; }
+.mb-grid__col-2 { grid-column: span 2; }
+.mb-grid__col-3 { grid-column: span 3; }
+.mb-grid__col-4 { grid-column: span 4; }
+.mb-grid__col-5 { grid-column: span 5; }
+.mb-grid__col-6 { grid-column: span 6; }
+.mb-grid__col-7 { grid-column: span 7; }
+.mb-grid__col-8 { grid-column: span 8; }
+.mb-grid__col-9 { grid-column: span 9; }
+.mb-grid__col-10 { grid-column: span 10; }
+.mb-grid__col-11 { grid-column: span 11; }
+.mb-grid__col-12 { grid-column: span 12; }
+
+/* ========================================
+   STAGE TEXT ELEMENTS
+   ======================================== */
+
+/* Stage headline - large, bold, uppercase */
+.mb-stage__headline {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+  color: var(--mb-white);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-lg);
+}
+
+/* Stage subheadline */
+.mb-stage__subheadline {
+  font-family: var(--font-body);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-normal);
+  color: var(--mb-silver);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-xl);
+}
+
+/* Stage eyebrow - small uppercase label */
+.mb-stage__eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  color: var(--mb-blue);
+  margin-bottom: var(--space-sm);
+  display: block;
+}
+
+/* ========================================
+   RESPONSIVE STAGE LAYOUTS
+   ======================================== */
+
+/* Mobile: Stack 50/50 split vertically */
+@media (max-width: 767px) {
+  .mb-split {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .mb-split__left,
+  .mb-split__right {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .mb-split__left {
+    padding: var(--space-xxl);
+  }
+
+  .mb-split__keyline {
+    display: none;
+  }
+
+  .mb-stage__headline {
+    font-size: var(--font-size-xl);
+  }
+
+  .mb-stage__subheadline {
+    font-size: var(--font-size-base);
+  }
+
+  /* Mobile grid: collapse to single column */
+  .mb-grid {
+    grid-template-columns: 1fr;
+    gap: var(--grid-gap-sm);
+  }
+
+  .mb-grid__col-1,
+  .mb-grid__col-2,
+  .mb-grid__col-3,
+  .mb-grid__col-4,
+  .mb-grid__col-5,
+  .mb-grid__col-6,
+  .mb-grid__col-7,
+  .mb-grid__col-8,
+  .mb-grid__col-9,
+  .mb-grid__col-10,
+  .mb-grid__col-11,
+  .mb-grid__col-12 {
+    grid-column: span 1;
+  }
+}
+
+/* Tablet: Adjust padding and spacing */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mb-split__left {
+    padding: var(--space-xl);
+  }
+
+  .mb-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .mb-grid__col-1,
+  .mb-grid__col-2,
+  .mb-grid__col-3,
+  .mb-grid__col-4,
+  .mb-grid__col-5,
+  .mb-grid__col-6 {
+    grid-column: span 3;
+  }
+
+  .mb-grid__col-7,
+  .mb-grid__col-8,
+  .mb-grid__col-9,
+  .mb-grid__col-10,
+  .mb-grid__col-11,
+  .mb-grid__col-12 {
+    grid-column: span 6;
+  }
+}
+
+/* Desktop: Full 12-column grid */
+@media (min-width: 1024px) {
+  .mb-stage__headline {
+    font-size: 80px;
+  }
+
+  .mb-stage__subheadline {
+    font-size: var(--font-size-lg);
+  }
+}
+
+/* ========================================
+   STAGE ANIMATION EFFECTS
+   ======================================== */
+
+/* Fade-in animation for stage content */
+.mb-stage__content--animated {
+  animation: stageContentFadeIn 1s var(--ease-out);
+}
+
+@keyframes stageContentFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide-in animation for split sections */
+.mb-split__left--animated {
+  animation: slideInLeft 0.8s var(--ease-out);
+}
+
+.mb-split__right--animated {
+  animation: slideInRight 0.8s var(--ease-out);
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Keyline grow animation */
+.mb-keyline-horizontal--animated {
+  animation: keylineGrow 1.2s var(--ease-out);
+}
+
+@keyframes keylineGrow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

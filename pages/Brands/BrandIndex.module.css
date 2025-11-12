@@ -1,0 +1,488 @@
+/* ================================
+   Brand Index Page
+   Magazine-style grid layout for 8 luxury brands
+   ================================ */
+
+.main {
+  background-color: var(--mb-black);
+  color: var(--mb-white);
+  min-height: 100vh;
+}
+
+/* ================================
+   HERO SECTION
+   ================================ */
+
+.hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(176, 38, 255, 0.05) 50%,
+    rgba(0, 0, 0, 1) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.heroContent {
+  max-width: 800px;
+  padding: var(--spacing-xxl) var(--spacing-lg);
+}
+
+.heroEyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  color: var(--mb-purple);
+  margin-bottom: var(--spacing-md);
+}
+
+.heroTitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-tight);
+  margin: 0 0 var(--spacing-md) 0;
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.heroSubtitle {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  color: var(--mb-silver);
+  font-weight: var(--font-weight-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ================================
+   BRAND GRID
+   ================================ */
+
+.brandGrid {
+  padding: var(--spacing-xxl) var(--spacing-lg);
+}
+
+.gridContainer {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--grid-gap-lg);
+}
+
+/* ================================
+   BRAND CARD
+   ================================ */
+
+.brandCard {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.brandCard:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: var(--mb-purple);
+  transform: translateY(-4px);
+}
+
+.brandCard:hover .brandImage {
+  transform: scale(1.05);
+}
+
+/* ================================
+   BRAND IMAGE
+   ================================ */
+
+.brandImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  transition: transform var(--transition-slow);
+}
+
+.brandImagePlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: transparent;
+}
+/* ================================
+   BRAND CONTENT
+   ================================ */
+
+.brandContent {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: var(--spacing-sm);
+}
+
+.brandName {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-light);
+  letter-spacing: var(--letter-spacing-tight);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+/* ================================
+   SPECIALTIES
+   ================================ */
+
+.specialties {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+  flex-wrap: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.specialtyTag {
+  padding: 4px 10px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--mb-silver);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+/* ================================
+   CTA SECTION
+   ================================ */
+
+.ctaSection {
+  padding: var(--spacing-xxl) var(--spacing-lg);
+  background: linear-gradient(180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(176, 38, 255, 0.05) 50%,
+    rgba(0, 0, 0, 1) 100%);
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ctaContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-light);
+  letter-spacing: var(--letter-spacing-tight);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.ctaSubtitle {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--mb-silver);
+  margin: 0 0 var(--spacing-xl) 0;
+  max-width: 100%;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CTA Section Primary Button - Book Appointment Style */
+.ctaSection .primaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: 16px 32px;
+  font-family: var(--font-headline);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: var(--mb-white);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.ctaSection .primaryButton:hover {
+  background-color: var(--mb-white);
+  color: var(--mb-black);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
+}
+
+/* Articles CTA Button - White Border Style */
+.articlesCTA .primaryButton {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-xl);
+  background-color: transparent;
+  color: var(--mb-white);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  text-decoration: none;
+  border: 1px solid var(--mb-white);
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.articlesCTA .primaryButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--mb-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================
+   ARTICLES PREVIEW SECTION
+   ======================================== */
+
+.articlesPreview {
+  padding: var(--space-massive) var(--space-xl);
+  background: radial-gradient(
+    ellipse 1600px 1200px at center,
+    rgba(176, 38, 255, 0.08) 0%,
+    rgba(138, 43, 226, 0.04) 40%,
+    transparent 70%
+  );
+}
+
+.articlesHeader {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--space-huge) auto;
+}
+
+.articlesEyebrow {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  color: var(--mb-purple);
+  margin-bottom: var(--space-md);
+}
+
+.articlesTitle {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-xxxl);
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: 1.1;
+  color: var(--mb-white);
+  margin: 0 0 var(--space-md) 0;
+}
+
+.articlesSubtitle {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.articlesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  gap: var(--space-lg);
+  max-width: 1400px;
+  margin: 0 auto var(--space-xl) auto;
+}
+
+/* First article (large) spans 2 rows in column 1 */
+.articlesGrid > :nth-child(1) {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+/* Remaining 4 articles fill the right 2 columns */
+.articlesGrid > :nth-child(2) {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.articlesGrid > :nth-child(3) {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.articlesGrid > :nth-child(4) {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.articlesGrid > :nth-child(5) {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.articlesCTA {
+  text-align: center;
+  margin-top: var(--space-xl);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .articlesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .articlesGrid > :nth-child(1) {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+
+  .articlesGrid > :nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .articlesGrid > :nth-child(3) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .articlesGrid > :nth-child(4) {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .articlesGrid > :nth-child(5) {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .articlesPreview {
+    padding: var(--space-huge) var(--space-md);
+  }
+
+  .articlesHeader {
+    margin-bottom: var(--space-xl);
+  }
+
+  .articlesTitle {
+    font-size: var(--font-size-xxl);
+  }
+
+  .articlesGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: var(--space-md);
+  }
+
+  .articlesGrid > :nth-child(1),
+  .articlesGrid > :nth-child(2),
+  .articlesGrid > :nth-child(3),
+  .articlesGrid > :nth-child(4),
+  .articlesGrid > :nth-child(5) {
+    grid-area: auto;
+  }
+}
+
+/* ========================================
+   EXISTING CTA SECTION
+   ======================================== */
+
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-xl);
+  background-color: transparent;
+  color: var(--mb-white);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  text-decoration: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all var(--transition-base);
+  cursor: pointer;
+}
+
+.secondaryButton:hover {
+  border-color: var(--mb-white);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.phoneIcon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* ================================
+   RESPONSIVE BREAKPOINTS
+   ================================ */
+
+@media (max-width: 1200px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: var(--font-size-3xl);
+  }
+
+  .heroSubtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--grid-gap-md);
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .heroTitle {
+    font-size: var(--font-size-2xl);
+  }
+
+  .brandInitial {
+    font-size: 80px;
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(timeout 5 bash:*)",
+      "Bash(timeout 3 bash:*)",
+      "Bash(cat:*)",
+      "Bash(tree:*)",
+      "Bash(curl:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(cp:*)",
+      "Bash(ffprobe:*)",
+      "Bash(find:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(for:*)",
+      "Bash(do echo \"$f:\")",
+      "Bash(identify -format:*)",
+      "Bash(done)",
+      "Bash(npm ls:*)",
+      "Bash(where:*)",
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "Bash(powershell -Command \"[Console]::OutputEncoding = [System.Text.Encoding]::UTF8; python ''c:\\Users\\clark\\OneDrive\\桌面\\vans\\md_to_word.py''\")",
+      "Bash(powershell -Command:*)",
+      "Bash(timeout 8 bash:*)",
+      "Bash(\"c:\\Users\\clark\\OneDrive\\桌面\\vans\\pages\\Brands\\BrandDetail.module.css\")",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

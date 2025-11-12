@@ -1,0 +1,499 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "name": "Luxury Auto Repair Design System",
+  "version": "1.0.0",
+  "description": "Design tokens for European luxury auto repair website, based on Mercedes-Benz official design guidelines",
+
+  "colors": {
+    "primary": {
+      "black": {
+        "value": "#000000",
+        "description": "Mercedes-Benz official deep black - backgrounds, text",
+        "usage": ["background", "text", "stage"]
+      },
+      "white": {
+        "value": "#FFFFFF",
+        "description": "Pure white - text on dark backgrounds, keylines",
+        "usage": ["text", "keyline", "buttons"]
+      },
+      "blue": {
+        "value": "#00ADEF",
+        "description": "Mercedes-Benz official blue - CTA buttons, highlights",
+        "usage": ["cta", "links", "highlights"]
+      }
+    },
+
+    "gradients": {
+      "forest": {
+        "value": "linear-gradient(135deg, #0a1f1f 0%, #1a1a1a 50%, #000000 100%)",
+        "description": "German forest gradient - Maybach slide",
+        "usage": ["hero-background"]
+      },
+      "city": {
+        "value": "linear-gradient(135deg, #0a0f1f 0%, #1a1a1a 50%, #000000 100%)",
+        "description": "City night gradient - S-Class slide",
+        "usage": ["hero-background"]
+      },
+      "track": {
+        "value": "linear-gradient(135deg, #1f0a0a 0%, #1a1a1a 50%, #000000 100%)",
+        "description": "Track gradient - AMG slide",
+        "usage": ["hero-background"]
+      },
+      "gold": {
+        "value": "linear-gradient(135deg, #2a2010 0%, #1a1a1a 50%, #000000 100%)",
+        "description": "Gold gradient - Rolls-Royce slide",
+        "usage": ["hero-background"]
+      },
+      "grey": {
+        "value": "linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 50%, #000000 100%)",
+        "description": "Grey gradient - Porsche slide",
+        "usage": ["hero-background"]
+      },
+      "overlayBottom": {
+        "value": "linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%)",
+        "description": "Bottom overlay for readable text on images",
+        "usage": ["image-overlay"]
+      },
+      "overlayTop": {
+        "value": "linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%)",
+        "description": "Top overlay for headers",
+        "usage": ["image-overlay"]
+      }
+    },
+
+    "future": {
+      "blue": {
+        "value": "#5B8FFF",
+        "description": "Neon blue - EQ future accent",
+        "usage": ["accent", "hover"]
+      },
+      "purple": {
+        "value": "#6B5FFF",
+        "description": "Purple - carousel indicators",
+        "usage": ["accent", "indicators"]
+      },
+      "cyan": {
+        "value": "#00E5FF",
+        "description": "Cyan - highlights",
+        "usage": ["accent"]
+      },
+      "neonGradient": {
+        "value": "linear-gradient(135deg, #5B8FFF 0%, #6B5FFF 100%)",
+        "description": "Neon gradient",
+        "usage": ["special-elements"]
+      }
+    },
+
+    "luxury": {
+      "gold": {
+        "value": "#D4AF37",
+        "description": "Gold accent - stars, badges",
+        "usage": ["accent", "luxury-markers"]
+      },
+      "goldLight": {
+        "value": "#F8E45C",
+        "description": "Light gold",
+        "usage": ["accent"]
+      },
+      "silver": {
+        "value": "#C0C0C0",
+        "description": "Silver",
+        "usage": ["accent"]
+      }
+    },
+
+    "text": {
+      "primary": {
+        "value": "#FFFFFF",
+        "description": "Primary text on dark backgrounds",
+        "usage": ["headings", "body-text"]
+      },
+      "secondary": {
+        "value": "rgba(255, 255, 255, 0.85)",
+        "description": "Secondary text",
+        "usage": ["subtitles", "descriptions"]
+      },
+      "tertiary": {
+        "value": "rgba(255, 255, 255, 0.6)",
+        "description": "Tertiary text",
+        "usage": ["captions", "labels"]
+      },
+      "disabled": {
+        "value": "rgba(255, 255, 255, 0.3)",
+        "description": "Disabled state",
+        "usage": ["disabled-elements"]
+      },
+      "onWhite": {
+        "value": "#000000",
+        "description": "Text on white backgrounds",
+        "usage": ["testimonials", "light-cards"]
+      },
+      "onWhiteSecondary": {
+        "value": "#666666",
+        "description": "Secondary text on white",
+        "usage": ["descriptions"]
+      }
+    },
+
+    "stage": {
+      "barHeight": {
+        "value": "24px",
+        "description": "Mercedes-Benz official stage bar height",
+        "usage": ["top-bar", "bottom-bar"]
+      },
+      "keylineHeight": {
+        "value": "1px",
+        "description": "White keyline separator",
+        "usage": ["separator"]
+      }
+    }
+  },
+
+  "typography": {
+    "fontFamilies": {
+      "headline": {
+        "value": "'Inter Tight', 'Roboto Condensed', Arial, sans-serif",
+        "description": "Headline font - condensed, modern (substitute for Corpo A)",
+        "usage": ["h1", "h2", "hero-titles"]
+      },
+      "body": {
+        "value": "'Inter', 'Roboto', Arial, sans-serif",
+        "description": "Body font - clean, readable (substitute for Corpo S)",
+        "usage": ["body-text", "buttons", "captions"]
+      },
+      "corpoA": {
+        "value": "'Corpo A Condensed', Arial, sans-serif",
+        "description": "Mercedes-Benz official headline font (if licensed)",
+        "usage": ["official-headings"]
+      },
+      "corpoS": {
+        "value": "'Corpo S', Arial, sans-serif",
+        "description": "Mercedes-Benz official body font (if licensed)",
+        "usage": ["official-body"]
+      }
+    },
+
+    "fontSizes": {
+      "xxl": {
+        "value": "64px",
+        "description": "Extra extra large - Hero main titles",
+        "usage": ["hero-h1"]
+      },
+      "xl": {
+        "value": "40px",
+        "description": "Extra large - Section titles",
+        "usage": ["section-h2"]
+      },
+      "lg": {
+        "value": "32px",
+        "description": "Large - Card large titles",
+        "usage": ["card-h3"]
+      },
+      "md": {
+        "value": "24px",
+        "description": "Medium - Card small titles",
+        "usage": ["card-h4"]
+      },
+      "base": {
+        "value": "18px",
+        "description": "Base - Body text",
+        "usage": ["p", "body"]
+      },
+      "sm": {
+        "value": "16px",
+        "description": "Small - Buttons, small body",
+        "usage": ["button", "small-text"]
+      },
+      "xs": {
+        "value": "14px",
+        "description": "Extra small - Labels, captions",
+        "usage": ["label", "caption"]
+      },
+      "xxs": {
+        "value": "12px",
+        "description": "Extra extra small - Copyright, fine print",
+        "usage": ["copyright", "fine-print"]
+      }
+    },
+
+    "lineHeights": {
+      "tight": {
+        "value": 1.1,
+        "description": "Tight line height for large headlines",
+        "usage": ["hero-titles", "large-headings"]
+      },
+      "snug": {
+        "value": 1.25,
+        "description": "Snug line height for subheadings",
+        "usage": ["h2", "h3"]
+      },
+      "normal": {
+        "value": 1.5,
+        "description": "Normal line height for body text",
+        "usage": ["body-text", "paragraphs"]
+      },
+      "relaxed": {
+        "value": 1.8,
+        "description": "Relaxed line height for long-form content",
+        "usage": ["articles", "long-descriptions"]
+      }
+    },
+
+    "fontWeights": {
+      "normal": {
+        "value": 400,
+        "description": "Normal weight",
+        "usage": ["body-text"]
+      },
+      "medium": {
+        "value": 500,
+        "description": "Medium weight",
+        "usage": ["emphasis"]
+      },
+      "semibold": {
+        "value": 600,
+        "description": "Semibold weight",
+        "usage": ["buttons", "strong-emphasis"]
+      },
+      "bold": {
+        "value": 700,
+        "description": "Bold weight",
+        "usage": ["headings", "titles"]
+      }
+    },
+
+    "letterSpacing": {
+      "tight": {
+        "value": "-0.02em",
+        "description": "Tight letter spacing for large text",
+        "usage": ["large-headings"]
+      },
+      "normal": {
+        "value": "0",
+        "description": "Normal letter spacing",
+        "usage": ["body-text"]
+      },
+      "wide": {
+        "value": "0.05em",
+        "description": "Wide letter spacing for uppercase",
+        "usage": ["uppercase-headings"]
+      },
+      "wider": {
+        "value": "0.1em",
+        "description": "Wider letter spacing for buttons",
+        "usage": ["button-text"]
+      }
+    }
+  },
+
+  "spacing": {
+    "xs": {
+      "value": "8px",
+      "description": "Extra small spacing",
+      "usage": ["tight-gaps"]
+    },
+    "sm": {
+      "value": "16px",
+      "description": "Small spacing",
+      "usage": ["card-gaps", "small-padding"]
+    },
+    "md": {
+      "value": "24px",
+      "description": "Medium spacing",
+      "usage": ["standard-gaps", "card-padding"]
+    },
+    "lg": {
+      "value": "48px",
+      "description": "Large spacing",
+      "usage": ["section-gaps"]
+    },
+    "xl": {
+      "value": "80px",
+      "description": "Extra large spacing",
+      "usage": ["section-padding"]
+    },
+    "xxl": {
+      "value": "120px",
+      "description": "Extra extra large spacing",
+      "usage": ["large-section-padding"]
+    }
+  },
+
+  "borderRadius": {
+    "sm": {
+      "value": "8px",
+      "description": "Small radius - buttons",
+      "usage": ["small-buttons", "tags"]
+    },
+    "md": {
+      "value": "16px",
+      "description": "Medium radius - cards",
+      "usage": ["cards", "modals"]
+    },
+    "lg": {
+      "value": "24px",
+      "description": "Large radius - search bar",
+      "usage": ["search-bar", "large-cards"]
+    },
+    "xl": {
+      "value": "32px",
+      "description": "Extra large radius",
+      "usage": ["special-elements"]
+    },
+    "full": {
+      "value": "9999px",
+      "description": "Full radius - circular buttons",
+      "usage": ["circular-buttons", "pills"]
+    }
+  },
+
+  "shadows": {
+    "sm": {
+      "value": "0 2px 8px rgba(0, 0, 0, 0.1)",
+      "description": "Small shadow",
+      "usage": ["hover-cards", "dropdowns"]
+    },
+    "md": {
+      "value": "0 4px 16px rgba(0, 0, 0, 0.2)",
+      "description": "Medium shadow",
+      "usage": ["cards", "modals"]
+    },
+    "lg": {
+      "value": "0 8px 32px rgba(0, 0, 0, 0.3)",
+      "description": "Large shadow",
+      "usage": ["elevated-cards", "popups"]
+    },
+    "xl": {
+      "value": "0 12px 48px rgba(0, 0, 0, 0.4)",
+      "description": "Extra large shadow",
+      "usage": ["hero-elements"]
+    },
+    "blue": {
+      "value": "0 4px 16px rgba(0, 173, 239, 0.3)",
+      "description": "Blue colored shadow",
+      "usage": ["primary-button-hover"]
+    },
+    "gold": {
+      "value": "0 4px 16px rgba(212, 175, 55, 0.3)",
+      "description": "Gold colored shadow",
+      "usage": ["luxury-elements"]
+    }
+  },
+
+  "transitions": {
+    "durations": {
+      "fast": {
+        "value": "150ms",
+        "description": "Fast transitions",
+        "usage": ["micro-interactions"]
+      },
+      "normal": {
+        "value": "300ms",
+        "description": "Normal transitions",
+        "usage": ["standard-interactions"]
+      },
+      "slow": {
+        "value": "500ms",
+        "description": "Slow transitions",
+        "usage": ["hover-effects", "image-scaling"]
+      },
+      "slower": {
+        "value": "800ms",
+        "description": "Slower transitions",
+        "usage": ["page-transitions", "carousel"]
+      }
+    },
+
+    "easings": {
+      "in": {
+        "value": "cubic-bezier(0.4, 0, 1, 1)",
+        "description": "Ease in",
+        "usage": ["element-exit"]
+      },
+      "out": {
+        "value": "cubic-bezier(0, 0, 0.2, 1)",
+        "description": "Ease out",
+        "usage": ["element-enter"]
+      },
+      "inOut": {
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "description": "Ease in-out",
+        "usage": ["general-transitions"]
+      },
+      "bounce": {
+        "value": "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+        "description": "Bounce easing",
+        "usage": ["playful-interactions"]
+      }
+    }
+  },
+
+  "breakpoints": {
+    "sm": {
+      "value": "640px",
+      "description": "Small devices (mobile)",
+      "usage": ["mobile-first-queries"]
+    },
+    "md": {
+      "value": "768px",
+      "description": "Medium devices (tablets)",
+      "usage": ["tablet-queries"]
+    },
+    "lg": {
+      "value": "1024px",
+      "description": "Large devices (small laptops)",
+      "usage": ["laptop-queries"]
+    },
+    "xl": {
+      "value": "1280px",
+      "description": "Extra large devices (desktops)",
+      "usage": ["desktop-queries"]
+    },
+    "xxl": {
+      "value": "1536px",
+      "description": "Extra extra large devices (large screens)",
+      "usage": ["large-screen-queries"]
+    }
+  },
+
+  "zIndex": {
+    "background": {
+      "value": 0,
+      "description": "Background layer",
+      "usage": ["background-images"]
+    },
+    "content": {
+      "value": 1,
+      "description": "Content layer",
+      "usage": ["main-content"]
+    },
+    "overlay": {
+      "value": 10,
+      "description": "Overlay layer",
+      "usage": ["overlays", "gradients"]
+    },
+    "header": {
+      "value": 100,
+      "description": "Header layer",
+      "usage": ["header", "navigation"]
+    },
+    "modal": {
+      "value": 1000,
+      "description": "Modal layer",
+      "usage": ["modals", "lightboxes"]
+    },
+    "tooltip": {
+      "value": 10000,
+      "description": "Tooltip layer",
+      "usage": ["tooltips", "popovers"]
+    }
+  },
+
+  "metadata": {
+    "author": "Claude AI + Client Design Team",
+    "createdAt": "2025-10-22",
+    "basedOn": "Mercedes-Benz Brand Communication Standards & Design Guidelines (Oct 2023)",
+    "version": "1.0.0",
+    "lastUpdated": "2025-10-22"
+  }
+}

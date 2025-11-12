@@ -1,0 +1,456 @@
+/*
+ * Brand Grid Redesign
+ * Lightweight layout for luxury marque groups
+ */
+
+:root {
+  --brand-grid-gap: var(--grid-gap-lg);
+}
+
+.brandSection {
+  padding: var(--space-massive) var(--space-lg);
+  background: radial-gradient(
+    ellipse 1600px 1200px at top left,
+    rgba(138, 43, 226, 0.2) 0%,
+    rgba(75, 0, 130, 0.12) 40%,
+    #000000 70%
+  );
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxl);
+}
+
+.brandIntro {
+  max-width: var(--container-xxl);
+  margin: 0 auto var(--space-xxl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.brandEyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.brandHeadline {
+  margin: 0;
+  font-family: var(--font-headline);
+  font-size: clamp(32px, 2.8vw, 40px);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-normal);
+  text-transform: uppercase;
+  color: var(--mb-white);
+}
+
+.brandIntroTags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xxs);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.brandIntroTags li {
+  position: relative;
+  padding-left: var(--space-md);
+}
+
+.brandIntroTags li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.brandGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.brandGroupHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-md);
+}
+
+.brandGroupCopy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  align-items: center;
+  width: 100%;
+}
+
+.brandGroupTitle {
+  margin: 0;
+  font-family: var(--font-headline);
+  font-size: clamp(24px, 2.4vw, 32px);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-normal);
+  text-transform: uppercase;
+  color: var(--mb-white);
+}
+
+.brandGroupSummary {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  color: rgba(255, 255, 255, 0.65);
+  line-height: var(--line-height-relaxed);
+  max-width: 640px;
+}
+
+.brandGroupTags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xxs);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.brandGroupTags li {
+  position: relative;
+  padding-left: var(--space-md);
+}
+
+.brandGroupTags li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.brandGroupGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--grid-gap-md);
+  width: 100%;
+  max-width: var(--container-xxl);
+  margin: 0 auto;
+  align-self: stretch;
+}
+
+.brandCard {
+  position: relative;
+  display: flex;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #101010;
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--duration-normal) var(--ease-out),
+              box-shadow var(--duration-normal) var(--ease-out);
+}
+
+.brandCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.brandCardImage {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform var(--duration-slow) var(--ease-out);
+  /* 优化高DPI屏幕显示 */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.brandCard:hover .brandCardImage {
+  transform: scale(1.05);
+}
+
+/* Special positioning for Lincoln Navigator - shift image up */
+.brandCard[data-brand="navigator"] .brandCardImage {
+  background-position: center 75%;
+}
+
+.brandCardOverlay {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  transition: background var(--duration-normal) var(--ease-out);
+}
+
+.brandCard:hover .brandCardOverlay {
+  background: transparent;
+}
+
+.brandCardContent {
+  position: absolute;
+  inset: 0;
+  z-index: calc(var(--z-base) + 1);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: transparent;
+  backdrop-filter: none;
+  border-radius: 0;
+  transition: background 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              gap 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 0;
+}
+
+.brandCard:hover .brandCardContent {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: none;
+  gap: var(--space-sm);
+}
+
+.brandCardName {
+  margin: 0;
+  font-family: var(--font-headline);
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-normal);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.2;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.brandCard:hover .brandCardName {
+  transform: translateY(-8px);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.brandCardMeta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxs);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.brandCard:hover .brandCardMeta {
+  max-height: 100px;
+  opacity: 1;
+}
+
+.brandCardTier {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xxs);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--brand-accent, rgba(255, 255, 255, 0.6));
+}
+
+.brandCardModels {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xxs);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.brandCardHighlights {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xxs);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s,
+              opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
+}
+
+.brandCard:hover .brandCardHighlights {
+  max-height: 100px;
+  opacity: 1;
+}
+
+.brandCardHighlights li {
+  padding: 6px var(--space-md);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(6px);
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.brandCardSummary {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: var(--line-height-relaxed);
+}
+
+.brandCardCaseLink {
+  margin-top: var(--space-sm);
+  cursor: default;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xxs);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: color var(--duration-normal) var(--ease-out);
+}
+
+.brandCta {
+  max-width: var(--container-xxl);
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-md);
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.brandCtaViewAll {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xxs);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.38);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+  padding-bottom: 2px;
+  transition: color var(--duration-normal) var(--ease-out),
+    border-color var(--duration-normal) var(--ease-out);
+}
+
+.brandCtaViewAll:hover {
+  color: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.brandCtaNote {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xxs);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.brandCtaLink {
+  color: var(--mb-white);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 2px;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xxs);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  transition: color var(--duration-normal) var(--ease-out),
+    border-color var(--duration-normal) var(--ease-out);
+}
+
+.brandCtaLink:hover {
+  color: var(--mb-purple);
+  border-color: var(--mb-purple);
+}
+
+@media (max-width: 1279px) {
+  .brandGroupGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-lg);
+  }
+}
+
+@media (max-width: 1023px) {
+  .brandGroupGrid {
+    gap: var(--space-md);
+  }
+}
+
+@media (max-width: 767px) {
+  .brandSection {
+    padding: var(--space-xxl) var(--space-lg);
+    gap: var(--space-xxl);
+  }
+
+  .brandIntroTags {
+    gap: var(--space-xs);
+  }
+
+  .brandGroupGrid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-md);
+  }
+
+  .brandCard {
+    aspect-ratio: 16 / 9;
+  }
+
+  .brandCardContent {
+    padding: var(--space-lg);
+    gap: var(--space-sm);
+  }
+
+  /* Show meta and highlights by default on mobile (no hover) */
+  .brandCardMeta,
+  .brandCardHighlights {
+    max-height: 200px;
+    opacity: 1;
+  }
+
+  .brandCardName {
+    transform: none;
+  }
+
+  .brandCardHighlights {
+    gap: var(--space-xs);
+  }
+
+  .brandCta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .brandCardImage,
+  .brandCardOverlay,
+  .brandCardContent {
+    transition: none !important;
+  }
+}

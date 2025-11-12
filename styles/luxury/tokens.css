@@ -1,0 +1,202 @@
+/*
+ * Design Tokens - Luxury Auto Repair Website
+ * Based on Mercedes-Benz Design System
+ * Source: design-tokens.json
+ */
+
+:root {
+  /* ========================================
+     COLOR TOKENS
+     ======================================== */
+
+  /* Primary Colors */
+  --mb-black: #000000;
+  --mb-white: #FFFFFF;
+  --mb-blue: #B026FF; /* Changed from blue to purple */
+
+  /* Secondary Colors */
+  --mb-silver: #C0C0C0;
+  --mb-dark-gray: #1a1a1a;
+  --mb-medium-gray: #333333;
+  --mb-light-gray: #F5F5F5;
+
+  /* Accent Colors */
+  --mb-gold: #D4AF37;
+  --mb-purple: #B026FF;
+
+  /* Semantic Colors */
+  --color-success: #00C853;
+  --color-warning: #FFA726;
+  --color-error: #F44336;
+
+  /* Background Overlays */
+  --overlay-forest: rgba(10, 31, 31, 0.7);
+  --overlay-city: rgba(10, 15, 31, 0.7);
+  --overlay-track: rgba(31, 10, 10, 0.7);
+  --overlay-mansion: rgba(20, 20, 25, 0.7);
+  --overlay-canyon: rgba(31, 20, 10, 0.7);
+
+  /* ========================================
+     GRADIENT TOKENS
+     ======================================== */
+
+  /* Semi-transparent gradients to show background images */
+  --gradient-forest: linear-gradient(135deg, rgba(10, 31, 31, 0.5) 0%, rgba(26, 26, 26, 0.6) 50%, rgba(0, 0, 0, 0.7) 100%);
+  --gradient-city: linear-gradient(135deg, rgba(10, 15, 31, 0.5) 0%, rgba(26, 26, 26, 0.6) 50%, rgba(0, 0, 0, 0.7) 100%);
+  --gradient-track: linear-gradient(135deg, rgba(31, 10, 10, 0.5) 0%, rgba(26, 26, 26, 0.6) 50%, rgba(0, 0, 0, 0.7) 100%);
+  --gradient-mansion: linear-gradient(135deg, rgba(20, 20, 25, 0.5) 0%, rgba(26, 26, 26, 0.6) 50%, rgba(0, 0, 0, 0.7) 100%);
+  --gradient-canyon: linear-gradient(135deg, rgba(31, 20, 10, 0.5) 0%, rgba(26, 26, 26, 0.6) 50%, rgba(0, 0, 0, 0.7) 100%);
+  --gradient-cta: linear-gradient(135deg, rgba(0, 35, 77, 0.5) 0%, rgba(0, 26, 61, 0.6) 50%, rgba(0, 0, 0, 0.7) 100%);
+
+  /* ========================================
+     TYPOGRAPHY TOKENS
+     ======================================== */
+
+  /* Font Families */
+  --font-headline: 'Inter Tight', 'Roboto Condensed', Arial, sans-serif;
+  --font-heading: 'Inter Tight', 'Roboto Condensed', Arial, sans-serif; /* Alias for consistency */
+  --font-body: 'Inter', 'Roboto', Arial, sans-serif;
+  --font-mono: 'Roboto Mono', 'Courier New', monospace;
+
+  /* Font Sizes */
+  --font-size-xxl: 64px;
+  --font-size-4xl: 56px;  /* Added for brand pages */
+  --font-size-3xl: 48px;  /* Added for brand pages */
+  --font-size-2xl: 36px;  /* Added for brand pages */
+  --font-size-xl: 40px;
+  --font-size-lg: 32px;
+  --font-size-md: 24px;
+  --font-size-base: 18px;
+  --font-size-sm: 16px;
+  --font-size-xs: 14px;
+  --font-size-xxs: 12px;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.8;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em;
+  --letter-spacing-wider: 0.1em;
+
+  /* ========================================
+     SPACING TOKENS
+     ======================================== */
+
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+  --space-xxxl: 64px;
+  --space-huge: 96px;
+  --space-massive: 128px;
+
+  /* Spacing Aliases (for consistency with brand pages) */
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+
+  /* ========================================
+     LAYOUT TOKENS
+     ======================================== */
+
+  /* Container Widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  --container-xxl: 1536px;
+
+  /* Max Width Aliases (for brand pages) */
+  --max-width-container: 1280px;  /* Same as --container-xl */
+  --max-width-text: 800px;         /* For article/editorial content */
+
+  /* Mercedes Stage Design */
+  --mb-stage-bar: 24px;
+  --mb-keyline: 1px;
+
+  /* Grid Gaps */
+  --grid-gap-sm: 16px;
+  --grid-gap-md: 24px;
+  --grid-gap-lg: 32px;
+
+  /* ========================================
+     BORDER RADIUS TOKENS
+     ======================================== */
+
+  --radius-none: 0;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* ========================================
+     SHADOW TOKENS
+     ======================================== */
+
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.25);
+  --shadow-glow: 0 0 20px rgba(0, 173, 239, 0.5);
+
+  /* ========================================
+     ANIMATION TOKENS
+     ======================================== */
+
+  /* Durations */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 700ms;
+
+  /* Easing Functions */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* Transition Presets (for brand pages) */
+  --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ========================================
+     Z-INDEX TOKENS
+     ======================================== */
+
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+
+  /* ========================================
+     RESPONSIVE BREAKPOINTS
+     ======================================== */
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-xxl: 1536px;
+}

@@ -1,0 +1,323 @@
+/*
+ * Booking Section Styles
+ * Mercedes-Benz Stage Design + Squarespace Integration
+ */
+
+/* ========================================
+   SECTION CONTAINER
+   ======================================== */
+
+.bookingSection {
+  background: linear-gradient(135deg, #0a0f1f 0%, #000000 100%);
+  position: relative;
+  padding: 0;
+}
+
+/* Mercedes Stage Bars */
+.stageBarTop,
+.stageBarBottom {
+  height: var(--mb-stage-bar);
+  background-color: var(--mb-black);
+}
+
+.keyline {
+  height: var(--mb-keyline);
+  background-color: var(--mb-white);
+  margin: 0;
+}
+
+/* ========================================
+   CONTENT CONTAINER
+   ======================================== */
+
+.bookingContainer {
+  max-width: var(--container-xl);
+  margin: 0 auto;
+  padding: var(--space-xxl) var(--space-lg);
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: var(--space-xxl);
+  align-items: start;
+}
+
+/* ========================================
+   MAIN CONTENT
+   ======================================== */
+
+.bookingContent {
+  max-width: 640px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-widest);
+  text-transform: uppercase;
+  color: var(--neon-blue);
+  margin-bottom: var(--space-md);
+}
+
+.heading {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+  color: var(--mb-white);
+  line-height: var(--line-height-tight);
+  margin: 0 0 var(--space-xl) 0;
+}
+
+/* ========================================
+   BOOKING ACTIONS (BUTTONS)
+   ======================================== */
+
+.bookingActions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  max-width: 320px;
+}
+
+.bookButton,
+.callButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: 16px 32px;
+  font-family: var(--font-headline);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all var(--duration-normal) var(--ease-out);
+  cursor: pointer;
+  width: 100%;
+}
+
+.bookButton {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: var(--mb-white);
+  backdrop-filter: blur(10px);
+}
+
+.bookButton:hover {
+  background-color: var(--mb-white);
+  color: var(--mb-black);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
+}
+
+.callButton {
+  background-color: transparent;
+  color: var(--mb-white);
+  border: none;
+}
+
+.callButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.bookButton:active,
+.callButton:active {
+  transform: translateY(0);
+}
+
+/* ========================================
+   INFO TEXT
+   ======================================== */
+
+.infoText {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+  margin: 0;
+}
+
+.infoText svg {
+  flex-shrink: 0;
+  color: var(--neon-blue);
+}
+
+/* ========================================
+   SIDEBAR (SERVICE HOURS & INFO)
+   ======================================== */
+
+.bookingSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.sidebarCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  padding: var(--space-lg);
+  backdrop-filter: blur(10px);
+}
+
+.sidebarHeading {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+  color: var(--mb-white);
+  margin: 0 0 var(--space-md) 0;
+}
+
+/* Hours List */
+.hoursList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.hoursList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hoursList li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.day {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--mb-white);
+}
+
+.time {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+/* Expect List */
+.expectList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.expectList li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.expectList li svg {
+  flex-shrink: 0;
+  color: var(--neon-blue);
+}
+
+/* ========================================
+   SQUARESPACE EMBED STYLING (Optional)
+   ======================================== */
+
+/*
+  If using Squarespace iframe embed, style it like this:
+
+  .schedulingEmbed {
+    margin-top: var(--space-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    padding: var(--space-md);
+  }
+
+  .schedulingEmbed iframe {
+    width: 100%;
+    min-height: 600px;
+    border: none;
+  }
+*/
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .bookingContainer {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .bookingSidebar {
+    max-width: 640px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .heading {
+    font-size: var(--font-size-xl);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .bookingContainer {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .heading {
+    font-size: var(--font-size-lg);
+  }
+
+  .bookingActions {
+    max-width: 100%;
+  }
+
+  .sidebarCard {
+    padding: var(--space-md);
+  }
+
+  .hoursList li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+.bookButton:focus-visible,
+.callButton:focus-visible {
+  outline: 2px solid var(--mb-blue);
+  outline-offset: 4px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .bookButton,
+  .callButton {
+    transition: none !important;
+  }
+}

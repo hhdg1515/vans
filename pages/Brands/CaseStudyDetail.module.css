@@ -1,0 +1,831 @@
+/* ================================
+   Case Study Detail Page
+   Magazine-style editorial layout
+   Based on Octane/Porsche Classic style
+
+   DESIGN OPTIMIZATION:
+   - Layered background system (#000 → #0a0a0a → #121212)
+   - Softened text colors (#F5F5F5 instead of pure #FFF)
+   - Card-based content modules for visual hierarchy
+   - Enhanced breathing space (60-80px section gaps)
+   ================================ */
+
+.main {
+  background-color: var(--mb-black); /* Pure black base */
+  color: #F5F5F5; /* Softened white for reduced eye strain */
+  min-height: 100vh;
+  padding-top: calc(var(--mb-stage-bar) + 140px);
+}
+
+/* ================================
+   BREADCRUMB
+   ================================ */
+
+.breadcrumb {
+  width: 100%;
+  padding: 0 var(--spacing-xl);
+  max-width: var(--container-xxl);
+  margin: 0 auto var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  color: var(--mb-silver);
+}
+
+.breadcrumb a {
+  color: var(--mb-purple);
+  text-decoration: none;
+  transition: color var(--transition-base);
+  text-transform: capitalize;
+}
+
+.breadcrumb a:hover {
+  color: var(--mb-white);
+}
+
+.breadcrumbSeparator {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbCurrent {
+  color: var(--mb-white);
+}
+
+/* ================================
+   ARTICLE STRUCTURE
+   ================================ */
+
+.article {
+  max-width: 1400px; /* Widened outer dark gray container */
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg) var(--spacing-xxl);
+  background-color: #0a0a0a; /* Layer 1: Dark gray container */
+  border-radius: 0; /* Keep it clean, no rounded corners on main container */
+}
+
+/* ================================
+   ARTICLE HEADER
+   ================================ */
+
+.articleHeader {
+  margin-top: 120px; /* Further increased spacing - breadcrumb has higher priority */
+  margin-bottom: var(--spacing-xxl);
+  max-width: 1000px; /* Align with content cards */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headerContent {
+  padding: var(--spacing-xxl) 0;
+  text-align: center;
+  border-bottom: none; /* Remove separator line */
+}
+
+.categoryBadge {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: var(--mb-purple);
+  color: var(--mb-black);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--spacing-lg);
+}
+
+.articleTitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-light);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
+  margin: 0 0 var(--spacing-md) 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #F5F5F5; /* Softened white for main titles */
+}
+
+.articleSubtitle {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-relaxed);
+  color: var(--mb-silver);
+  font-weight: var(--font-weight-light);
+  max-width: 700px;
+  margin: 0 auto var(--spacing-xl) auto;
+}
+
+.articleMeta {
+  display: flex;
+  gap: var(--spacing-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  color: var(--mb-silver);
+  margin-top: var(--spacing-xl); /* Increased spacing between title and meta */
+  margin-bottom: var(--spacing-xxl);
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.metaItem svg {
+  opacity: 0.6;
+}
+
+/* ================================
+   COVER IMAGE
+   ================================ */
+
+.coverImage {
+  margin: var(--spacing-xxl) 0;
+  aspect-ratio: 16 / 9;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 1000px; /* Align with content cards */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coverImagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg,
+    rgba(176, 38, 255, 0.15) 0%,
+    rgba(0, 0, 0, 0.9) 100%);
+}
+
+/* ================================
+   VEHICLE DETAILS
+   ================================ */
+
+.vehicleSection {
+  margin-top: var(--spacing-xxl);
+  padding: var(--spacing-xxl) 0 var(--spacing-xl);
+  margin-bottom: var(--spacing-xxl);
+  max-width: 1000px; /* Align with content cards */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vehicleGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.vehicleDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detailLabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mb-silver);
+}
+
+.detailValue {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  color: #E0E0E0; /* Softer white for detail values */
+  font-weight: var(--font-weight-medium);
+}
+
+/* ================================
+   CONTENT SECTIONS
+   ================================ */
+
+.contentSection {
+  margin-bottom: 60px; /* Increased from 48px for more breathing room */
+  padding: 40px; /* Add padding for card feel */
+  background-color: #121212; /* Layer 2: Light gray card background */
+  border: none; /* Border removed - was too bright */
+  border-radius: 2px; /* Minimal rounding for precision */
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5); /* Subtle elevation */
+  max-width: 1000px; /* Keep inner content cards at comfortable reading width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contentSection:last-of-type {
+  border-bottom: none;
+}
+
+.sectionEyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  color: var(--mb-purple);
+  margin-bottom: var(--spacing-md);
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-light);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
+  margin: 0 0 var(--spacing-xl) 0;
+  color: #F5F5F5; /* Softened white for section titles */
+}
+
+.paragraph {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--mb-silver);
+  margin: 0 0 var(--spacing-lg) 0;
+}
+
+/* ================================
+   SYMPTOMS LIST
+   ================================ */
+
+.symptomsList,
+.faultCodes {
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-lg) 0;
+}
+
+.listTitle {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  margin: 0 0 var(--spacing-md) 0;
+  color: #E0E0E0; /* Softer white for list titles */
+}
+
+.symptomsList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.symptomsList li {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--mb-silver);
+  padding: var(--spacing-xs) 0;
+}
+
+/* ================================
+   FAULT CODES
+   ================================ */
+
+.codeList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--mb-silver);
+}
+
+.codeDescription {
+  color: var(--mb-silver);
+}
+
+/* ================================
+   DIAGNOSIS STEPS
+   ================================ */
+
+.diagnosisStep {
+  margin-bottom: var(--spacing-xl);
+  padding-left: 24px; /* Space for left border */
+  border-left: 2px solid rgba(176, 38, 255, 0.3); /* Purple timeline connector */
+  position: relative;
+}
+
+.diagnosisStep::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--mb-purple);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(176, 38, 255, 0.2);
+}
+
+.stepTitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-normal);
+  margin: 0 0 var(--spacing-sm) 0;
+  color: #E0E0E0; /* Slightly dimmer than main titles */
+}
+
+.conclusion {
+  margin-top: var(--spacing-lg);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--mb-silver);
+}
+
+/* ================================
+   PROCEDURES
+   ================================ */
+
+.procedure {
+  margin-bottom: var(--spacing-xl);
+  padding-left: 20px; /* Space for left accent bar */
+  border-left: none; /* Purple line removed - was too bright */
+  position: relative;
+  background-color: #121212; /* Keep same light gray as parent card */
+  padding: 24px;
+  border-radius: 2px;
+}
+
+.procedureHeader {
+  display: block;
+  margin-bottom: var(--spacing-md);
+}
+
+.procedureTitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  margin: 0;
+  color: #E0E0E0; /* Slightly dimmer than main titles */
+}
+
+.procedureDescription {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--mb-silver);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.partsUsed {
+  margin-top: var(--spacing-md);
+  font-size: var(--font-size-sm);
+  color: var(--mb-silver);
+}
+
+.partsUsed strong {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  color: var(--mb-white);
+}
+
+.partsUsed ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.partsUsed li {
+  padding: 4px 0;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+}
+
+.partsUsed li::before {
+  content: '•';
+  color: var(--mb-purple);
+  margin-right: var(--spacing-sm);
+}
+
+.procedureResult {
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: var(--font-size-sm);
+  color: var(--mb-silver);
+}
+
+.procedureResult strong {
+  color: var(--mb-white);
+}
+
+/* ================================
+   TECHNICAL INSIGHTS
+   ================================ */
+
+.insight {
+  margin-bottom: var(--spacing-xl);
+}
+
+.insightHeading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-normal);
+  margin: 0 0 var(--spacing-sm) 0;
+  color: #E0E0E0; /* Softer white for insight headings */
+}
+
+/* ================================
+   RESULTS SECTION
+   ================================ */
+
+.resultsSection {
+  margin-bottom: var(--spacing-xxl);
+  max-width: 1000px; /* Align with content cards */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.achievementsList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--spacing-xxl) 0;
+}
+
+.achievementsList li {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--mb-silver);
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ================================
+   TESTIMONIAL
+   ================================ */
+
+/* ================================
+   OWNER ADVICE
+   ================================ */
+
+/* ================================
+   MECHANIC SUMMARY SECTION
+   ================================ */
+
+.mechanicSummarySection {
+  padding: var(--spacing-xxl) var(--spacing-lg);
+  background: linear-gradient(135deg,
+    rgba(176, 38, 255, 0.08) 0%,
+    rgba(138, 43, 226, 0.05) 50%,
+    rgba(0, 0, 0, 0.02) 100%);
+}
+
+.mechanicSummaryContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mechanicSummaryHeader {
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.mechanicSummaryTitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-tight);
+  color: var(--mb-white);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.mechanicSummaryContent {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  padding: var(--spacing-xl);
+  border: 1px solid rgba(176, 38, 255, 0.2);
+}
+
+.mechanicSummaryBlock {
+  margin-bottom: var(--spacing-xl);
+}
+
+.mechanicSummarySubtitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-tight);
+  color: var(--mb-purple);
+  margin: 0 0 var(--spacing-md) 0;
+  line-height: 1.4;
+}
+
+.mechanicSummarySymptoms {
+  list-style: disc;
+  padding-left: var(--spacing-lg);
+  margin: 0;
+}
+
+.mechanicSummarySymptoms li {
+  padding: var(--spacing-sm) 0;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.mechanicSummaryWarning {
+  padding: var(--spacing-lg);
+  background-color: rgba(176, 38, 255, 0.1);
+  border-left: 4px solid var(--mb-purple);
+  border-radius: 2px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.mechanicSummaryRecommendation {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: var(--mb-white);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.mechanicSummaryRecommendation strong {
+  color: var(--mb-purple);
+  font-weight: var(--font-weight-bold);
+}
+
+.mechanicSummaryConsequence {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+.mechanicSummaryConsequence strong {
+  color: var(--mb-purple);
+  font-weight: var(--font-weight-bold);
+}
+
+.mechanicSummaryFooter {
+  text-align: right;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mechanicSummaryAuthor {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ================================
+   RELATED CASE STUDIES
+   ================================ */
+
+.relatedSection {
+  padding: var(--spacing-xxl) var(--spacing-lg);
+  background-color: #0a0a0a; /* Subtle gray background for visual separation */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.relatedContainer {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--grid-gap-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.relatedCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #121212; /* Card background for related items */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition-base);
+  border-radius: 2px;
+}
+
+.relatedCard:hover {
+  background-color: #1a1a1a; /* Lighter on hover */
+  border-color: var(--mb-purple);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+.relatedImage {
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+
+.relatedImagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg,
+    rgba(176, 38, 255, 0.1) 0%,
+    rgba(0, 0, 0, 0.9) 100%);
+}
+
+.relatedCategory {
+  position: absolute;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
+  padding: 4px 12px;
+  background-color: var(--mb-purple);
+  color: var(--mb-black);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
+.relatedContent {
+  padding: var(--spacing-lg);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.relatedTitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  margin: 0 0 var(--spacing-sm) 0;
+  color: #E0E0E0; /* Softer white for related titles */
+}
+
+.relatedSubtitle {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: var(--mb-silver);
+  margin: 0 0 var(--spacing-md) 0;
+  flex-grow: 1;
+}
+
+.relatedMeta {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  color: var(--mb-purple);
+  text-transform: uppercase;
+}
+
+/* ================================
+   CTA SECTION
+   ================================ */
+
+.ctaSection {
+  padding: var(--spacing-xxl) var(--spacing-lg);
+  text-align: center;
+  background: linear-gradient(180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(176, 38, 255, 0.05) 50%,
+    rgba(0, 0, 0, 1) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ctaContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-light);
+  margin: 0 0 var(--spacing-md) 0;
+  color: #F5F5F5; /* Softer white for CTA title */
+}
+
+.ctaSubtitle {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  color: var(--mb-silver);
+  margin: 0 0 var(--spacing-xl) 0;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: 16px 32px;
+  font-family: var(--font-headline);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  text-decoration: none;
+  transition: all var(--duration-normal) var(--ease-out);
+  cursor: pointer;
+}
+
+.primaryButton {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: var(--mb-white);
+  backdrop-filter: blur(10px);
+}
+
+.primaryButton:hover {
+  background-color: var(--mb-white);
+  color: var(--mb-black);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: var(--mb-white);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.secondaryButton:hover {
+  border-color: var(--mb-white);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ================================
+   NOT FOUND
+   ================================ */
+
+.notFound {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--spacing-xxl);
+}
+
+.notFound h1 {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.notFound p {
+  font-size: var(--font-size-lg);
+  color: var(--mb-silver);
+  margin-bottom: var(--spacing-xl);
+}
+
+.notFound a {
+  color: var(--mb-purple);
+  text-decoration: none;
+}
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: calc(var(--mb-stage-bar) + 110px);
+  }
+
+  .breadcrumb {
+    padding: 0 var(--spacing-lg);
+  }
+
+  .articleTitle {
+    font-size: var(--font-size-2xl);
+  }
+
+  .articleSubtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .vehicleGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .relatedGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    justify-content: center;
+  }
+}

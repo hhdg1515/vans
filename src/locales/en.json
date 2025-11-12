@@ -1,0 +1,733 @@
+{
+  "header": {
+    "language": {
+      "en": "EN",
+      "zh": "中文",
+      "aria_toggle": "Switch language"
+    },
+    "mobile_menu": {
+      "aria_toggle": "Toggle mobile menu"
+    }
+  },
+  "footer": {
+    "about": {
+      "heading": "WSC Auto",
+      "description": "Southern California's premier independent shop for ultra-luxury European vehicles."
+    },
+    "quick_links": {
+      "heading": "Quick Links",
+      "items": {
+        "home": "Home",
+        "services": "Services",
+        "about": "About Us",
+        "booking": "Book Appointment"
+      }
+    },
+    "services": {
+      "heading": "Our Services",
+      "items": {
+        "diagnostics": "Advanced Diagnostics",
+        "engine": "Engine & Powertrain",
+        "electrical": "Electrical Systems",
+        "chassis": "Chassis & Suspension",
+        "brake": "Brake Systems",
+        "maintenance": "General Maintenance"
+      }
+    },
+    "contact": {
+      "heading": "Contact Us",
+      "address": "123 Auto Way\nLos Angeles, CA 90001",
+      "phone": "Call",
+      "email": "Email",
+      "hours": {
+        "heading": "Service Hours",
+        "weekday": "Mon-Fri: 8AM - 6PM",
+        "saturday": "Sat: 9AM - 4PM",
+        "sunday": "Sun: Closed"
+      }
+    },
+    "bottom": {
+      "rights": "© {year} WSC Auto. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  },
+  "hero": {
+    "cta": "Book Service"
+  },
+  "gallery": {
+    "eyebrow": "Our Work",
+    "headline": "Gallery",
+    "subheadline": "Showcasing our precision craftsmanship on luxury vehicles"
+  },
+  "faq": {
+    "headline": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "How often should I service my car?",
+        "answer": "Luxury vehicles require service every 5,000-7,500 miles or 6-12 months, whichever comes first. However, high-performance models like AMG or Porsche may need more frequent attention. We recommend following your manufacturer's service schedule, which we can review during your first visit."
+      },
+      {
+        "question": "What is included in a car service?",
+        "answer": "A comprehensive luxury car service includes: oil and filter change, brake inspection, fluid level checks, tire rotation and pressure adjustment, multi-point inspection of suspension and steering, diagnostic scan for fault codes, and battery testing. For premium brands, we use only OEM-spec parts and fluids."
+      },
+      {
+        "question": "Why is regular maintenance important?",
+        "answer": "Regular maintenance preserves your luxury vehicle's performance, safety, and resale value. Modern luxury cars have complex systems that deteriorate without proper care. Preventive maintenance costs significantly less than major repairs, and maintains your vehicle's warranty coverage. Our experience shows well-maintained luxury cars retain 20-30% more value."
+      },
+      {
+        "question": "How do I know when my brakes need service?",
+        "answer": "Warning signs include: squealing or grinding noises, vibration when braking, longer stopping distances, or dashboard warning lights. Luxury vehicles often have brake wear sensors that alert you early. We recommend brake inspection every 10,000 miles. High-performance brakes (carbon-ceramic) require specialized knowledge we possess."
+      },
+      {
+        "question": "How can I tell if my air filter needs replacement?",
+        "answer": "Signs your air filter needs replacement: reduced fuel efficiency, decreased acceleration, unusual engine sounds, or check engine light. Luxury vehicles have both engine air filters and cabin air filters. We recommend engine air filter replacement every 15,000-30,000 miles, and cabin filter every 15,000 miles for optimal performance and air quality."
+      }
+    ]
+  },
+  "booking": {
+    "sectionEyebrow": "Schedule Service",
+    "heading": "Book Appointment",
+    "primaryCta": "Book Appointment",
+    "secondaryCta": "Call Us",
+    "info": "We'll confirm your appointment within 2 hours during business hours",
+    "sidebar": {
+      "hours_title": "Service Hours",
+      "weekdays": "Monday - Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "closed": "Closed",
+      "expect_title": "What to Expect",
+      "expect_items": [
+        "Complimentary vehicle pickup",
+        "Detailed diagnostic report",
+        "Transparent pricing",
+        "90-day service warranty"
+      ]
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "The page you're looking for doesn't exist or has been moved.",
+    "cta": "Return to Home"
+  },
+  "brands": {
+    "index": {
+      "hero": {
+        "eyebrow": "Our Expertise",
+        "title": "Ultra-Luxury European Marques",
+        "subtitle": ""
+      },
+      "cta": {
+        "title": "Don't See Your Brand?",
+        "subtitle": "We service all ultra-luxury European vehicles.",
+        "view_services": "Book Appointment",
+        "view_all": "View all the marques we service",
+        "note": "Need another marque?",
+        "talk": "Contact Us"
+      },
+      "groups": {
+        "eyebrow": "Specialists In",
+        "headline": "Luxury marques",
+        "tags": [
+          "Flagship",
+          "Performance",
+          "Supercar",
+          "Luxury SUV"
+        ],
+        "flagship": {
+          "title": "Flagship Atelier",
+          "summary": "Coachbuilt sedans, blueprint V12s, and executive concierge delivery.",
+          "tags": [
+            "Coachbuilt Interiors",
+            "Blueprint Powertrains",
+            "Concierge Stage"
+          ]
+        },
+        "performance": {
+          "title": "Performance & Track",
+          "tags": [
+            "Track Telemetry",
+            "Carbon Aero",
+            "Hybrid Systems",
+            "GT Chassis Setup"
+          ]
+        },
+        "suv": {
+          "title": "Off-Road Specialists",
+          "tags": [
+            "Terrain Response",
+            "Expedition Prep",
+            "All-Terrain Calibration"
+          ]
+        }
+      }
+    },
+    "detail": {
+      "not_found": {
+        "title": "Brand Not Found",
+        "message": "The brand you're looking for doesn't exist.",
+        "back": "Back to All Brands"
+      },
+      "breadcrumb": {
+        "all_brands": "All Brands"
+      },
+      "hero": {
+        "stats": {
+          "vehicles": "Vehicles Serviced",
+          "experience": "Years Experience",
+          "case_studies": "Case Studies"
+        }
+      },
+      "story": {
+        "image_placeholder": "Workshop Photo\n1200 × 1600 px"
+      },
+      "models": {
+        "section_title": "Models We Service",
+        "lineup_title": "{brand} Lineup",
+        "spec_labels": {
+          "engine": "Engine",
+          "power": "Power",
+          "transmission": "Transmission"
+        },
+        "features": "Key Features",
+        "issues": "Common Issues",
+        "studies": "{count} case {plural} available",
+        "studies_plural": "studies",
+        "studies_singular": "study"
+      },
+      "services": {
+        "section_title": "What We Offer",
+        "subtitle": "{brand} Specialized Services"
+      },
+      "case_studies": {
+        "section_title": "{brand} Case Studies",
+        "eyebrow": "Real-World Work",
+        "subtitle": "In-depth technical stories from our most complex repairs and service work."
+      },
+      "gallery": {
+        "title": "Workshop Gallery"
+      },
+      "cta": {
+        "title": "Schedule your service",
+        "subtitle": "Expert care from factory-trained specialists.",
+        "book": "Book Appointment",
+        "call": "Call: (310) 555-1234"
+      }
+    },
+    "caseStudy": {
+      "breadcrumb": {
+        "all_brands": "All Brands",
+        "case": "Case Study"
+      },
+      "not_found": {
+        "title": "Case Study Not Found",
+        "message": "The case study you're looking for doesn't exist.",
+        "back": "Back to {brand}"
+      },
+      "hero": {
+        "vehicle_meta": "{year} {make} {model}"
+      },
+      "sections": {
+        "vehicle_details": "",
+        "problem": {
+          "symptoms": "Reported Symptoms",
+          "fault_codes": "Diagnostic faults / problems"
+        },
+        "diagnosis": {
+          "conclusion": "Conclusion"
+        },
+        "solution": {
+          "title": "The Solution",
+          "summary": "Summary",
+          "parts_used": "Parts Used",
+          "tools_used": "Tools Used",
+          "result": "Result"
+        },
+        "technical": "Technical Insights",
+        "results": {
+          "title": "Results",
+          "achievements": "Achievements"
+        },
+        "advice": {
+          "title": "Owner Advisory"
+        },
+        "mechanic_summary": {
+          "title": "Mechanic's Alert",
+          "subtitle": "If your vehicle shows these symptoms:",
+          "recommendation": "Recommendation:",
+          "consequence": "Consequence of Delay:"
+        },
+        "related": "Related Case Studies",
+        "cta": {
+          "title": "Have a Similar Issue?",
+          "subtitle": "Please contact us.",
+          "book": "Book Appointment",
+          "more": "View More"
+        },
+        "vehicle_labels": {
+          "year": "Year",
+          "make_model": "Model",
+          "mileage": "Mileage"
+        }
+      }
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "eyebrow": "Mercedes-Benz Specialist Atelier",
+      "title": "Precision Services",
+      "tags": "Diagnostics | Engine & Powertrain | Electrical | Chassis & Suspension | Brake Systems | Maintenance",
+      "see_all": "See all"
+    },
+    "nav": {
+      "aria": "Quick service navigation",
+      "labels": {
+        "diagnostics": "Diagnostics",
+        "engine": "Engine",
+        "electrical": "Electrical",
+        "chassis": "Chassis",
+        "brake": "Brake",
+        "maintenance": "Maintenance"
+      }
+    },
+    "sections": {
+      "concierge": {
+        "title": "Concierge Services",
+        "heading": "Premium Care Programs",
+        "keywords": [
+          "Pre-Purchase",
+          "Service Management",
+          "Mobility",
+          "Insurance & Warranty"
+        ]
+      },
+      "experience": {
+        "title": "The Experience",
+        "heading": "How We Work",
+        "keywords": [
+          "Arrival Intake",
+          "Diagnostics",
+          "Execution",
+          "Delivery"
+        ],
+        "steps": [
+          {
+            "title": "Concierge Arrival & Intake",
+            "description": "Reserved bay arrival with white-glove handoff, digital inspection, and tailored service plan."
+          },
+          {
+            "title": "Precision Diagnostics",
+            "description": "OEM tooling, live telemetry, and master technicians isolate issues to the micron."
+          },
+          {
+            "title": "Engineering Execution",
+            "description": "Factory procedures, torque monitoring, and photo documentation at every step."
+          },
+          {
+            "title": "Validation & Delivery",
+            "description": "Road/track validation, detailing, and concierge delivery aligned to your calendar."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Return your vehicle to factory specification",
+        "subtitle": "Each engagement is documented in a digital service dossier, ensuring provenance and resale value remain uncompromised.",
+        "metrics": {
+          "dossier": {
+            "label": "Digital dossier delivered after completion",
+            "value": "24h"
+          },
+          "guarantee": {
+            "label": "Craftsmanship guarantee across all restoration work",
+            "value": "90-day"
+          }
+        },
+        "benefits": [
+          {
+            "id": "01",
+            "title": "Documented Provenance",
+            "description": "Digital dossier with torque specs, calibration logs, and photography delivered within 24 hours."
+          },
+          {
+            "id": "02",
+            "title": "OEM Parts & Procedures",
+            "description": "Factory-approved tooling, software, and components protect warranty status and long-term value."
+          },
+          {
+            "id": "03",
+            "title": "Concierge Project Control",
+            "description": "Real-time status updates, concierge pickup, and curated delivery presentation on completion."
+          }
+        ],
+        "primary": "Contact Us",
+        "footnote": "Concierge team responds within 2 hours during business hours."
+      }
+    }
+  },
+  "servicesData": {
+    "badges": {
+      "most_popular": "Most Popular"
+    },
+    "coreServices": {
+      "diagnostics": {
+        "title": "Advanced Diagnostics",
+        "description": "Factory-level scan tools and OEM software for precise diagnostics",
+        "features": [
+          "Mercedes XENTRY diagnostics",
+          "Porsche PIWIS III system",
+          "European OEM software access",
+          "Electronic system troubleshooting"
+        ]
+      },
+      "engine": {
+        "title": "Engine & Powertrain",
+        "description": "Expert engine repair, rebuild, and maintenance for all luxury marques",
+        "features": [
+          "V12 engine specialists",
+          "Twin-turbo systems",
+          "Transmission service",
+          "Hybrid powertrain expertise"
+        ]
+      },
+      "electrical": {
+        "title": "Electrical Systems",
+        "description": "Complex electrical diagnostics and repair for modern luxury vehicles",
+        "features": [
+          "CAN-bus system repair",
+          "COMAND and MBUX service",
+          "Lighting and LED diagnostics",
+          "Battery and charging systems"
+        ]
+      },
+      "chassis": {
+        "title": "Chassis & Suspension",
+        "description": "Suspension, steering, and chassis repair for optimal handling and safety",
+        "features": [
+          "Air suspension service",
+          "Steering system repair",
+          "Control arm replacement",
+          "Alignment and geometry"
+        ]
+      },
+      "maintenance": {
+        "title": "General Maintenance",
+        "description": "Scheduled maintenance and service to keep your vehicle running perfectly",
+        "features": [
+          "Oil and filter changes",
+          "Fluid service and inspection",
+          "Factory service intervals",
+          "Multi-point inspection"
+        ]
+      }
+    },
+    "serviceDetails": {
+      "diagnostics": {
+        "title": "Advanced Diagnostics",
+        "subtitle": "Factory scan suite and electrical forensics",
+        "summary": "Precision fault forensics",
+        "highlights": [
+          {
+            "label": "Platforms",
+            "value": "Mercedes XENTRY | Porsche PIWIS III | BMW ISTA | VW/Audi ODIS"
+          },
+          {
+            "label": "Turnaround",
+            "value": "Same-day reporting for most diagnostic cases"
+          },
+          {
+            "label": "Documentation",
+            "value": "Digital health dossier with fault traces and action plan"
+          }
+        ],
+        "focusAreas": [
+          "Full OEM scan with guided fault tracing, coding review, and freeze-frame analysis.",
+          "Live data logging, oscilloscope capture, and load testing for intermittent electrical faults.",
+          "CAN, LIN, and FlexRay network verification with communication diagnostics.",
+          "Battery, charging, and power management evaluation to protect warranties."
+        ],
+        "procedures": [
+          {
+            "title": "Concierge Intake",
+            "description": "White-glove arrival inspection with photography, condition logging, and protective staging."
+          },
+          {
+            "title": "OEM Scan Suite",
+            "description": "Run manufacturer software with guided diagnostics and control-unit adaptation checks."
+          },
+          {
+            "title": "Electrical Validation",
+            "description": "Oscilloscope capture, load testing, and harness review to confirm affected circuits."
+          },
+          {
+            "title": "Consult and Roadmap",
+            "description": "Review results with your advisor, prioritize repairs, and schedule corrective work."
+          }
+        ],
+        "ctaLabel": "Schedule Diagnostic Evaluation"
+      },
+      "engine": {
+        "title": "Engine & Powertrain",
+        "subtitle": "AMG, V12, and exotic powertrain specialists",
+        "summary": "Blueprint powertrain craftsmanship",
+        "highlights": [
+          {
+            "label": "Capabilities",
+            "value": "V12 rebuilds | AMG biturbo | Ferrari V8 | PDK and ZF 8HP"
+          },
+          {
+            "label": "Clean room",
+            "value": "Dedicated engine studio with torque traceability and ARP tooling"
+          },
+          {
+            "label": "Validation",
+            "value": "Dyno break-in, oil analysis, and telemetry road or track test"
+          }
+        ],
+        "focusAreas": [
+          "Factory-scheduled maintenance including ignition, fuel, and lubrication systems.",
+          "Bottom-end rebuilds with blueprint balancing, align-hone, and bearing measurement.",
+          "Transmission service for DCT, PDK, and ZF 8HP with adaptation resets and fluid analysis.",
+          "Cooling system refurbishment, intercooler service, and heat exchanger upgrades."
+        ],
+        "procedures": [
+          {
+            "title": "Inspection and Measurement",
+            "description": "Borescope, compression, leak-down, and fluid analysis to benchmark current health."
+          },
+          {
+            "title": "Disassembly and Cataloging",
+            "description": "Component catalog with torque and sequence documentation to maintain provenance."
+          },
+          {
+            "title": "Rebuild and Calibration",
+            "description": "Machine work, assembly, torque monitoring, and software calibration per OEM spec."
+          },
+          {
+            "title": "Validation Drive",
+            "description": "Dyno break-in or controlled road validation with data logging and customer briefing."
+          }
+        ],
+        "ctaLabel": "Book Engine Consultation"
+      },
+      "electrical": {
+        "title": "Electrical Systems",
+        "subtitle": "Infotainment, ADAS, and network restoration",
+        "summary": "OEM electrical restoration",
+        "highlights": [
+          {
+            "label": "Coverage",
+            "value": "MBUX | COMAND | Burmester | Night Vision | Driver Assist"
+          },
+          {
+            "label": "Programming",
+            "value": "Online SCN coding, firmware updates, and module cloning"
+          },
+          {
+            "label": "Specialty",
+            "value": "Reverse engineering for bespoke coachbuilt electrical systems"
+          }
+        ],
+        "focusAreas": [
+          "Infotainment diagnosis and updates for COMAND, MBUX, PCM, and Burmester systems.",
+          "ADAS sensor calibration including radar, lidar, camera, and night vision alignment.",
+          "Lighting and ambient illumination repairs with OEM modules and custom fabrication.",
+          "Harness repair, corrosion mitigation, and moisture intrusion remediation."
+        ],
+        "procedures": [
+          {
+            "title": "System Scan and Topology Map",
+            "description": "Create a complete electrical map to identify module faults and communication losses."
+          },
+          {
+            "title": "Module Programming",
+            "description": "Perform online coding, firmware refresh, or clone modules to restore functionality."
+          },
+          {
+            "title": "Hardware Repair",
+            "description": "Repair or replace harnesses, connectors, and components with OEM-grade parts."
+          },
+          {
+            "title": "Calibration and Validation",
+            "description": "Calibrate sensors, road-test with diagnostic logging, and provide final report."
+          }
+        ],
+        "ctaLabel": "Restore Electrical Systems"
+      },
+      "chassis": {
+        "title": "Chassis & Suspension",
+        "subtitle": "Suspension and steering system service",
+        "summary": "Restore factory ride quality and handling precision with comprehensive chassis and suspension service. Expert diagnosis and repair of suspension components, steering systems, and wheel alignment to maintain optimal comfort and safety."
+      },
+      "brake": {
+        "title": "Brake System Service",
+        "subtitle": "Complete brake system inspection and repair",
+        "summary": "Ensure safe and reliable braking performance with thorough brake system service. From routine pad replacement to complete system overhaul, we maintain your vehicle's stopping power to factory specifications."
+      },
+      "maintenance": {
+        "title": "General Maintenance",
+        "subtitle": "Scheduled service and preventive care",
+        "summary": "Keep your vehicle running at peak condition with comprehensive maintenance service. Following manufacturer specifications, we provide scheduled maintenance including fluid changes, filter replacements, and multi-point inspections."
+      }
+    },
+    "conciergePrograms": {
+      "ppi": {
+        "title": "Pre-Purchase Inspection",
+        "description": "200-point inspection with paint depth analysis, ECU scan, fluid sampling, and valuation report before acquisition.",
+        "deliverables": [
+          "Comprehensive condition dossier with photography",
+          "Full OEM diagnostic scan and service history evaluation",
+          "Market valuation and maintenance consultation"
+        ]
+      },
+      "maintenance": {
+        "title": "Service Management",
+        "description": "Tailored maintenance programs aligned with factory intervals and Los Angeles driving conditions.",
+        "deliverables": [
+          "Personalized maintenance roadmap with cost forecasting",
+          "Pick-up, loaner, and delivery coordination",
+          "Service history check"
+        ]
+      },
+      "concierge": {
+        "title": "Concierge Mobility",
+        "description": "Keep your collection active with enclosed transport, event preparation, and track support on request.",
+        "deliverables": [
+          "Door-to-door enclosed transport",
+          "Pre-event inspection and detailing",
+          "Track-side technicians and telemetry support"
+        ]
+      },
+      "warranty": {
+        "title": "Insurance & Warranty",
+        "description": "Dedicated team to manage warranty claims, extended coverage, and insurance interactions on your behalf.",
+        "deliverables": [
+          "Technical documentation prepared for claims adjusters",
+          "Direct coordination with warranty providers",
+          "OEM parts sourcing"
+        ]
+      }
+    }
+  },
+  "servicesGrid": {
+    "header": {
+      "eyebrow": "Core Services",
+      "headline": "Expert Care for Your Investment",
+      "subheadline": "Factory-trained technicians using OEM procedures and genuine parts"
+    },
+    "cta": "View All Services"
+  },
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "About Us",
+      "title": "Mercedes-Benz Master Technician",
+      "subtitle": "Factory-trained specialist • 15+ years experience • Los Angeles, CA"
+    },
+    "gallery": {
+      "badge": "See facility"
+    },
+    "story": {
+      "eyebrow": "Our Story",
+      "title": "Independent Excellence",
+      "paragraphs": [
+        "Our team brings years of experience from authorized Mercedes-Benz dealerships, where we honed our skills working on luxury and performance vehicles.",
+        "We established our independent shop to provide personalized, dealership-quality service with more flexibility and attention to detail.",
+        "Today, we're proud to serve luxury vehicle owners throughout Southern California with the same expertise and care, minus the dealership overhead."
+      ],
+      "credentials": [
+        "Experienced dealership-trained technicians",
+        "Professional diagnostic equipment",
+        "Specialized in luxury European vehicles",
+        "Independent, personalized service"
+      ],
+      "image_placeholder": "Workshop Photo\n1200 × 1600 px"
+    },
+    "facility": {
+      "eyebrow": "Our Workshop",
+      "title": "State-of-the-Art Facility",
+      "cards": {
+        "diagnostic": {
+          "title": "STAR Diagnostic System",
+          "description": "Factory-level diagnostics with real-time access to Mercedes-Benz engineering data."
+        },
+        "lifts": {
+          "title": "Professional Lift Systems",
+          "description": "Four-post alignment-capable lifts designed for ultra-luxury vehicles."
+        },
+        "tooling": {
+          "title": "Precision Frame Alignment",
+          "description": "Computer-measured straightening with laser frame systems to restore factory geometry."
+        },
+        "climate": {
+          "title": "Wheel Alignment & Tire Service",
+          "description": "High-accuracy four-wheel alignment and dynamic balancing for confident post-repair driving."
+        }
+      }
+    },
+    "cta": {
+      "title": "Experience the Difference",
+      "subtitle": "Schedule your appointment with a certified Mercedes-Benz specialist.",
+      "book": "Book Appointment",
+      "call": "Call: (XXX) XXX-XXXX",
+      "footnote": "Available Monday - Saturday, 8:00 AM - 6:00 PM"
+    }
+  },
+  "home": {
+    "carousel": {
+      "aria": "Hero Carousel",
+      "prev": "Previous slide",
+      "next": "Next slide",
+      "go_to": "Go to slide {index}"
+    }
+  },
+  "common": {
+    "call_label": "Call: {number}"
+  },
+  "brandsPage": {
+    "articles": {
+      "eyebrow": "Repair Journals",
+      "title": "Real Cases · Expert Insights",
+      "subtitle": "Explore our precision repair and service work for top luxury vehicles. Each case study documents the full diagnostic, repair, and testing process.",
+      "cta": "View More"
+    }
+  },
+  "articles": {
+    "featured": "Featured",
+    "categories": {
+      "suspension": "Suspension",
+      "powertrain": "Powertrain",
+      "electrical": "Electrical",
+      "interior": "Interior",
+      "brakes": "Brakes"
+    },
+    "difficulty": {
+      "novice": "Standard",
+      "intermediate": "Complex",
+      "expert": "Expert"
+    },
+    "meta": {
+      "hours": "h"
+    }
+  },
+  "articlesPage": {
+    "breadcrumb": {
+      "brands": "All Brands",
+      "articles": "Repair Cases"
+    },
+    "hero": {
+      "eyebrow": "Technical Expertise",
+      "title": "Repair & Service Cases"
+    },
+    "categories": {
+      "all": "All Cases"
+    },
+    "empty": {
+      "message": "No articles found in this category."
+    },
+    "cta": {
+      "title": "Need Expert Service?",
+      "subtitle": "Our certified technicians are ready to handle your luxury vehicle's needs with precision and care.",
+      "book": "Book Appointment"
+    }
+  }
+}

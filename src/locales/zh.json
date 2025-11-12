@@ -1,0 +1,2536 @@
+{
+  "header": {
+    "language": {
+      "en": "EN",
+      "zh": "中文",
+      "aria_toggle": "切换语言"
+    },
+    "mobile_menu": {
+      "aria_toggle": "展开或收起移动菜单"
+    }
+  },
+  "footer": {
+    "about": {
+      "heading": "WSC Auto",
+      "description": "南加州顶级的超豪华欧系车型独立维修团队。"
+    },
+    "quick_links": {
+      "heading": "快捷链接",
+      "items": {
+        "home": "首页",
+        "services": "服务项目",
+        "about": "关于我们",
+        "booking": "预约到店"
+      }
+    },
+    "services": {
+      "heading": "核心服务",
+      "items": {
+        "diagnostics": "高级诊断",
+        "engine": "发动机与动力系统",
+        "electrical": "电气系统",
+        "chassis": "底盘与悬挂",
+        "brake": "制动系统",
+        "maintenance": "常规保养"
+      }
+    },
+    "contact": {
+      "heading": "联系我们",
+      "address": "123 Auto Way\n洛杉矶, CA 90001",
+      "phone": "电话",
+      "email": "邮箱",
+      "hours": {
+        "heading": "营业时间",
+        "weekday": "周一至周五：8:00 - 18:00",
+        "saturday": "周六：9:00 - 16:00",
+        "sunday": "周日：休息"
+      }
+    },
+    "bottom": {
+      "rights": "© {year} WSC Auto 版权所有",
+      "privacy": "隐私政策",
+      "terms": "服务条款"
+    }
+  },
+  "hero": {
+    "cta": "预约服务"
+  },
+  "gallery": {
+    "eyebrow": "精选案例",
+    "headline": "作品展示",
+    "subheadline": "展示我们对豪华车辆的精密工艺"
+  },
+  "faq": {
+    "headline": "常见问题",
+    "items": [
+      {
+        "question": "汽车应该多久保养一次?",
+        "answer": "豪华车辆需要每行驶5,000-7,500英里或每6-12个月进行一次保养,以先到者为准。然而,高性能车型如AMG或保时捷可能需要更频繁的保养。我们建议遵循您车辆制造商的保养计划,我们可以在您第一次到访时为您详细审查。"
+      },
+      {
+        "question": "汽车保养包括哪些项目?",
+        "answer": "全面的豪华车保养包括:机油和机滤更换、刹车系统检查、各类液位检查、轮胎换位和气压调整、悬挂和转向系统多点检测、故障码诊断扫描以及电池测试。对于高端品牌,我们只使用符合原厂规格的配件和油液。"
+      },
+      {
+        "question": "为什么定期保养很重要?",
+        "answer": "定期保养能够保持您豪华车的性能、安全性和转售价值。现代豪华车拥有复杂的系统,如果缺乏适当的保养会逐渐退化。预防性维护的成本远低于重大维修,同时还能维持您的车辆保修覆盖。根据我们的经验,保养良好的豪华车能保持高出20-30%的残值。"
+      },
+      {
+        "question": "如何判断刹车系统需要保养?",
+        "answer": "警告信号包括:刹车时有尖锐或磨擦声、制动时方向盘震动、刹车距离变长,或仪表盘警告灯亮起。豪华车通常配备刹车磨损传感器,能够提前预警。我们建议每行驶10,000英里进行一次刹车检查。高性能刹车系统(碳陶瓷)需要我们掌握的专业知识。"
+      },
+      {
+        "question": "如何判断空气滤清器需要更换?",
+        "answer": "需要更换空气滤清器的信号包括:燃油效率降低、加速性能下降、发动机异响,或发动机故障灯亮起。豪华车同时配备发动机空气滤清器和车厢空气滤清器。我们建议每行驶15,000-30,000英里更换发动机空气滤清器,每15,000英里更换车厢滤清器,以确保最佳性能和空气质量。"
+      }
+    ]
+  },
+  "booking": {
+    "sectionEyebrow": "预约服务",
+    "heading": "在线预约",
+    "primaryCta": "提交预约",
+    "secondaryCta": "电话联系",
+    "info": "营业时间内我们将在 2 小时内确认预约。",
+    "sidebar": {
+      "hours_title": "营业时间",
+      "weekdays": "周一至周五",
+      "saturday": "周六",
+      "sunday": "周日",
+      "closed": "休息",
+      "expect_title": "服务流程",
+      "expect_items": [
+        "提供接送或拖车服务",
+        "完成后发送诊断报告",
+        "费用透明，无额外收费",
+        "90 天工艺质保"
+      ]
+    }
+  },
+  "notFound": {
+    "title": "页面未找到",
+    "message": "您访问的页面不存在或已被移动。",
+    "cta": "返回首页"
+  },
+  "brands": {
+    "index": {
+      "hero": {
+        "eyebrow": "我们的专长",
+        "title": "超豪华欧系品牌",
+        "subtitle": ""
+      },
+      "cta": {
+        "title": "没看到您的品牌？",
+        "subtitle": "我们服务所有超豪华欧系车辆。",
+        "view_services": "预约到店",
+        "view_all": "查看全部合作品牌",
+        "note": "需要其他品牌？",
+        "talk": "联系我们"
+      },
+      "groups": {
+        "eyebrow": "专注品牌",
+        "headline": "顶级豪华品牌",
+        "tags": [
+          "旗舰",
+          "性能",
+          "超级跑车",
+          "豪华 SUV"
+        ],
+        "flagship": {
+          "title": "旗舰定制工坊",
+          "summary": "定制豪华轿车、蓝图级 V12 调校与行政级礼宾交付。",
+          "tags": [
+            "定制内饰",
+            "蓝图动力系统",
+            "礼宾交付流程"
+          ]
+        },
+        "performance": {
+          "title": "高性能跑车与赛道",
+          "tags": [
+            "赛道遥测",
+            "碳纤空气套件",
+            "混动系统",
+            "GT 底盘设定"
+          ]
+        },
+        "suv": {
+          "title": "越野专家",
+          "tags": [
+            "地形响应系统",
+            "远征整备",
+            "全地形标定"
+          ]
+        }
+      }
+    },
+    "detail": {
+      "not_found": {
+        "title": "Brand Not Found",
+        "message": "The brand you're looking for doesn't exist.",
+        "back": "Back to All Brands"
+      },
+      "breadcrumb": {
+        "all_brands": "All Brands"
+      },
+      "hero": {
+        "stats": {
+          "vehicles": "Vehicles Serviced",
+          "experience": "Years Experience",
+          "case_studies": "Case Studies"
+        }
+      },
+      "story": {
+        "image_placeholder": "Workshop Photo\n1200 × 1600 px"
+      },
+      "models": {
+        "section_title": "Models We Service",
+        "lineup_title": "{brand} Lineup",
+        "spec_labels": {
+          "engine": "Engine",
+          "power": "Power",
+          "transmission": "Transmission"
+        },
+        "features": "Key Features",
+        "issues": "Common Issues",
+        "studies": "{count} case {plural} available",
+        "studies_plural": "studies",
+        "studies_singular": "study"
+      },
+      "services": {
+        "section_title": "What We Offer",
+        "subtitle": "{brand} Specialized Services"
+      },
+      "case_studies": {
+        "section_title": "{brand} Case Studies",
+        "eyebrow": "Real-World Work",
+        "subtitle": "In-depth technical stories from our most complex repairs and service work."
+      },
+      "gallery": {
+        "title": "Workshop Gallery"
+      },
+      "cta": {
+        "title": "预约您的服务",
+        "subtitle": "Expert care from factory-trained specialists.",
+        "book": "Book Appointment",
+        "call": "Call: (310) 555-1234"
+      }
+    },
+    "caseStudy": {
+      "breadcrumb": {
+        "all_brands": "全部品牌",
+        "case": "案例"
+      },
+      "not_found": {
+        "title": "未找到案例",
+        "message": "您访问的案例不存在或已被移除。",
+        "back": "返回 {brand}"
+      },
+      "hero": {
+        "vehicle_meta": "{year} {make} {model}"
+      },
+      "sections": {
+        "vehicle_details": "",
+        "problem": {
+          "symptoms": "车主反馈症状",
+          "fault_codes": "诊断问题"
+        },
+        "diagnosis": {
+          "conclusion": "诊断结论"
+        },
+        "solution": {
+          "title": "解决方案",
+          "summary": "执行概要",
+          "parts_used": "更换部件",
+          "tools_used": "使用工具",
+          "result": "结果"
+        },
+        "technical": "技术解析",
+        "results": {
+          "title": "维修成果",
+          "achievements": "关键成果"
+        },
+        "advice": {
+          "title": "车主建议"
+        },
+        "mechanic_summary": {
+          "title": "技师提醒",
+          "subtitle": "如果您的车辆出现以下症状：",
+          "recommendation": "建议：",
+          "consequence": "延误后果："
+        },
+        "related": "更多案例",
+        "cta": {
+          "title": "是否遇到类似问题？",
+          "subtitle": "欢迎直接联系我们。",
+          "book": "预约服务",
+          "more": "查看更多 {brand} 案例"
+        },
+        "vehicle_labels": {
+          "year": "年份",
+          "make_model": "车型",
+          "mileage": "里程"
+        }
+      }
+    }
+  },
+  "servicesPage": {
+    "hero": {
+      "eyebrow": "梅赛德斯-奔驰专业工坊",
+      "title": "精密服务体系",
+      "tags": "诊断 | 动力系统 | 电气系统 | 底盘悬挂 | 制动系统 | 常规保养",
+      "see_all": "查看全部"
+    },
+    "nav": {
+      "aria": "快速服务导航",
+      "labels": {
+        "diagnostics": "诊断",
+        "engine": "发动机",
+        "electrical": "电气",
+        "chassis": "底盘",
+        "brake": "制动",
+        "maintenance": "保养"
+      }
+    },
+    "sections": {
+      "concierge": {
+        "title": "礼宾服务",
+        "heading": "高端养护方案",
+        "keywords": [
+          "购车前检测",
+          "维修管理",
+          "尊享出行",
+          "保险与延保"
+        ]
+      },
+      "experience": {
+        "title": "服务体验",
+        "heading": "我们的流程",
+        "keywords": [
+          "到店交接",
+          "精准诊断",
+          "工程执行",
+          "交付"
+        ],
+        "steps": [
+          {
+            "title": "礼宾到店交接",
+            "description": "预留工位、白手套交接，数字化检测与专属方案制定。"
+          },
+          {
+            "title": "精准诊断",
+            "description": "原厂设备、实时遥测，资深技师逐项定位问题根源。"
+          },
+          {
+            "title": "工程化执行",
+            "description": "遵循原厂流程，监测扭矩并拍摄记录每个关键步骤。"
+          },
+          {
+            "title": "验证与交付",
+            "description": "赛道/道路验证、精细美容，并按您的时间安排礼宾交付。"
+          }
+        ]
+      },
+      "cta": {
+        "title": "让车辆恢复原厂标准",
+        "subtitle": "每一次服务都会生成数字化服务档案，确保车辆溯源与保值表现。",
+        "metrics": {
+          "dossier": {
+            "label": "完工后 24 小时内交付数字档案",
+            "value": "24h"
+          },
+          "guarantee": {
+            "label": "全部修复项目提供工艺质保",
+            "value": "90-day"
+          }
+        },
+        "benefits": [
+          {
+            "id": "01",
+            "title": "完整溯源记录",
+            "description": "24 小时内提供含扭矩数据、校准日志与影像的数字档案。"
+          },
+          {
+            "id": "02",
+            "title": "原厂零件与流程",
+            "description": "原厂认证设备与软件，保障保修资格与车辆长期价值。"
+          },
+          {
+            "id": "03",
+            "title": "礼宾项目管控",
+            "description": "实时进度更新、礼宾接送与交付，流程公开透明。"
+          }
+        ],
+        "primary": "联系我们",
+        "footnote": "礼宾团队在营业时间内 2 小时内回复。"
+      }
+    }
+  },
+  "servicesData": {
+    "badges": {
+      "most_popular": "热门推荐"
+    },
+    "coreServices": {
+      "diagnostics": {
+        "title": "高级诊断",
+        "description": "使用原厂级别扫描工具与软件完成精准诊断",
+        "features": [
+          "梅赛德斯 XENTRY 诊断",
+          "保时捷 PIWIS III 系统",
+          "欧系原厂软件访问",
+          "电子系统故障排查"
+        ]
+      },
+      "engine": {
+        "title": "发动机与动力系统",
+        "description": "为各大豪华品牌提供发动机维修、重建与保养",
+        "features": [
+          "V12 发动机专家",
+          "双涡轮系统",
+          "变速箱服务",
+          "混动动力系统专长"
+        ]
+      },
+      "electrical": {
+        "title": "电气系统",
+        "description": "为现代豪华车辆提供复杂电气诊断与维修",
+        "features": [
+          "CAN 总线系统维修",
+          "COMAND 与 MBUX 服务",
+          "照明与 LED 诊断",
+          "电池与充电系统"
+        ]
+      },
+      "chassis": {
+        "title": "底盘与悬挂",
+        "description": "悬挂与转向系统的专业维护与修复",
+        "features": [
+          "空气悬挂系统维修",
+          "四轮定位与调校",
+          "转向系统诊断",
+          "底盘部件更换"
+        ]
+      },
+      "maintenance": {
+        "title": "常规保养",
+        "description": "按照原厂标准进行定期保养维护",
+        "features": [
+          "机油与滤清器更换",
+          "制动液与冷却液",
+          "多点安全检测",
+          "原厂保养周期"
+        ]
+      }
+    },
+    "serviceDetails": {
+      "diagnostics": {
+        "title": "高级诊断",
+        "subtitle": "原厂诊断套件与电气取证",
+        "summary": "精准故障鉴识",
+        "highlights": [
+          {
+            "label": "诊断平台",
+            "value": "Mercedes XENTRY | Porsche PIWIS III | BMW ISTA | VW/Audi ODIS"
+          },
+          {
+            "label": "交付时效",
+            "value": "多数诊断案例当日出具报告"
+          },
+          {
+            "label": "文档交付",
+            "value": "数字健康档案，包含故障轨迹与行动计划"
+          }
+        ],
+        "focusAreas": [
+          "原厂引导式扫描，涵盖故障追踪、编码校验与冻结帧分析。",
+          "实时数据记录、示波器抓取与负载测试，定位间歇性电气故障。",
+          "验证 CAN、LIN、FlexRay 网络通信，排查模块互联问题。",
+          "评估电池、充电与电源管理系统，保护质保权益。"
+        ],
+        "procedures": [
+          {
+            "title": "礼宾接车",
+            "description": "白手套接车，拍照建档并进行保护布置。"
+          },
+          {
+            "title": "原厂扫描流程",
+            "description": "运行原厂软件，执行引导式诊断与控制单元适配检查。"
+          },
+          {
+            "title": "电气验证",
+            "description": "示波器抓取、负载测试与线束检测，确认受影响电路。"
+          },
+          {
+            "title": "结果咨询与行动方案",
+            "description": "与顾问共同审阅结果，排定维修优先级并安排工期。"
+          }
+        ],
+        "ctaLabel": "预约诊断评估"
+      },
+      "engine": {
+        "title": "发动机与动力系统",
+        "subtitle": "AMG、V12 及稀有动力总成专家",
+        "summary": "蓝图级动力匠心",
+        "highlights": [
+          {
+            "label": "能力范围",
+            "value": "V12 rebuilds | AMG biturbo | Ferrari V8 | PDK and ZF 8HP"
+          },
+          {
+            "label": "洁净车间",
+            "value": "专属发动机工作室，提供扭矩追溯与 ARP 工具"
+          },
+          {
+            "label": "验证流程",
+            "value": "台架磨合、机油分析与赛道/道路遥测测试"
+          }
+        ],
+        "focusAreas": [
+          "按原厂周期完成点火、燃油与润滑系统的保养。",
+          "曲轴箱重建，执行蓝图配平、校轴与轴瓦测量。",
+          "DCT、PDK、ZF 8HP 变速箱保养，含适配复位与油液分析。",
+          "冷却系统翻新、增压中冷保养及热交换升级。"
+        ],
+        "procedures": [
+          {
+            "title": "检测与测量",
+            "description": "内窥镜、压缩比、泄压与油液分析，评估当前状态。"
+          },
+          {
+            "title": "拆解与建档",
+            "description": "按扭矩与顺序记录部件，确保溯源。"
+          },
+          {
+            "title": "重建与校准",
+            "description": "机加工、装配、扭矩监控与软件标定，遵循原厂规范。"
+          },
+          {
+            "title": "验证试车",
+            "description": "台架磨合或受控道路验证，记录数据并向车主汇报。"
+          }
+        ],
+        "ctaLabel": "预约动力系统咨询"
+      },
+      "electrical": {
+        "title": "电气系统",
+        "subtitle": "资讯娱乐、ADAS 与网络恢复",
+        "summary": "原厂级电气复原",
+        "highlights": [
+          {
+            "label": "覆盖范围",
+            "value": "MBUX | COMAND | Burmester | Night Vision | Driver Assist"
+          },
+          {
+            "label": "编程服务",
+            "value": "在线 SCN 编码、固件更新与模块克隆"
+          },
+          {
+            "label": "专长",
+            "value": "为定制车身电气系统提供逆向工程解决方案"
+          }
+        ],
+        "focusAreas": [
+          "为 COMAND、MBUX、PCM 与 Burmester 等系统提供诊断与更新。",
+          "雷达、激光雷达、摄像头与夜视系统的 ADAS 传感器标定。",
+          "使用原厂模块与定制方案修复照明与氛围灯系统。",
+          "线束修复、防腐处理与湿气入侵治理。"
+        ],
+        "procedures": [
+          {
+            "title": "系统扫描与拓扑图",
+            "description": "构建完整电气拓扑，定位模块故障与通讯异常。"
+          },
+          {
+            "title": "模块编程",
+            "description": "执行在线编码、固件刷新或模块克隆，恢复功能。"
+          },
+          {
+            "title": "硬件维修",
+            "description": "使用原厂标准修复或更换线束、连接器与组件。"
+          },
+          {
+            "title": "校准与验证",
+            "description": "完成传感器校准、道路测试与诊断记录，并提供最终报告。"
+          }
+        ],
+        "ctaLabel": "预约电气系统修复"
+      },
+      "chassis": {
+        "title": "底盘与悬挂",
+        "subtitle": "悬挂与转向系统服务",
+        "summary": "通过全面的底盘与悬挂服务，恢复原厂驾乘品质与操控精度。专业诊断和维修悬挂部件、转向系统及四轮定位，确保最佳的舒适性与安全性。"
+      },
+      "brake": {
+        "title": "制动系统服务",
+        "subtitle": "完整的制动系统检测与维修",
+        "summary": "通过全面的制动系统服务，确保安全可靠的制动性能。从常规刹车片更换到完整系统大修，我们按照原厂规格维护您的车辆制动力。"
+      },
+      "maintenance": {
+        "title": "常规保养",
+        "subtitle": "定期保养与预防性维护",
+        "summary": "通过全面的保养服务，让您的车辆保持巅峰状态。遵循制造商规格，我们提供定期保养，包括更换机油、滤清器和多点检测。"
+      }
+    },
+    "conciergePrograms": {
+      "ppi": {
+        "title": "购车前巡检",
+        "description": "购车前执行 200 项巡检，包含漆面测厚、ECU 扫描、油液取样与价值评估。",
+        "deliverables": [
+          "完整影像记录的车况档案",
+          "原厂诊断扫描与保养记录评估",
+          "市场估值与保养建议"
+        ]
+      },
+      "maintenance": {
+        "title": "全程维护管理",
+        "description": "结合原厂周期与洛杉矶驾驶环境制定保养方案。",
+        "deliverables": [
+          "个性化保养路线图与费用预测",
+          "接送、备用车与交付全程协调",
+          "服务记录审查"
+        ]
+      },
+      "concierge": {
+        "title": "礼宾出行支持",
+        "description": "提供封闭运输、活动前预备与赛道现场支援，随时保持车库活力。",
+        "deliverables": [
+          "门到门封闭运输",
+          "活动前检测与精洗",
+          "赛道技师与遥测支持"
+        ]
+      },
+      "warranty": {
+        "title": "保险与延保协助",
+        "description": "专属团队替您处理保修索赔、延长保修与保险沟通。",
+        "deliverables": [
+          "为理赔人员准备的技术文档",
+          "直接协调保修服务商",
+          "原厂零件采购"
+        ]
+      }
+    }
+  },
+  "brandsData": {
+    "maybach": {
+      "name": "梅赛德斯-迈巴赫",
+      "hero": {
+        "eyebrow": "超豪华专属",
+        "title": "梅赛德斯-迈巴赫专家团队",
+        "subtitle": "原厂培训技师守护世界最尊贵的旗舰轿车"
+      },
+      "story": {
+        "eyebrow": "迈巴赫专长",
+        "title": "二十余年的超豪华服务经验",
+        "paragraphs": [
+          "梅赛德斯-迈巴赫象征着汽车奢华的巅峰。从 S680 的双涡轮增压 V12 到 MBUX 全景屏，这些座驾需要专门知识与原厂级诊断工具。",
+          "我们的首席技师曾在梅赛德斯-奔驰斯图加特经典中心受训，自 2004 年以来维护超过 200 辆迈巴赫，拥有南加州规模最大的迈巴赫专用工具库。",
+          "无论是 S 级的 AIRMATIC/ABC 底盘校准、Magic Body Control 诊断，还是混动系统保养，我们都能提供经销商级专业能力而无经销商式流程。"
+        ]
+      },
+      "services": [
+        {
+          "title": "AIRMATIC 与 ABC 系统",
+          "description": "采用原厂流程诊断 Active Body Control、AIRMATIC 空气悬挂与 E-ACTIVE BODY CONTROL 道路扫描功能。"
+        },
+        {
+          "title": "V12 与轻混动力总成",
+          "description": "双涡轮 V12 维护、48V 轻混系统与 ISG 集成起动电机校准，确保旗舰动力顺畅输出。"
+        },
+        {
+          "title": "MBUX 及座舱科技",
+          "description": "MBUX 全景屏软件更新、Burmester 4D 音响检修、后排行政座椅空调与按摩系统诊断。"
+        },
+        {
+          "title": "行政礼宾套件",
+          "description": "后排娱乐、隔断系统、行政中控台以及后轮转向标定，恢复专车礼宾体验。"
+        }
+      ],
+      "models": {
+        "maybach-s680": {
+          "name": "S680",
+          "generation": "V223（2021-至今）",
+          "features": [
+            "AIRMATIC 自适应空气悬挂",
+            "4MATIC 全时四驱",
+            "后轮转向",
+            "MBUX 全景屏"
+          ],
+          "commonIssues": [
+            "ABC 液压泄漏",
+            "AIRMATIC 传感器漂移",
+            "MBUX 软件异常"
+          ]
+        },
+        "maybach-s580": {
+          "name": "S580",
+          "generation": "V223（2021-至今）",
+          "features": [
+            "ISG 48V 轻混系统",
+            "E-ACTIVE BODY CONTROL 主动悬挂",
+            "Burmester 4D 音响"
+          ],
+          "commonIssues": [
+            "48V 电池衰减",
+            "E-ABC 校准问题",
+            "混动系统故障"
+          ]
+        },
+        "maybach-s560": {
+          "name": "S560 / S650",
+          "generation": "X222（2015-2020）",
+          "features": [
+            "MAGIC BODY CONTROL 主动悬挂",
+            "行政座椅套件",
+            "后排行政座椅"
+          ],
+          "commonIssues": [
+            "ABC 泵故障",
+            "COMAND 系统死机",
+            "空气悬挂漏气"
+          ]
+        }
+      }
+    },
+    "rolls-royce": {
+      "name": "劳斯莱斯",
+      "hero": {
+        "eyebrow": "王者礼遇",
+        "title": "劳斯莱斯专业服务",
+        "subtitle": "以原厂标准维护世界最尊贵的旗舰座驾"
+      },
+      "story": {
+        "eyebrow": "我们的劳斯莱斯传承",
+        "title": "匠心工艺与精密工程的融合",
+        "paragraphs": [
+          "劳斯莱斯代表着无可妥协的品质与定制奢华。从 6.75 升 V12 到全新 Spectre 纯电架构，这些座驾需要深入理解 BMW 集团最独特的平台。",
+          "我们是加州仅有的少数独立工坊之一，配备原厂劳斯莱斯诊断工具与工厂培训技师，长期服务收藏家车库——从 60 年代的 Silver Shadow 到最新 Phantom Series II。",
+          "每一次劳斯莱斯服务都遵循品牌白手套标准：全程防护、仅用超细纤维接触，并提供配得上欢庆女神的完整文档。"
+        ]
+      },
+      "services": [
+        {
+          "title": "Magic Carpet Ride 悬挂系统",
+          "description": "诊断旗舰级空气悬挂、摄像头预判系统 Planar 悬架与自适应水平调节，恢复魔毯般的乘坐体验。"
+        },
+        {
+          "title": "6.75L V12 动力总成",
+          "description": "N74 发动机维护、卫星辅助变速箱标定，以及针对劳斯莱斯架构的 BMW ISTA 原厂诊断。"
+        },
+        {
+          "title": "定制内饰系统",
+          "description": "画廊照明、发光饰板、星空顶棚维保，并可协调定制木饰与皮革修复。"
+        },
+        {
+          "title": "电气与舒适系统",
+          "description": "欢庆女神升降、吸合车门、后排娱乐与微环境净化系统的综合调校。"
+        }
+      ],
+      "models": {
+        "rolls-phantom": {
+          "name": "Phantom VIII",
+          "generation": "2018-至今",
+          "features": [
+            "Magic Carpet Ride 魔毯底盘",
+            "Bespoke 定制音响",
+            "车内艺术画廊",
+            "Flagbearer 道路预判系统"
+          ],
+          "commonIssues": [
+            "空气悬挂系统复杂故障",
+            "定制电子系统异常",
+            "画廊照明失效"
+          ]
+        },
+        "rolls-ghost": {
+          "name": "Ghost",
+          "generation": "第二代（2020-至今）",
+          "features": [
+            "Planar 平面悬挂",
+            "发光饰板",
+            "微环境净化系统"
+          ],
+          "commonIssues": [
+            "Planar 阻尼校准偏差",
+            "卫星辅助变速箱异常",
+            "车内灯光 LED 故障"
+          ]
+        },
+        "rolls-cullinan": {
+          "name": "Cullinan",
+          "generation": "2018-至今",
+          "features": [
+            "全地形模式",
+            "观景套件",
+            "后备箱休闲模块",
+            "自动水平调节"
+          ],
+          "commonIssues": [
+            "越野工况导致悬挂磨损",
+            "尾门电子系统故障",
+            "全轮驱动系统问题"
+          ]
+        }
+      }
+    },
+    "bentley": {
+      "name": "宾利",
+      "hero": {
+        "eyebrow": "英伦匠心",
+        "title": "宾利专属服务",
+        "subtitle": "在洛杉矶复刻克鲁工厂的豪华与精密"
+      },
+      "story": {
+        "eyebrow": "我们的宾利经验",
+        "title": "克鲁工艺在加州",
+        "paragraphs": [
+          "宾利融合了英国奢华与大众集团工程精密。从 W12 驱动的 Continental GT 到电动化的 Bentayga Hybrid，维修需求跨越两个技术世界。",
+          "团队精通宾利专属的 VAG 诊断平台，包括 48V Dynamic Ride 主动防侧倾、宾利定制自适应巡航以及旋转中控屏。",
+          "我们与英国宾利专家保持直接合作，可获取技术通报、线束图与高端内饰零件，提供经销商难以获得的支持。"
+        ]
+      },
+      "services": [
+        {
+          "title": "W12 与 V8 动力总成",
+          "description": "维护大众集团 W12/V8 双涡轮发动机、双离合变速箱服务与性能校准。"
+        },
+        {
+          "title": "Dynamic Ride 系统",
+          "description": "48V 主动防侧倾、空气悬挂诊断以及全轮转向校准。"
+        },
+        {
+          "title": "内饰与信息娱乐",
+          "description": "旋转中控屏检修、Naim 音响维护、菱格皮革保养与木饰面修复。"
+        },
+        {
+          "title": "混动与电气化",
+          "description": "Bentayga Hybrid 高压电池诊断、充电系统故障排除与高压安全操作。"
+        }
+      ],
+      "models": {
+        "bentley-continental-gt": {
+          "name": "Continental GT",
+          "generation": "第三代（2018-至今）",
+          "features": [
+            "Dynamic Ride 48V 主动防侧倾",
+            "旋转中控屏",
+            "后轮转向",
+            "空气悬挂"
+          ],
+          "commonIssues": [
+            "48V 系统故障",
+            "双离合离合器磨损",
+            "旋转屏幕电机问题"
+          ]
+        },
+        "bentley-bentayga": {
+          "name": "Bentayga",
+          "generation": "2016-至今",
+          "features": [
+            "Bentley Dynamic Ride",
+            "全地形配置",
+            "Naim 发烧音响",
+            "插电混动选装"
+          ],
+          "commonIssues": [
+            "空气悬挂漏气",
+            "主动防侧倾电机故障",
+            "混动电池问题"
+          ]
+        }
+      }
+    },
+    "aston-martin": {
+      "name": "阿斯顿·马丁",
+      "hero": {
+        "eyebrow": "性能定制",
+        "title": "阿斯顿·马丁性能工坊",
+        "subtitle": "原厂工具、AML 诊断与 Q 部门座舱维护"
+      },
+      "story": {
+        "eyebrow": "我们的阿斯顿传承",
+        "title": "从 Newport Pagnell 到现代 Gaydon",
+        "paragraphs": [
+          "首席技师 2006 年起于阿斯顿·马丁 Newport Pagnell 工厂工作，熟悉 DB9、DBS、Vantage 及 Valkyrie 车型，掌握 AML 粘接铝合金车架、VH 平台电子及 V12/V8 调校要点。",
+          "车间配备 AMDS 与 AML Diagnostic Laptop 原厂工具、碳陶刹车治具、发动机拆装扭矩板，并对服务文档进行影像归档以保留溯源。",
+          "无论是为 DB12 准备高山自驾，还是保持 Q 规 Vantage 的评鉴状态，我们结合原厂扭矩标准与照片报告呈现每一步。"
+        ]
+      },
+      "services": [
+        {
+          "title": "AML 动力总成方案",
+          "description": "发动机下车正时链维修、V12 气门机构调整以及 AMG 血统 V8 软件标定。"
+        },
+        {
+          "title": "底盘与碳陶呵护",
+          "description": "碳陶刹车整修、自适应阻尼校准与粘接铝合金车架检测。"
+        },
+        {
+          "title": "Q 部门内饰维护",
+          "description": "皮革复色、碳纤饰板翻新及 AML 信息娱乐系统升级，贴合 Q 定制需求。"
+        },
+        {
+          "title": "赛道与长途准备",
+          "description": "配合遥测的定位、轮胎与油液方案，并提供赛道或欧洲巡游现场支持。"
+        }
+      ],
+      "models": {
+        "aston-db12": {
+          "name": "DB12",
+          "generation": "2023-至今",
+          "features": [
+            "粘接铝合金平台",
+            "AML 驾驶模式",
+            "碳陶瓷刹车"
+          ],
+          "commonIssues": [
+            "校准软件更新",
+            "碳陶瓷热衰",
+            "自适应阻尼故障"
+          ]
+        },
+        "aston-vantage": {
+          "name": "Vantage V12",
+          "generation": "2022-至今",
+          "features": [
+            "主动排气系统",
+            "AML 后差速器",
+            "Track 模式标定"
+          ],
+          "commonIssues": [
+            "后差速器渗油",
+            "碳陶刹车噪音",
+            "自适应悬挂标定"
+          ]
+        },
+        "aston-dbx707": {
+          "name": "DBX707",
+          "generation": "2022-至今",
+          "features": [
+            "主动中央差速器",
+            "三腔空气悬挂",
+            "48V 主动抗侧倾"
+          ],
+          "commonIssues": [
+            "空气悬挂漏气",
+            "48V 主动防侧倾故障",
+            "高温制动衰退"
+          ]
+        }
+      }
+    },
+    "porsche": {
+      "name": "保时捷",
+      "hero": {
+        "eyebrow": "斯图加特精度",
+        "title": "保时捷专业团队",
+        "subtitle": "以赛道级精度维护传奇跑车"
+      },
+      "story": {
+        "eyebrow": "我们的保时捷理念",
+        "title": "工程卓越",
+        "paragraphs": [
+          "保时捷是日常实用与赛道性能的终极结合。从风冷 911 到 800V Taycan，每一辆保时捷都需要毫厘不差的维护。",
+          "技师曾在保时捷 Classic Partner 任职五年，车间配备 PIWIS 3 诊断、四轮配重设备，以及 IMS 轴承与 PDK 离合专用工装。",
+          "无论是 911 赛道日例检，还是 Taycan 的高压电池诊断，我们都能在远低于经销商成本的前提下提供原厂级精度。"
+        ]
+      },
+      "services": [
+        {
+          "title": "水平对置动力总成",
+          "description": "风冷与水冷水平对置发动机维修、IMS 轴承升级、PDK 变速箱服务。"
+        },
+        {
+          "title": "Taycan 电驱系统",
+          "description": "800V 电池诊断、高压充电系统维修与 Performance Battery Plus 健康检测。"
+        },
+        {
+          "title": "PASM 与底盘调校",
+          "description": "PASM 主动悬挂维护、后轮转向校准与 GT3 赛道定位。"
+        },
+        {
+          "title": "赛道准备",
+          "description": "赛前检查、刹车油更换、四轮配重与赛后油液分析。"
+        }
+      ],
+      "models": {
+        "porsche-911": {
+          "name": "911 (992)",
+          "generation": "2019-至今",
+          "features": [
+            "湿式 PDK 离合",
+            "PASM Sport 悬挂",
+            "后轮转向",
+            "Sport Chrono 套件"
+          ],
+          "commonIssues": [
+            "PDK 机电单元故障",
+            "后轮转向校准偏差",
+            "PASM 渗油"
+          ]
+        },
+        "porsche-taycan": {
+          "name": "Taycan",
+          "generation": "2020-至今",
+          "features": [
+            "800V 架构",
+            "270kW 快充",
+            "主动悬挂",
+            "弹射起步"
+          ],
+          "commonIssues": [
+            "800V 充电故障",
+            "电池热管理问题",
+            "两速变速箱故障"
+          ]
+        },
+        "porsche-gt3": {
+          "name": "911 GT3",
+          "generation": "992（2021-至今）",
+          "features": [
+            "DRS 主动尾翼",
+            "双叉臂前悬",
+            "Clubsport 套件",
+            "碳纤维桶椅"
+          ],
+          "commonIssues": [
+            "赛道刹车磨损",
+            "DRS 执行器故障",
+            "机油温控问题"
+          ]
+        }
+      }
+    },
+    "lamborghini": {
+      "name": "兰博基尼",
+      "hero": {
+        "eyebrow": "蛮牛性能",
+        "title": "兰博基尼专业服务",
+        "subtitle": "在南加州重现圣亚加塔的热血与精度"
+      },
+      "story": {
+        "eyebrow": "我们的兰博基尼经验",
+        "title": "驭牛之道",
+        "paragraphs": [
+          "兰博基尼代表戏剧化的性能与无可妥协的设计。从自然吸气 V10 Huracán 到混动 V12 Revuelto，这些超跑需要深入理解 VAG 集团极限平台。",
+          "车间配备 LDAS 诊断、低底盘专用举升以及恒温储车空间，已服务超过 60 台兰博基尼，包括稀有的 Aventador SVJ 与 Huracán Performante。",
+          "每一次保养均包含施工前后影像记录、车漆防护，以及专属超跑工位存放，确保座驾始终如新。"
+        ]
+      },
+      "services": [
+        {
+          "title": "V10 与 V12 动力总成",
+          "description": "自然吸气 V10 维护、混动 V12 诊断以及 LDF 双离合变速箱服务。"
+        },
+        {
+          "title": "LDAS 原厂诊断",
+          "description": "使用 Lamborghini Diagnostic Assistance System 处理故障码、标定与软件更新。"
+        },
+        {
+          "title": "磁流变悬挂",
+          "description": "自适应阻尼诊断、前举升液压系统维修与赛道模式校准。"
+        },
+        {
+          "title": "碳纤维呵护",
+          "description": "碳陶刹车服务、碳纤车身检查，并提供透明膜施工合作。"
+        }
+      ],
+      "models": {
+        "lamborghini-huracan": {
+          "name": "Huracán",
+          "generation": "2014-至今",
+          "features": [
+            "LDV 车辆动态系统",
+            "磁流变悬挂",
+            "ANIMA 驾驶模式"
+          ],
+          "commonIssues": [
+            "双离合过热",
+            "前举升液压故障",
+            "碳陶刹车抖动"
+          ]
+        },
+        "lamborghini-urus": {
+          "name": "Urus",
+          "generation": "2018-至今",
+          "features": [
+            "Tamburo 驾驶模式",
+            "主动防侧倾",
+            "Akrapovic 钛合金排气"
+          ],
+          "commonIssues": [
+            "涡轮废气阀异响",
+            "空气悬挂故障",
+            "后轮转向系统问题"
+          ]
+        }
+      }
+    },
+    "ferrari": {
+      "name": "法拉利",
+      "hero": {
+        "eyebrow": "跃马精神",
+        "title": "法拉利专业团队",
+        "subtitle": "以马拉内罗标准守护赛车血统"
+      },
+      "story": {
+        "eyebrow": "我们的法拉利理念",
+        "title": "赛车传奇的延续",
+        "paragraphs": [
+          "法拉利是意大利激情的象征，每一款车型都承载着 F1 基因。从 F8 Tributo 的双涡轮 V8 到 SF90 的 1000 马力三电机系统，都需要法拉利专属经验。",
+          "技师持有授权法拉利服务中心认证，掌握 Ferrari Telemetry、Leonardo 诊断平台以及马拉内罗内部技术通报资料。",
+          "我们理解法拉利远不止交通工具——它是赛车历史的延续。每一次服务都在维持原厂规格的同时尊重车辆独一无二的个性。"
+        ]
+      },
+      "services": [
+        {
+          "title": "法拉利 V8/V12 动力总成",
+          "description": "双涡轮 V8 维护、自然吸气 V12 服务与 F1 双离合专修。"
+        },
+        {
+          "title": "混动系统（SF90）",
+          "description": "高压电池诊断、电机维护与充电系统故障排除。"
+        },
+        {
+          "title": "Leonardo 原厂诊断",
+          "description": "Ferrari Leonardo 平台、遥测数据分析与 Side Slip Control 校准。"
+        },
+        {
+          "title": "磁流变悬挂",
+          "description": "SCM-E 阻尼服务、Ferrari Dynamic Enhancer 诊断与赛道定位。"
+        }
+      ],
+      "models": {
+        "ferrari-f8": {
+          "name": "F8 Tributo",
+          "generation": "2019-至今",
+          "features": [
+            "Side Slip Control 6.1",
+            "Ferrari Dynamic Enhancer",
+            "SCM-E 磁流变系统"
+          ],
+          "commonIssues": [
+            "F1 双离合磨损",
+            "F1 执行器故障",
+            "机油消耗偏高"
+          ]
+        },
+        "ferrari-sf90": {
+          "name": "SF90 Stradale",
+          "generation": "2020-至今",
+          "features": [
+            "插电式混动系统",
+            "扭矩矢量分配",
+            "eManettino 模式选择",
+            "主动空气动力"
+          ],
+          "commonIssues": [
+            "高压电池故障",
+            "混动逆变器冷却问题",
+            "eDrive 驱动故障"
+          ]
+        }
+      }
+    },
+    "range-rover": {
+      "name": "路虎·揽胜",
+      "hero": {
+        "eyebrow": "豪华 SUV 专家",
+        "title": "揽胜专属服务",
+        "subtitle": "以英国豪华工艺与加州经验守护全地形旗舰"
+      },
+      "story": {
+        "eyebrow": "我们的揽胜经验",
+        "title": "英国豪华 · 洛杉矶守护",
+        "paragraphs": [
+          "揽胜是越野能力与劳斯莱斯级奢华的罕见结合。从 Terrain Response 2 到兼顾 11.7 英寸离地间隙与高速舒适的空气悬挂，系统复杂精密。",
+          "我们专攻揽胜常见薄弱环节——空气悬挂压缩机、分动箱故障与 InControl Touch Pro 电气问题，配备 JLR SDD 诊断并直连英国零部件供应。",
+          "每一台揽胜都会进行底盘彻底检查（对海边盐雾尤为关键），并预防性维护易于过早磨损的部件。"
+        ]
+      },
+      "services": [
+        {
+          "title": "空气悬挂系统",
+          "description": "压缩机更换、车高传感器校准与空气弹簧漏气维修。"
+        },
+        {
+          "title": "JLR 动力总成",
+          "description": "Ingenium I6 轻混服务、BMW V8 维护以及 ZF 8 速变速箱保养。"
+        },
+        {
+          "title": "Terrain Response 诊断",
+          "description": "Terrain Response 2 标定、分动箱服务与电子差速器诊断。"
+        },
+        {
+          "title": "InControl 电子系统",
+          "description": "Pivi Pro 软件更新、ClearSight 摄像系统与电气故障处理。"
+        }
+      ],
+      "models": {
+        "range-rover-lwb": {
+          "name": "揽胜（L460）",
+          "generation": "第五代（2022-至今）",
+          "features": [
+            "48V 轻混系统",
+            "动态空气悬挂",
+            "Terrain Response 2",
+            "ClearSight 抬头影像"
+          ],
+          "commonIssues": [
+            "空气悬挂漏气",
+            "InControl 软件异常",
+            "48V 系统故障"
+          ]
+        },
+        "range-rover-sport": {
+          "name": "揽胜运动版（L461）",
+          "generation": "第三代（2023-至今）",
+          "features": [
+            "Dynamic Handling Pack",
+            "电子主动差速器",
+            "后轮转向"
+          ],
+          "commonIssues": [
+            "BMW V8 冷却问题",
+            "分动箱故障",
+            "电子差速器警告"
+          ]
+        }
+      }
+    },
+    "maserati": {
+      "name": "玛莎拉蒂",
+      "hero": {
+        "eyebrow": "意式性能",
+        "title": "玛莎拉蒂专属服务",
+        "subtitle": "从 Modena 工厂延伸的超豪华保养体验"
+      },
+      "story": {
+        "eyebrow": "我们的玛莎拉蒂经验",
+        "title": "保留三叉戟的声浪与格调",
+        "paragraphs": [
+          "玛莎拉蒂融合意式工艺与法拉利血统动力。从 Nettuno V6 的预燃技术到 Levante 的 Skyhook 悬挂，必须由熟悉 Modena 平台的技师亲自操作。",
+          "我们曾支援洛杉矶与摩纳哥的旗舰展厅，处理 Skyhook 阻尼重建、碳陶刹车保养与高端内饰修复，并保有完整原厂诊断与扭矩数据。",
+          "无论是行政级 Quattroporte 还是赛道基因的 MC20，我们都会依据车主使用场景调校动力、底盘与座舱细节，让玛莎拉蒂维持独特的声线与操控。"
+        ]
+      },
+      "services": [
+        {
+          "title": "法拉利血统动力总成",
+          "description": "F154 V8 与 Nettuno V6 正时、冷却与双离合标定，配合原厂诊断流程。"
+        },
+        {
+          "title": "Skyhook 与空气悬挂",
+          "description": "Skyhook 阻尼检修、Levante 空气悬挂压缩机与车高传感器校准。"
+        },
+        {
+          "title": "ZF 8HP 与双离合调校",
+          "description": "ZF 8HP 软件更新、离合自适应初始化以及 MC20 双离合温控方案。"
+        },
+        {
+          "title": "意式内饰与材料护理",
+          "description": "全粒面皮革复原、碳纤饰板翻新与个性化内饰维护。"
+        }
+      ],
+      "models": {
+        "maserati-quattroporte": {
+          "name": "Quattroporte (M156)",
+          "generation": "第六代（2013-至今）",
+          "features": [
+            "Skyhook 自适应阻尼",
+            "Q4 四驱系统",
+            "Bowers & Wilkins 音响"
+          ],
+          "commonIssues": [
+            "Skyhook 减震漏油",
+            "气门室盖渗油",
+            "Uconnect 信息娱乐异常"
+          ]
+        },
+        "maserati-levante": {
+          "name": "Levante / Levante Trofeo",
+          "generation": "M161（2017-至今）",
+          "features": [
+            "高度可调空气悬挂",
+            "Q4 扭矩分配",
+            "Skyhook 阻尼系统"
+          ],
+          "commonIssues": [
+            "空气悬挂压缩机磨损",
+            "分动箱故障",
+            "碳陶刹车保养频繁"
+          ]
+        },
+        "maserati-mc20": {
+          "name": "MC20",
+          "generation": "M240（2021-至今）",
+          "features": [
+            "Nettuno 预燃技术",
+            "碳纤维单体壳",
+            "主动空气动力"
+          ],
+          "commonIssues": [
+            "机油分离器升级",
+            "双离合标定",
+            "赛道使用后传感器初始化"
+          ]
+        }
+      }
+    },
+    "bmw-7-series": {
+      "name": "宝马 7 系",
+      "hero": {
+        "eyebrow": "行政旗舰",
+        "title": "宝马 7 系专属服务",
+        "subtitle": "面向 G70 与 i7 的全方位高端保养"
+      },
+      "story": {
+        "eyebrow": "我们的 7 系理念",
+        "title": "行政座舱的技术守护",
+        "paragraphs": [
+          "全新一代 7 系融合纯电 i7、48V 轻混 V8 与剧院级座舱科技，对诊断与编程提出极高要求。",
+          "技师曾在 BMW 北美培训中心负责 G12/G70 项目，熟悉 ISTA、BDC 编程与驾驶辅助系统标定，可在工坊内完成完整的原厂流程。",
+          "无论是 Integral Active Steering 四轮转向，还是香氛、按摩等舒适模块，我们都能提供经销商以外的个性化维护方案。"
+        ]
+      },
+      "services": [
+        {
+          "title": "高压与轻混动力系统",
+          "description": "i7 高压电池调理、48V 系统维护与 S68/N63 正时系统大修。"
+        },
+        {
+          "title": "Executive 底盘科技",
+          "description": "四轮转向、空气悬挂与 Executive Drive Pro 主动防侧倾标定。"
+        },
+        {
+          "title": "BMW 数字座舱",
+          "description": "iDrive 8/8.5 更新、驾驶辅助雷达校准与天幕顶棚维护。"
+        },
+        {
+          "title": "行政舒适模块",
+          "description": "Executive Lounge 座椅编程、按摩/通风修复与香氛系统保养。"
+        }
+      ],
+      "models": {
+        "bmw-g70-i7": {
+          "name": "i7 xDrive60",
+          "generation": "G70（2023-至今）",
+          "features": [
+            "xDrive 电驱四驱",
+            "Executive Lounge 座椅",
+            "高速领航辅助"
+          ],
+          "commonIssues": [
+            "高压电池均衡",
+            "OTA 更新失败",
+            "前雷达标定"
+          ]
+        },
+        "bmw-g70-760i": {
+          "name": "760i xDrive",
+          "generation": "G70（2023-至今）",
+          "features": [
+            "48V 轻混系统",
+            "Executive Drive Pro",
+            "晶体互动光幕"
+          ],
+          "commonIssues": [
+            "48V 系统报警",
+            "空气悬挂阀块问题",
+            "激光大灯起雾"
+          ]
+        },
+        "bmw-g12-750i": {
+          "name": "750i / M760Li",
+          "generation": "G11/G12 LCI（2019-2022）",
+          "features": [
+            "手势控制",
+            "软关闭车门",
+            "后排行政套件"
+          ],
+          "commonIssues": [
+            "气门油封老化",
+            "冷却系统漏液",
+            "B&W 功放故障"
+          ]
+        }
+      }
+    },
+    "discovery": {
+      "name": "路虎·发现",
+      "hero": {
+        "eyebrow": "全地形伙伴",
+        "title": "发现系列专属服务",
+        "subtitle": "兼顾探险与城市生活的精细保养"
+      },
+      "story": {
+        "eyebrow": "我们的发现经验",
+        "title": "越野准备与豪华维护并重",
+        "paragraphs": [
+          "新一代发现车型结合铝合金车身、Terrain Response 2 与多模式空气悬挂，既要应对越野泥水，也要保持城市舒适度。",
+          "我们常驻 Pathfinder 与 SDD 诊断平台，可处理涉水后电气故障、空气悬挂改装以及电子差速系统调校。",
+          "无论是家庭用车还是越野改装，我们都会制定防水、防腐与配件布线方案，确保可靠性。"
+        ]
+      },
+      "services": [
+        {
+          "title": "空气悬挂与底盘",
+          "description": "车高传感器校准、压缩机翻修与交叉阀块维护。"
+        },
+        {
+          "title": "Ingenium 动力总成",
+          "description": "正时链条、冷却系统与柴油 DEF 服务，保持可靠输出。"
+        },
+        {
+          "title": "Terrain Response 设置",
+          "description": "Terrain Response 2 软件、分动箱与 AWD 离合器标定。"
+        },
+        {
+          "title": "水侵与电气防护",
+          "description": "天窗排水治理、线束检查以及信息娱乐系统更新。"
+        }
+      ],
+      "models": {
+        "discovery-l462": {
+          "name": "Discovery (L462)",
+          "generation": "第五代（2017-至今）",
+          "features": [
+            "Terrain Response 2",
+            "空气悬挂系统",
+            "全地形反馈监控"
+          ],
+          "commonIssues": [
+            "冷却液泄漏",
+            "正时链条拉长",
+            "车高传感器故障"
+          ]
+        },
+        "discovery-sport-l550": {
+          "name": "Discovery Sport (L550)",
+          "generation": "第二代（2020-至今）",
+          "features": [
+            "Terrain Response",
+            "可配置动态系统",
+            "ClearSight 后视影像"
+          ],
+          "commonIssues": [
+            "后差速器维护",
+            "天窗排水堵塞",
+            "信息娱乐延迟"
+          ]
+        }
+      }
+    },
+    "porsche-911": {
+      "name": "保时捷 911",
+      "hero": {
+        "eyebrow": "赛道 DNA",
+        "title": "911 专家团队",
+        "subtitle": "服务 992、GT 与 Turbo 全系车型"
+      },
+      "story": {
+        "eyebrow": "我们的 911 理念",
+        "title": "精准调校经典后置布局",
+        "paragraphs": [
+          "从早期风冷车型到最新的 992 GT3，我们为 911 准备了赛道级对角配重、PIWIS 3 诊断与 IMS 轴承升级，确保操控如出厂般精准。",
+          "团队常驻赛道活动，熟悉 GT 系列的冷却升级、刹车热管理与 PDK 软件更新，能够根据使用场景定制调校。",
+          "针对街道或赛道用途，我们都会依据驾驶风格设定定位、空气动力与刹车方案，让 911 在每一种路况都发挥优势。"
+        ]
+      },
+      "services": [
+        {
+          "title": "水平对置动力总成",
+          "description": "发动机密封、IMS 升级与涡轮/自然吸气动力优化。"
+        },
+        {
+          "title": "PDK 与手动变速箱",
+          "description": "PDK 软件更新、离合器包更换与手动短行程机构服务。"
+        },
+        {
+          "title": "赛道底盘与空气动力",
+          "description": "对角配重、专属定位与空气动力套件调校。"
+        },
+        {
+          "title": "碳陶刹车维护",
+          "description": "PCCB 清洁、钛合金螺栓升级与高温刹车油方案。"
+        }
+      ],
+      "models": {
+        "porsche-992-carrera": {
+          "name": "992 Carrera / Carrera S",
+          "generation": "992（2020-至今）",
+          "features": [
+            "PDCC 主动防侧倾",
+            "后轮转向",
+            "PASM 自适应阻尼"
+          ],
+          "commonIssues": [
+            "PDK 软件更新需求",
+            "涡轮进气密封渗漏",
+            "后主油封渗油"
+          ]
+        },
+        "porsche-992-gt3": {
+          "name": "992 GT3 / GT3 RS",
+          "generation": "992（2022-至今）",
+          "features": [
+            "双叉臂前悬",
+            "主动空气动力",
+            "赛道冷却套件"
+          ],
+          "commonIssues": [
+            "前桥举升标定",
+            "刹车导风件裂纹",
+            "赛道温度管理"
+          ]
+        },
+        "porsche-992-turbo": {
+          "name": "992 Turbo / Turbo S",
+          "generation": "992（2021-至今）",
+          "features": [
+            "PTM 主动四驱",
+            "主动空气动力",
+            "液冷涡轮"
+          ],
+          "commonIssues": [
+            "中冷器管路漏气",
+            "PDK 自适应重置",
+            "碳陶刹车磨损"
+          ]
+        }
+      }
+    },
+    "panamera": {
+      "name": "保时捷 Panamera",
+      "hero": {
+        "eyebrow": "四门 GT",
+        "title": "Panamera 专属服务",
+        "subtitle": "兼具豪华舒适与保时捷性能的维护方案"
+      },
+      "story": {
+        "eyebrow": "我们的 Panamera 方法",
+        "title": "行政四门的性能保养",
+        "paragraphs": [
+          "Panamera 结合 911 的底盘基因与豪华行政舱座椅，Plug-in 混动与 Sport Turismo 版本对技师要求更高。",
+          "我们使用 PIWIS 指引进行高压电池调理、InnoDrive 标定与后轮转向设置，确保每次软件更新与硬件改装都符合原厂标准。",
+          "车内软关闭、按摩座椅与音响系统也会与动力与底盘一同检查，维持四座 GT 的全方位体验。"
+        ]
+      },
+      "services": [
+        {
+          "title": "混动与高压系统",
+          "description": "E-Hybrid 高压冷却、充电系统与电池维护。"
+        },
+        {
+          "title": "V8/V6 动力总成",
+          "description": "EA825 正时链、MA1 发动机密封与 Sport Chrono 校准。"
+        },
+        {
+          "title": "PDCC 与空气悬挂",
+          "description": "动态底盘控制、车高调整与运动阻尼设置。"
+        },
+        {
+          "title": "行政舱座舱护理",
+          "description": "按摩座椅、软关闭车门、Burmester 音响检修与细节保养。"
+        }
+      ],
+      "models": {
+        "panamera-971-turbos": {
+          "name": "Panamera Turbo S E-Hybrid",
+          "generation": "971.2（2021-至今）",
+          "features": [
+            "InnoDrive 驾驶辅助",
+            "PDCC Sport",
+            "后轮转向"
+          ],
+          "commonIssues": [
+            "高压冷却阀故障",
+            "充电模块报警",
+            "空气悬挂漏气"
+          ]
+        },
+        "panamera-971-gts": {
+          "name": "Panamera GTS",
+          "generation": "971（2018-至今）",
+          "features": [
+            "Sport Exhaust 排气",
+            "PASM 运动悬挂",
+            "Sport Chrono 套件"
+          ],
+          "commonIssues": [
+            "积碳堆积",
+            "排气阀执行器故障",
+            "PDK 维护周期短"
+          ]
+        },
+        "panamera-970": {
+          "name": "Panamera 4 / S / Turbo",
+          "generation": "970（2010-2016）",
+          "features": [
+            "PDCC 主动防侧倾",
+            "扭矩矢量控制",
+            "软关闭车门"
+          ],
+          "commonIssues": [
+            "冷却水管漏水",
+            "PDK 机电单元故障",
+            "空气悬挂压缩机损坏"
+          ]
+        }
+      }
+    },
+    "audi-r8": {
+      "name": "奥迪 R8",
+      "hero": {
+        "eyebrow": "赛道与日常兼顾",
+        "title": "R8 专业服务",
+        "subtitle": "掌握兰博基尼 V10 技术的奥迪 Sport 团队"
+      },
+      "story": {
+        "eyebrow": "我们的 R8 经验",
+        "title": "V10 声浪与 quattro 精准共存",
+        "paragraphs": [
+          "R8 共享兰博基尼 V10 与碳纤维空间架构，同时配备奥迪电控系统，需要跨品牌经验的团队负责。",
+          "技师持有 Audi Sport 与 Lamborghini 认证，可进行干式油底壳保养、磁感悬挂检修与碳纤内饰翻新，服务覆盖日常通勤到赛道使用。",
+          "我们会根据车型是 quattro、RWD 还是限量 GT 设定差速器、变速箱与底盘，确保驾驶感受符合车主需求。"
+        ]
+      },
+      "services": [
+        {
+          "title": "兰博基尼 V10 动力",
+          "description": "V10 正时链、干式油底壳与进气积碳清理。"
+        },
+        {
+          "title": "S tronic / R-tronic 变速箱",
+          "description": "机电单元维修、离合器包更换与软件自适应。"
+        },
+        {
+          "title": "Audi Magnetic Ride",
+          "description": "磁感悬挂更换、液体更新与赛道定位设定。"
+        },
+        {
+          "title": "碳陶与内饰呵护",
+          "description": "碳陶刹车保养、碳纤维修复与真皮内饰翻新。"
+        }
+      ],
+      "models": {
+        "audi-r8-v10": {
+          "name": "R8 V10 quattro",
+          "generation": "4S（2017-至今）",
+          "features": [
+            "quattro 四驱系统",
+            "磁感悬挂",
+            "碳陶刹车选装"
+          ],
+          "commonIssues": [
+            "二次空气泵故障",
+            "磁感阻尼漏油",
+            "碳陶刹车磨损成本高"
+          ]
+        },
+        "audi-r8-rwd": {
+          "name": "R8 RWD / RWS",
+          "generation": "4S（2018-至今）",
+          "features": [
+            "后驱动态设定",
+            "钢制刹车",
+            "动态转向系统"
+          ],
+          "commonIssues": [
+            "ABS 传感器报警",
+            "变速箱冷却管漏油",
+            "进气岐管积碳"
+          ]
+        },
+        "audi-r8-42": {
+          "name": "R8 V8 / V10 (Type 42)",
+          "generation": "2008-2015",
+          "features": [
+            "铝合金空间框架",
+            "磁感悬挂",
+            "侧翼散热进气"
+          ],
+          "commonIssues": [
+            "R-tronic 泵故障",
+            "干式油底壳管路漏油",
+            "进气积碳"
+          ]
+        }
+      }
+    },
+    "g-class": {
+      "name": "梅赛德斯-奔驰 G 级",
+      "hero": {
+        "eyebrow": "硬派奢华",
+        "title": "G-Class 专属服务",
+        "subtitle": "涵盖经典 W463 到全新 AMG G63"
+      },
+      "story": {
+        "eyebrow": "我们的 G-Wagen 经验",
+        "title": "手工车身与现代科技的平衡",
+        "paragraphs": [
+          "G 级结合手工焊接车身、梯形车架与 AMG 双涡轮 V8，既要维护越野能力也要照顾奢华座舱。",
+          "我们的技师在奔驰美国总部与 AMG 受训多年，拥有 STAR/XENTRY、红外定位与专用车架工装，可处理 Portal 车桥、Brabus 升级与日常保养。",
+          "从经典 G500 到最新 G63，我们都提供防锈、防腐与性能升级方案，并记录每一次施工细节供车主存档。"
+        ]
+      },
+      "services": [
+        {
+          "title": "AMG 与经典动力系统",
+          "description": "M177/M278/M113 发动机维修、机械增压维护与排气调校。"
+        },
+        {
+          "title": "四驱传动系统",
+          "description": "差速锁翻修、分动箱保养与 Portal 车桥定位。"
+        },
+        {
+          "title": "车架与防腐处理",
+          "description": "梯形车架防锈、接缝除锈与底盘涂层，适应海岸环境。"
+        },
+        {
+          "title": "豪华座舱电子",
+          "description": "数字座舱升级、Burmester 音响维修与软关闭车门校准。"
+        }
+      ],
+      "models": {
+        "g63-w463-2019": {
+          "name": "AMG G63",
+          "generation": "W463a（2019-至今）",
+          "features": [
+            "AMG Ride Control",
+            "Dynamic Select",
+            "4MATIC+ 全时四驱"
+          ],
+          "commonIssues": [
+            "主动排气阀故障",
+            "冷却系统热衰",
+            "AMG 刹车磨损快"
+          ]
+        },
+        "g550-w463-2013": {
+          "name": "G550 / G500",
+          "generation": "W463（2013-2018）",
+          "features": [
+            "三把差速锁",
+            "梯形车架",
+            "可选 AIRMATIC"
+          ],
+          "commonIssues": [
+            "差速器透气孔渗油",
+            "分动箱漏油",
+            "AIRMATIC 改装难题"
+          ]
+        },
+        "g55-w463-classic": {
+          "name": "G55 AMG / G500 经典款",
+          "generation": "W463（2002-2012）",
+          "features": [
+            "固轴悬挂",
+            "低速四驱",
+            "手工内饰"
+          ],
+          "commonIssues": [
+            "接缝锈蚀",
+            "机械增压皮带磨损",
+            "真空锁止泄漏"
+          ]
+        }
+      }
+    },
+    "mclaren": {
+      "name": "迈凯伦",
+      "hero": {
+        "eyebrow": "轻量化哲学",
+        "title": "迈凯伦专属服务",
+        "subtitle": "从 MonoCell 到主动空气动力的赛道级维护"
+      },
+      "story": {
+        "eyebrow": "我们的迈凯伦经验",
+        "title": "延续 F1 团队的工程基因",
+        "paragraphs": [
+          "迈凯伦公路车将 F1 技术带入街道：碳纤维 Monocell、Proactive Chassis Control 与主动空气动力都是核心。",
+          "我们掌握 MDS 原厂诊断、悬挂氮气充填与碳纤维修复，曾支援迈凯伦官方经销商处理 570S 至 765LT 的各类维修。",
+          "无论是 Artura 插混系统还是 600LT 赛道调校，我们都会依照赛道或城市使用场景提供热管理与底盘方案。"
+        ]
+      },
+      "services": [
+        {
+          "title": "双涡轮 V8 与混动系统",
+          "description": "M838T/M840T 维护、Artura 高压系统诊断与热管理升级。"
+        },
+        {
+          "title": "主动液压悬挂",
+          "description": "Proactive Chassis Control 氮气充填、车高标定与赛道定位。"
+        },
+        {
+          "title": "SSG 双离合变速箱",
+          "description": "离合器磨合、软件更新与弹射起步系统检查。"
+        },
+        {
+          "title": "碳纤维与空气动力",
+          "description": "碳纤单体壳检测、车身修复与主动空气动力组件校准。"
+        }
+      ],
+      "models": {
+        "mclaren-720s": {
+          "name": "720S / 765LT",
+          "generation": "Super Series（2017-至今）",
+          "features": [
+            "Proactive Chassis Control II",
+            "主动空气动力",
+            "Monocage II 碳纤车架"
+          ],
+          "commonIssues": [
+            "液压悬挂渗漏",
+            "蝶门气压支撑衰减",
+            "排气高温管理"
+          ]
+        },
+        "mclaren-artura": {
+          "name": "Artura",
+          "generation": "混动超跑（2022-至今）",
+          "features": [
+            "轴向磁通电机",
+            "E-diff 电子差速器",
+            "插电式混动系统"
+          ],
+          "commonIssues": [
+            "高压冷却管路渗漏",
+            "逆变器软件更新",
+            "电机离合磨合"
+          ]
+        },
+        "mclaren-600lt": {
+          "name": "600LT / 570S",
+          "generation": "Sport Series（2015-2020）",
+          "features": [
+            "MonoCell II 碳纤壳体",
+            "顶置排气（600LT）",
+            "赛道遥测系统"
+          ],
+          "commonIssues": [
+            "转向机渗油",
+            "空调蒸发器结露",
+            "内饰按钮粘滞"
+          ]
+        }
+      }
+    },
+    "escalade": {
+      "name": "凯迪拉克 Escalade",
+      "hero": {
+        "eyebrow": "美式旗舰",
+        "title": "Escalade 专属服务",
+        "subtitle": "Super Cruise 与 MagRide 一站式维护"
+      },
+      "story": {
+        "eyebrow": "我们的 Escalade 经验",
+        "title": "Presidential 级别的舒适守护",
+        "paragraphs": [
+          "Escalade 结合 Super Cruise 驾驶辅助、Magnetic Ride Control 与豪华影音系统，需要熟悉 GM 平台的团队维护。",
+          "我们配备 GDS2 诊断、OTA 更新流程与车队管理经验，可为 VIP 或商务车队提供定制化保养计划。",
+          "无论是高性能 Escalade V 还是加长 ESV，我们都会同步检查空气悬挂、电气负载与内饰细节，让旗舰 SUV 时刻保持精品状态。"
+        ]
+      },
+      "services": [
+        {
+          "title": "GM 动力与 Super Cruise",
+          "description": "LT 系列发动机、10 速变速箱标定，以及 Super Cruise 传感器重校。"
+        },
+        {
+          "title": "MagRide 与空气悬挂",
+          "description": "磁感悬挂更换、空气弹簧泄漏排查与车身高度设定。"
+        },
+        {
+          "title": "座舱影音系统",
+          "description": "38 英寸 OLED 校准、AKG 音响维修与后排娱乐系统调校。"
+        },
+        {
+          "title": "行政内饰护理",
+          "description": "半苯胺皮革养护、定制改装电气整合与隐私加固。"
+        }
+      ]
+    },
+    "defender": {
+      "name": "路虎·卫士",
+      "hero": {
+        "eyebrow": "探险旗舰",
+        "title": "Defender 专属服务",
+        "subtitle": "兼顾越野改装与豪华日常"
+      },
+      "story": {
+        "eyebrow": "我们的卫士计划",
+        "title": "越野准备与城市可靠性兼备",
+        "paragraphs": [
+          "全新 L663 卫士采用铝合金车身、Terrain Response 2 以及丰富的原厂越野附件，对电气与底盘校准要求极高。",
+          "我们常备 Pathfinder 诊断、专用举升与涉水检测流程，为客户打造从海岸露营到沙漠越野的全场景方案。",
+          "对老款经典卫士，我们同样提供防腐、电气翻新与内饰焕新，延续经典方盒子的生命力。"
+        ]
+      },
+      "services": [
+        {
+          "title": "空气悬挂与 Terrain Response",
+          "description": "车高设定、交叉阀块服务与越野模式标定。"
+        },
+        {
+          "title": "Ingenium 与 V8 动力",
+          "description": "正时链条、冷却系统升级以及机械增压 V8 保养。"
+        },
+        {
+          "title": "越野改装与电气整合",
+          "description": "绞盘、涉水喉、车顶电器布线与配件无故障安装。"
+        },
+        {
+          "title": "经典卫士复原",
+          "description": "防腐处理、内饰翻新与传动系统升级。"
+        }
+      ]
+    },
+    "navigator": {
+      "name": "林肯领航员",
+      "hero": {
+        "eyebrow": "美式奢华",
+        "title": "Navigator 专属服务",
+        "subtitle": "Black Label 级别的礼宾式保养"
+      },
+      "story": {
+        "eyebrow": "我们的领航员经验",
+        "title": "静谧座舱与大排量动力的平衡",
+        "paragraphs": [
+          "领航员以 CCD 主动悬挂、Revel Ultima 音响与 30 向座椅著称，维护时需兼顾舒适性与拖曳能力。",
+          "我们使用 Ford IDS/FDRS 平台进行软件刷新、传感器编程，并为礼宾车队提供定制化巡检清洁流程。",
+          "从 EcoBoost V6 动力到电动踏板、软关闭门，我们都以原厂标准细致照料，让旗舰 SUV 始终保持头等舱体验。"
+        ]
+      },
+      "services": [
+        {
+          "title": "EcoBoost 动力总成",
+          "description": "正时链条、涡轮冷却与 10R80 变速箱油液维护。"
+        },
+        {
+          "title": "CCD 主动悬挂",
+          "description": "CCD 减震更换、车身高度校准与地形模式自检。"
+        },
+        {
+          "title": "座舱礼宾系统",
+          "description": "Perfect Position 座椅、按摩系统与 Black Label 皮革保养。"
+        },
+        {
+          "title": "驾驶辅助与娱乐",
+          "description": "Co-Pilot360 传感器标定、SYNC 4 更新与 Revel 音响调校。"
+        }
+      ]
+    }
+  },
+  "caseStudiesData": {
+    "maybach-s680-abc-rebuild": {
+      "title": "2022 迈巴赫 S680：ABC 系统全面重建",
+      "subtitle": "让 23 万美元旗舰重拾“魔毯”驾乘体验",
+      "category": "复杂维修",
+      "problem": {
+        "eyebrow": "挑战",
+        "title": "ABC 液压系统灾难性故障",
+        "description": [
+          "这辆 2022 年迈巴赫 S680 被平台拖车送来，右前悬挂完全塌陷。车主在 3 周内陆续收到警告：先是“ABC Visit Workshop”，随后是“Vehicle Lowered”，最终隔夜停放后彻底瘫痪。",
+          "STAR 诊断显示 Active Body Control 系统多处故障码，右前减震液压泄漏，油箱内液体被污染——经销商报价超过 12,000 美元且需要等待 6 周备件。"
+        ],
+        "symptoms": [
+          "右前角下沉至限位块",
+          "仪表出现 AIRMATIC 与 ABC 多条故障信息",
+          "车底出现绿色液压油渗漏",
+          "Magic Body Control 与曲线倾斜功能失效",
+          "车辆倾斜严重，无法安全行驶"
+        ]
+      },
+      "diagnosis": {
+        "eyebrow": "调查",
+        "title": "根因分析",
+        "steps": [
+          {
+            "title": "1. STAR 深度诊断",
+            "description": "连接 XENTRY 读取 ABC 控制单元的全部数据、冻结帧与液压压力。确认右前减震密封失效是主因，同时污染迹象提示还有次级问题。"
+          },
+          {
+            "title": "2. 液压系统检查",
+            "description": "排空 ABC 油液后发现大量金属屑，证明液压泵已磨损。检查确认：右前减震活塞密封撕裂、液压泵进油滤网 70% 被碎屑堵塞、蓄能器衰减。"
+          },
+          {
+            "title": "3. 压力测试",
+            "description": "使用 ABC 压力表检测静态与动态压力。液压泵仅输出 180 bar（标准 200 bar），蓄能器无法保持压力——两者若不同时更换将导致复发。"
+          }
+        ],
+        "conclusion": "减震密封失效让空气进入闭式液压系统，引发气蚀导致液压泵加速磨损，污染物扩散至整套管路。如果只更换减震，很快会再次故障。"
+      },
+      "solution": {
+        "eyebrow": "解决方案",
+        "title": "ABC 系统全面翻修",
+        "approach": "与其只更换损坏减震，我们建议进行全系统刷新，解决根因并防止再发。客户了解故障链后批准完整重建方案。",
+        "procedures": [
+          {
+            "title": "阶段 1：系统除污",
+            "description": "彻底排空 ABC 系统，拆卸油箱清洗、更换液压滤芯，并按原厂流程冲洗全线。共清除 2.5L 含金属颗粒的污染油液。",
+            "partsUsed": [
+              "ABC 液压滤芯 (A2223270090)",
+              "ABC 油箱清洁套件",
+              "MB 345.0 液压油 3L"
+            ],
+            "duration": "4 小时"
+          },
+          {
+            "title": "阶段 2：部件更换",
+            "description": "更换右前减震总成（含新密封）、更新款液压泵与蓄能器，全部使用原厂件以维持底盘质感。",
+            "partsUsed": [
+              "右前 ABC 减震总成 (A2223208713)",
+              "升级版 ABC 液压泵 (A2213201604)",
+              "ABC 蓄能器 (A2203270115)",
+              "泵进油滤网 (A2213270090)"
+            ],
+            "duration": "8 小时"
+          },
+          {
+            "title": "阶段 3：系统标定",
+            "description": "按 XENTRY 指引完成编码、车身高度传感器校准与液压压力匹配，并执行 23 项 ABC 自检，包括曲线倾斜与坑洞模拟。",
+            "toolsUsed": [
+              "XENTRY 诊断与编码",
+              "ABC 压力测试套件",
+              "车身高度校准工具"
+            ],
+            "duration": "3 小时"
+          },
+          {
+            "title": "阶段 4：道路验证",
+            "description": "在多种路面进行测试，验证曲线倾斜、Magic Body Control 道路扫描与 ABC Sport 模式表现，并通过 XENTRY 监控实时压力数据。",
+            "result": "所有 ABC 功能恢复至原厂规格，Magic Body Control 能提前感知路面，曲线倾斜角度误差小于 0.5°。"
+          }
+        ],
+        "totalLaborHours": "17 小时",
+        "totalCost": "$8,400（对比经销商报价 $12,700）",
+        "turnaroundTime": "5 个工作日（经销商需 6 周）"
+      },
+      "technicalInsights": {
+        "eyebrow": "技术解析",
+        "title": "认识 ABC 系统架构",
+        "content": [
+          {
+            "heading": "ABC 如何运作",
+            "text": "与传统空气悬挂不同，ABC 使用 200 bar（2,900 PSI）的液压油独立控制四个车轮。中央双活塞泵提供压力，蓄能器储存能量，控制单元通过电液阀在毫秒级调节阻尼以抑制侧倾、点头与俯仰。"
+          },
+          {
+            "heading": "故障级联效应",
+            "text": "当减震密封失效时空气进入闭式回路，会在泵内形成气蚀，迅速磨损泵部件。金属屑进一步堵塞滤芯并损伤阀体，因此检测到污染时必须整体处理，否则短时间内必然复发。"
+          },
+          {
+            "heading": "为何坚持原厂零件",
+            "text": "我们曾测试副厂 ABC 减震，平均仅使用 18 个月，而原厂可超过 5 年。关键在于密封材料与阻尼标定：非原厂密封易硬化，阻尼曲线偏差会让控制单元误判，触发虚假故障。"
+          }
+        ]
+      },
+      "results": {
+        "eyebrow": "结果",
+        "title": "魔毯驾乘完全恢复",
+        "achievements": [
+          "ABC 故障码清零，行驶 500+ 英里后未再出现",
+          "曲线倾斜功能恢复至原厂（最多 2.65°）",
+          "Magic Body Control 能提前 15 米识别路面起伏",
+          "液压压力在全部工况下稳定维持 200 bar",
+          "车主反馈驾乘质感优于新车"
+        ],
+        "clientTestimonial": {
+          "quote": "经销商要价 13,000 美元还需要六周，这里 8,400 美元不到一周就完工，而且解释得很清楚——不只是念故障码。推荐所有迈巴赫车主来这里。",
+          "author": "Robert M.",
+          "location": "比佛利山庄，加州",
+          "vehicle": "2022 迈巴赫 S680"
+        }
+      },
+      "ownerAdvice": {
+        "title": "ABC 系统保养建议",
+        "tips": [
+          {
+            "icon": "ðŸ”",
+            "title": "及早处理警告",
+            "description": "不要忽视“ABC Visit Workshop”等提示，早期介入可避免污染扩散，将 2,000 美元的修复变成 8,000 美元的大修。"
+          },
+          {
+            "icon": "âš™ï¸",
+            "title": "6 万英里更换液压油",
+            "description": "原厂虽未规定，但我们建议每 6 万英里或 5 年更换 ABC 液压油，可延缓密封老化与泵磨损。"
+          },
+          {
+            "icon": "ðŸ”¥",
+            "title": "避免高温冲击",
+            "description": "连续激烈驾驶或大坑路面对 ABC 压力影响极大，建议放慢速度并定期检查悬挂温度。"
+          },
+          {
+            "icon": "ðŸ“Š",
+            "title": "年度 STAR 体检",
+            "description": "ABC 故障往往渐进式发生，年度 STAR 诊断可在压力下降、传感器漂移与泵磨损初期就发现问题。"
+          }
+        ]
+      }
+    },
+    "maybach-s580-hybrid-fault": {
+      "title": "2023 迈巴赫 S580：48V 混动系统故障",
+      "subtitle": "定位轻混 ISG 间歇失效",
+      "category": "混动诊断",
+      "problem": {
+        "eyebrow": "挑战",
+        "title": "轻混系统随机停机",
+        "description": [
+          "车主反映仪表偶发“Hybrid System Malfunction”警告，既可能在冷车启动出现，也可能在高速行驶后发生，伴随自动启停失效、油耗上升及 9G-TRONIC 偶发顿挫。",
+          "经销商在 4 周内做了两次 STAR 诊断却无法复现故障，只能给出“未发现问题”的回复。"
+        ],
+        "symptoms": [
+          "混动系统警告灯间歇点亮",
+          "自动启停随机失效",
+          "3-2 降挡时偶发顿挫",
+          "油耗从 21 MPG 升至 17 MPG",
+          "故障无固定触发条件"
+        ],
+        "faultCodes": [
+          "P0A0F: Hybrid Battery Voltage System - Intermittent",
+          "U110D: ISG Communication Lost - Sporadic",
+          "P0562: 48V System Voltage Low - Historical"
+        ]
+      },
+      "diagnosis": {
+        "eyebrow": "调查",
+        "title": "高级间歇故障排查",
+        "steps": [
+          {
+            "title": "1. 数据记录",
+            "description": "安装 XENTRY 数据记录仪，采集 48V 电压、ISG 电流与电池 SOC。客户驾驶 3 天共 450 英里，成功记录故障。"
+          },
+          {
+            "title": "2. 热成像检查",
+            "description": "分析数据发现高温（95°F 以上）时电压掉落。使用热像仪检测 48V 电池舱，故障复现时温度高达 167°F，超过原厂 140°F 上限。"
+          },
+          {
+            "title": "3. 冷却系统定位",
+            "description": "检查 48V 电池冷却通道，发现 HVAC 通风口被包装泡棉堵塞 80%。冷却系统本身完好，但气流不足导致过热。"
+          }
+        ],
+        "conclusion": "48V 电池因冷却风道被异物堵塞而严重过热，电池管理系统为保护寿命会关闭混动功能。这是早期 V223 车型常见的 PDI 疏漏。"
+      },
+      "solution": {
+        "eyebrow": "解决方案",
+        "title": "恢复冷却气流并更新软件",
+        "approach": "清除通风阻塞，执行 48V 电池健康测试并更新混动控制软件，同时对系统重新学习和校准。",
+        "procedures": [
+          {
+            "title": "冷却通道清理",
+            "description": "拆除阻塞物，检查冷却风扇与导风管路，确保通风畅通。",
+            "duration": "2 小时"
+          },
+          {
+            "title": "电池健康测试",
+            "description": "使用原厂测试流程检查 48V 电池内阻与 SoH，并执行高压安全流程。",
+            "duration": "1 小时"
+          },
+          {
+            "title": "软件更新与学习",
+            "description": "更新混动控制单元软件，重置 ISG 与 9G-TRONIC 协同参数，同时执行路试确认。",
+            "duration": "3 小时"
+          }
+        ],
+        "totalLaborHours": "6 小时",
+        "totalCost": "$1,480（客户避免经销商建议的 $3,200 电池更换）",
+        "turnaroundTime": "2 个工作日"
+      },
+      "technicalInsights": {
+        "eyebrow": "技术解析",
+        "title": "梅赛德斯 48V 轻混架构",
+        "content": [
+          {
+            "heading": "48V 轻混的作用",
+            "text": "S580 采用 48V 电气架构驱动集成起动电机（ISG），提供 22 马力与 184 磅·英尺电助动力，实现自动启停、EQ Boost 与能量回收。不同于插混，无法单独电驱行驶。"
+          },
+          {
+            "heading": "温度对 48V 电池的影响",
+            "text": "锂电池最佳温度范围为 20-40°C。超过 60°C 内阻上升、容量下降，电池管理系统会主动关闭混动功能以保护寿命。"
+          },
+          {
+            "heading": "V223 PDI 常见问题",
+            "text": "我们曾遇到多台早期 V223 车型因港口交车检查疏忽，冷却风道被包装物堵塞。奔驰发布过内部公告要求经销商检查冷却气流。"
+          }
+        ]
+      },
+      "results": {
+        "eyebrow": "结果",
+        "title": "混动系统全面恢复",
+        "achievements": [
+          "在多次 95°F+ 日间驾驶后未再出现混动故障",
+          "48V 电池峰值温度从 167°F 降至 118°F",
+          "油耗从 17 MPG 恢复至 21 MPG",
+          "自动启停功能 100% 正常",
+          "客户避免了经销商 3,200 美元的电池更换"
+        ],
+        "clientTestimonial": {
+          "quote": "经销商没确认电池是否真的坏就想换新，要价 3,200 美元。这家工坊一天就找到真正问题——安装残留堵住了冷却风道，既省钱又彻底解决。",
+          "author": "David K.",
+          "location": "马里布，加州",
+          "vehicle": "2023 迈巴赫 S580"
+        }
+      },
+      "ownerAdvice": {
+        "title": "48V 轻混系统养护",
+        "tips": [
+          {
+            "icon": "ðŸ”¥",
+            "title": "关注电池温度",
+            "description": "炎热天气下若出现混动故障，很可能与过热有关，可通过 XENTRY 实时监控电池温度。"
+          },
+          {
+            "icon": "ðŸ”‹",
+            "title": "激烈驾驶后短暂怠速",
+            "description": "赛道或高速奔跑后怠速 30 秒再熄火，让冷却风扇运行，避免热浸。"
+          },
+          {
+            "icon": "âš¡",
+            "title": "确认交车检查完成",
+            "description": "购新车时要求经销商确认 48V 冷却风道已检查，早期 V223 容易遗留包装物。"
+          },
+          {
+            "icon": "ðŸ“Š",
+            "title": "每年检测电池健康",
+            "description": "48V 电池应在 8 年内保持 90% 以上健康度，年度检测可及早发现衰减。"
+          }
+        ]
+      }
+    },
+    "rolls-phantom-air-suspension": {
+      "title": "2019 劳斯莱斯 Phantom：Magic Carpet Ride 恢复",
+      "subtitle": "诊断并修复 Flagbearer 悬挂系统故障",
+      "category": "豪华悬挂",
+      "problem": {
+        "eyebrow": "挑战",
+        "title": "Magic Carpet Ride 功能失效",
+        "description": [
+          "这台 45 万美元的 Phantom VIII 出现“Suspension Fault”警告，车主在两个月内感受到悬挂预判能力逐渐下降，最终 Flagbearer 摄像头完全不工作。",
+          "Flagbearer 系统（双目摄像头扫描前方路面）无法识别路面，车辆只剩下普通豪华车的悬挂表现，对劳斯莱斯车主而言不可接受。"
+        ],
+        "symptoms": [
+          "Magic Carpet Ride 摄像头离线",
+          "悬挂无法提前应对路面起伏",
+          "仪表出现 Flagbearer 报警",
+          "右前悬挂在路面不平时发涩",
+          "车身高度传感器读数不稳定"
+        ],
+        "faultCodes": [
+          "C1A12: Flagbearer Camera System - No Signal",
+          "C1304: Air Suspension Height Sensor RF - Implausible",
+          "C1202: Air Spring RF - Leak Suspected"
+        ]
+      },
+      "diagnosis": {
+        "eyebrow": "调查",
+        "title": "深入解析 Flagbearer 系统",
+        "steps": [
+          {
+            "title": "1. 摄像系统检查",
+            "description": "检查挡风玻璃后的 Flagbearer 立体摄像头，发现右侧镜头内部凝露。拆下后确认镜头密封开裂，洗车时进水。"
+          },
+          {
+            "title": "2. 悬挂漏气检测",
+            "description": "排查过程中发现右前空气弹簧缓慢漏气，使用泡沫检测确认上支座压接处渗漏。"
+          },
+          {
+            "title": "3. 车身高度校准",
+            "description": "高度传感器之所以读值异常，是由于空气弹簧漏气导致车身高度波动，传感器本身正常，更换后需重新标定。"
+          }
+        ],
+        "conclusion": "存在两处独立故障：Flagbearer 摄像头因密封破损进水失效，空气弹簧漏气导致高度传感器误差，必须同时处理才能恢复魔毯效果。"
+      },
+      "solution": {
+        "eyebrow": "解决方案",
+        "title": "更换摄像头并修复空气悬挂",
+        "approach": "更换受损的 Flagbearer 摄像组件、右前空气弹簧并对整套悬挂系统重新校准。",
+        "procedures": [
+          {
+            "title": "阶段 1：摄像头更换",
+            "description": "拆卸 A 柱饰板与顶棚，取出摄像头总成，安装新的双目摄像组件并使用 BMW ISTA 完成三维路面映射标定。",
+            "partsUsed": [
+              "Flagbearer 双目摄像头组件 (RR 7123456)",
+              "镜头密封套件"
+            ],
+            "duration": "3 小时"
+          },
+          {
+            "title": "阶段 2：空气弹簧更换",
+            "description": "使用 Phantom 专用支撑点举升车辆，更换右前空气弹簧（与 7 系平台共用），并对其余弹簧进行泄漏测试。",
+            "partsUsed": [
+              "右前空气弹簧 (BMW 37126791675)",
+              "安装固定件"
+            ],
+            "duration": "4 小时"
+          },
+          {
+            "title": "阶段 3：系统标定",
+            "description": "通过 BMW ISTA 完成空气悬挂充放气测试、车身高度学习、Flagbearer 对准以及 Magic Carpet Ride 功能验证。",
+            "toolsUsed": [
+              "BMW ISTA/D",
+              "Flagbearer 对准工具",
+              "悬挂压力测试设备"
+            ],
+            "duration": "2 小时"
+          }
+        ],
+        "totalLaborHours": "9 小时",
+        "totalCost": "$5,200",
+        "turnaroundTime": "3 天（摄像头需特调）"
+      },
+      "technicalInsights": {
+        "eyebrow": "技术解析",
+        "title": "劳斯莱斯 Flagbearer 技术",
+        "content": [
+          {
+            "heading": "Magic Carpet Ride 的原理",
+            "text": "Flagbearer 系统利用挡风玻璃后的双目摄像头生成 10 米范围内的 3D 路面地图，控制单元提前调整空气弹簧与阻尼，让乘客在碰到颠簸前已被平顺处理。"
+          },
+          {
+            "heading": "摄像头故障模式",
+            "text": "镜头密封开裂导致水汽进入，是 2018-2019 年部分 Phantom 的已知问题，劳斯莱斯建议车主避免高压水枪洗车。"
+          },
+          {
+            "heading": "空气悬挂架构",
+            "text": "Phantom VIII 使用与宝马 7 系共享的空气悬挂硬件，但拥有劳斯莱斯专属标定，因此多数部件可使用 OEM BMW 零件，大幅降低成本。"
+          }
+        ]
+      },
+      "results": {
+        "eyebrow": "结果",
+        "title": "魔毯驾乘全面回归",
+        "achievements": [
+          "Flagbearer 系统重新识别前方 10 米路况",
+          "空气悬挂恢复原厂质感",
+          "400+ 英里测试无故障复现",
+          "车主反馈再次“宛若悬浮于云端”",
+          "总费用 5,200 美元，对比经销商 8,700 美元方案"
+        ],
+        "clientTestimonial": {
+          "quote": "我的 Phantom 失去了灵魂般的魔毯感。经销商要 9,000 美元还要两周，这里一天就诊断到位，成本更低，讲解也更透彻，现在的行驶质感完全回来了。",
+          "author": "Charles T.",
+          "location": "贝莱尔，加州",
+          "vehicle": "2019 劳斯莱斯 Phantom VIII"
+        }
+      },
+      "ownerAdvice": {
+        "title": "Phantom 悬挂保养提示",
+        "tips": [
+          {
+            "icon": "ðŸ’§",
+            "title": "仅使用无接触洗车",
+            "description": "高压水枪会损伤 Flagbearer 镜头密封（劳斯莱斯 SIB-72-2019）。建议手洗或无接触洗车。"
+          },
+          {
+            "icon": "ðŸŽ¥",
+            "title": "保持挡风玻璃洁净",
+            "description": "摄像头需要清晰视野，避免树胶污染并定期清洁。"
+          },
+          {
+            "icon": "âš™ï¸",
+            "title": "每年检测空气弹簧",
+            "description": "空气弹簧久用会产生微漏，年度检测可防止压缩机过劳。"
+          },
+          {
+            "icon": "ðŸ“Š",
+            "title": "换胎后重新标定",
+            "description": "即便是原厂规格轮胎，也会影响车身高度，换胎后需重新标定悬挂。"
+          }
+        ]
+      }
+    },
+    "aston-vantage-carbon-brake-service": {
+      "title": "阿斯顿·马丁 Vantage：碳陶刹车维护",
+      "subtitle": "消除赛道日后的尖锐刹车噪音",
+      "category": "性能服务",
+      "problem": {
+        "eyebrow": "挑战",
+        "title": "赛道使用后碳陶刹车持续尖叫",
+        "description": [
+          "车主在 Laguna Seca 连续两天赛道日后出现严重刹车尖叫，4S 店建议整体更换刹车盘片，但 400 英里后问题重现。",
+          "检查发现刹车片表面结晶、转移层不均，且缺少 AML 更新的防啸叫垫片。"
+        ],
+        "symptoms": [
+          "低速制动时高频尖叫",
+          "轻踩刹车方向盘抖动",
+          "通过轮辐可见刹车片接触不均"
+        ]
+      },
+      "diagnosis": {
+        "eyebrow": "调查",
+        "title": "刹车盘片状况分析",
+        "steps": [
+          {
+            "title": "1. 刹车盘表面测绘",
+            "description": "检测刹车盘跳动并使用热成像确认热点，跳动值在标准内但转移层不均。"
+          },
+          {
+            "title": "2. 刹车片材料检查",
+            "description": "刹车片厚度充足但表面严重结晶，且缺失新版防啸叫垫片（P/N 707337）。"
+          }
+        ],
+        "conclusion": "并非刹车盘变形，而是转移层污染。只需恢复摩擦层并正确铺垫，即可解决噪音问题。"
+      },
+      "solution": {
+        "eyebrow": "解决方案",
+        "title": "碳陶刹车翻新与重新铺垫",
+        "approach": "清洁刹车盘表面、安装新版垫片，并按 AML 官方流程重新铺垫。",
+        "procedures": [
+          {
+            "title": "碳陶表面刷新",
+            "description": "拆下全部刹车盘，采用干冰清洁与专用设备轻度切削，重建均匀转移层。",
+            "duration": "3 小时"
+          },
+          {
+            "title": "安装垫片并铺垫",
+            "description": "安装升级版阻尼垫片，复位刹车片，并完成 AML 官方铺垫流程。",
+            "duration": "2 小时"
+          }
+        ]
+      },
+      "results": {
+        "eyebrow": "结果",
+        "title": "街道安静、赛道就绪",
+        "achievements": [
+          "低速尖叫完全消除",
+          "轻刹震动消失",
+          "铺垫后两轮温差控制在 5°C 以内"
+        ]
+      },
+      "ownerAdvice": {
+        "title": "赛道日刹车检查要点",
+        "tips": [
+          {
+            "icon": "inspect",
+            "title": "每次赛后检查",
+            "description": "检查刹车片结晶、刹车盘状态及所有紧固扭矩。"
+          },
+          {
+            "icon": "repeat",
+            "title": "必要时重复铺垫",
+            "description": "剧烈赛道使用后重新执行铺垫程序，恢复均匀转移层。"
+          }
+        ]
+      }
+    }
+  },
+  "servicesGrid": {
+    "header": {
+      "eyebrow": "核心服务",
+      "headline": "为您的座驾提供顶级养护",
+      "subheadline": "原厂认证技师遵循 OEM 流程并使用正品部件"
+    },
+    "cta": "查看更多服务"
+  },
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "关于我们",
+      "title": "梅赛德斯-奔驰 Master 技师",
+      "subtitle": "原厂认证技师 • 15+ 年维修经验 • 美国洛杉矶"
+    },
+    "gallery": {
+      "badge": "查看工坊"
+    },
+    "story": {
+      "eyebrow": "我们的故事",
+      "title": "独立工坊的专业品质",
+      "paragraphs": [
+        "我们的团队拥有多年梅赛德斯-奔驰授权经销商工作经验,在豪华与性能车型维修领域积累了深厚技术功底。",
+        "为了提供更灵活、更专注的个性化服务,我们建立了这家独立工坊,保持经销商级别的专业水准,同时提供更细致的关怀。",
+        "如今,我们为南加州的豪华车主提供同等专业的维修服务,免去经销商的高昂费用。"
+      ],
+      "credentials": [
+        "经销商培训经验的专业技师",
+        "专业诊断设备",
+        "专注欧洲豪华车型",
+        "独立工坊的个性化服务"
+      ],
+      "image_placeholder": "工坊照片\n1200 × 1600 px"
+    },
+    "facility": {
+      "eyebrow": "我们的工坊",
+      "title": "我们的工坊",
+      "cards": {
+        "diagnostic": {
+          "title": "STAR 诊断系统",
+          "description": "原厂级诊断设备,实时连接梅赛德斯工程数据库"
+        },
+        "lifts": {
+          "title": "专业举升系统",
+          "description": "四柱式举升机,专为超豪华车型设计,支持四轮定位"
+        },
+        "tooling": {
+          "title": "精密车架校正系统",
+          "description": "激光测量、电脑控制的拉伸平台,精准恢复原厂车架几何"
+        },
+        "climate": {
+          "title": "四轮定位与轮胎服务",
+          "description": "高精度四轮定位配合动平衡调校,确保维修后行驶稳定自信"
+        }
+      }
+    },
+    "cta": {
+      "title": "感受原厂级服务",
+      "subtitle": "联系我们",
+      "book": "预约服务",
+      "call": "电话预约：(XXX) XXX-XXXX",
+      "footnote": "服务时间：周一至周六 8:00 AM - 6:00 PM"
+    }
+  },
+  "home": {
+    "carousel": {
+      "aria": "Hero Carousel",
+      "prev": "Previous slide",
+      "next": "Next slide",
+      "go_to": "Go to slide {index}"
+    }
+  },
+  "common": {
+    "call_label": "Call: {number}"
+  },
+  "brandsPage": {
+    "articles": {
+      "eyebrow": "修车日志",
+      "title": "真实案例 · 专业见证",
+      "subtitle": "探索我们为顶级豪华车辆提供的精密维修服务，每个案例都详细记录了诊断、维修与测试全过程。",
+      "cta": "查看更多"
+    }
+  },
+  "articles": {
+    "featured": "精选",
+    "categories": {
+      "suspension": "悬挂系统",
+      "powertrain": "动力系统",
+      "electrical": "电气系统",
+      "interior": "内饰",
+      "brakes": "制动系统"
+    },
+    "difficulty": {
+      "novice": "标准",
+      "intermediate": "复杂",
+      "expert": "专家级"
+    },
+    "meta": {
+      "hours": "小时"
+    }
+  },
+  "articlesPage": {
+    "breadcrumb": {
+      "brands": "全部品牌",
+      "articles": "维修案例"
+    },
+    "hero": {
+      "eyebrow": "技术专长",
+      "title": "维修服务案例"
+    },
+    "categories": {
+      "all": "全部案例"
+    },
+    "empty": {
+      "message": "该类别下暂无文章。"
+    },
+    "cta": {
+      "title": "需要专业服务？",
+      "subtitle": "我们的认证技师随时准备以精准和细心处理您的豪华车辆需求。",
+      "book": "预约到店"
+    }
+  }
+}

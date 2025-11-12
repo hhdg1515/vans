@@ -1,0 +1,569 @@
+/*
+ * Interactive Service Grid Styles
+ * Asymmetric Layout Inspired by Mercedes Vision AVTR
+ */
+
+/* ========================================
+   SECTION CONTAINER
+   ======================================== */
+
+.serviceSection {
+  padding: var(--space-massive) var(--space-lg);
+  background: radial-gradient(
+    ellipse 1400px 1000px at top right,
+    rgba(0, 191, 255, 0.18) 0%,
+    rgba(30, 144, 255, 0.10) 40%,
+    #000000 70%
+  );
+  position: relative;
+}
+
+/* ========================================
+   SECTION HEADER
+   ======================================== */
+
+.serviceHeader {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--space-xxl);
+}
+
+.serviceEyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  color: var(--mb-blue);
+  margin-bottom: var(--space-md);
+}
+
+.serviceHeadline {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+  color: var(--mb-white);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-lg);
+}
+
+.serviceSubheadline {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  color: var(--mb-silver);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Mercedes Keyline */
+.keyline {
+  width: 120px;
+  height: var(--mb-keyline);
+  background-color: var(--mb-white);
+  margin: 0 auto var(--space-xxl);
+}
+
+/* ========================================
+   ASYMMETRIC GRID LAYOUT
+   ======================================== */
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  gap: var(--grid-gap-md);
+  max-width: var(--container-xxl);
+  margin: 0 auto;
+}
+
+/* Desktop Layout - Asymmetric */
+.serviceCard1 {
+  grid-area: 1 / 1 / 3 / 2; /* Large card: spans 2 rows, column 1 */
+}
+
+.serviceCard2 {
+  grid-area: 1 / 2 / 2 / 3; /* Medium card: row 1, column 2 */
+}
+
+.serviceCard3 {
+  grid-area: 1 / 3 / 2 / 4; /* Medium card: row 1, column 3 */
+}
+
+.serviceCard6 {
+  grid-area: 2 / 2 / 3 / 3; /* Data card: row 2, column 2 */
+}
+
+.serviceCard4 {
+  grid-area: 2 / 3 / 3 / 4; /* Medium card: row 2, column 3 */
+}
+
+/* Card 5 is hidden on desktop in this layout - can be shown on Services page */
+
+/* ========================================
+   SERVICE CARD BASE STYLES
+   ======================================== */
+
+.serviceCard {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--mb-dark-gray);
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: transform var(--duration-normal) var(--ease-out),
+    box-shadow var(--duration-normal) var(--ease-out);
+}
+
+.serviceCard:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  z-index: calc(var(--z-base) + 1);
+}
+
+/* Large Service Card (spans 2 rows) */
+.serviceCardLarge {
+  grid-row: span 2;
+}
+
+/* Background Image */
+.serviceCardImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.serviceCard:hover .serviceCardImage {
+  transform: scale(1.08);
+}
+
+/* Gradient Overlay */
+.serviceCardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.7) 40%,
+    transparent 100%
+  );
+  z-index: calc(var(--z-base) + 1);
+  transition: background var(--duration-normal) var(--ease-out);
+}
+
+.serviceCard:hover .serviceCardOverlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.98) 0%,
+    rgba(0, 0, 0, 0.85) 60%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+}
+
+/* ========================================
+   CARD CONTENT
+   ======================================== */
+
+.serviceCardContent {
+  position: relative;
+  padding: var(--space-xl);
+  z-index: calc(var(--z-base) + 2);
+}
+
+.serviceCardTitle {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-tight);
+  color: var(--mb-white);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-md);
+}
+
+.serviceCard:hover .serviceCardTitle {
+  color: var(--mb-white);
+}
+
+.serviceCardDescription {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  color: var(--mb-silver);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-md);
+}
+
+/* Details wrapper - Hidden by default, shown on hover */
+.serviceCardDetails {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all var(--duration-slow) var(--ease-out);
+}
+
+.serviceCardDetailsVisible {
+  max-height: 500px;
+  opacity: 1;
+  margin-top: var(--space-md);
+}
+
+/* Features List */
+.serviceCardFeatures {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-md) 0 0 0;
+}
+
+.serviceCardFeature {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  font-family: var(--font-body);
+  font-size: var(--font-size-xs);
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: var(--space-xs);
+  line-height: 1.4;
+}
+
+.serviceCardFeature svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--mb-blue);
+}
+
+/* ========================================
+   CIRCULAR ARROW BUTTON
+   ======================================== */
+
+.serviceCardArrow {
+  position: absolute;
+  top: var(--space-lg);
+  right: var(--space-lg);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mb-white);
+  color: var(--mb-black);
+  border-radius: var(--radius-full);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all var(--duration-normal) var(--ease-out);
+  z-index: calc(var(--z-base) + 3);
+}
+
+.serviceCard:hover .serviceCardArrow {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.serviceCardArrow:hover {
+  background-color: var(--mb-blue);
+  color: var(--mb-white);
+  transform: scale(1.1);
+}
+
+/* Highlight Badge */
+.serviceCardBadge {
+  position: absolute;
+  top: var(--space-lg);
+  left: var(--space-lg);
+  padding: var(--space-xs) var(--space-md);
+  background-color: var(--mb-blue);
+  color: var(--mb-white);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xxs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  z-index: calc(var(--z-base) + 3);
+  box-shadow: var(--shadow-md);
+}
+
+/* ========================================
+   DATA CARD STYLES
+   ======================================== */
+
+.dataCard {
+  position: relative;
+  background: linear-gradient(135deg, var(--mb-dark-gray) 0%, var(--mb-medium-gray) 100%);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform var(--duration-normal) var(--ease-out),
+    border-color var(--duration-normal) var(--ease-out);
+}
+
+.dataCard:hover {
+  transform: translateY(-8px);
+  border-color: var(--mb-blue);
+}
+
+.dataCardTitle {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+  color: var(--mb-white);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-lg);
+}
+
+.dataCardStats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  flex: 1;
+}
+
+.dataCardStat {
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dataCardStat:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.dataCardStatHighlight {
+  padding: var(--space-md);
+  background-color: rgba(0, 173, 239, 0.1);
+  border: 1px solid var(--mb-blue);
+  border-radius: var(--radius-sm);
+}
+
+.dataCardNumber {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-black);
+  color: var(--mb-neon-blue);
+  line-height: 1;
+  margin-bottom: var(--space-xs);
+}
+
+.dataCardStatHighlight .dataCardNumber {
+  color: var(--mb-blue);
+}
+
+.dataCardLabel {
+  font-family: var(--font-body);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  color: var(--mb-silver);
+  line-height: var(--line-height-normal);
+}
+
+.dataCardCta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-family: var(--font-headline);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--mb-white);
+  text-decoration: none;
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: color var(--duration-normal) var(--ease-out);
+}
+
+.dataCardCta:hover {
+  color: var(--mb-blue);
+}
+
+.dataCardCta svg {
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.dataCardCta:hover svg {
+  transform: translateX(4px);
+}
+
+/* ========================================
+   BOTTOM CTA
+   ======================================== */
+
+.serviceCta {
+  text-align: center;
+  margin-top: var(--space-huge);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet (2-column layout) */
+@media (max-width: 1023px) {
+  .serviceGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: var(--grid-gap-md);
+  }
+
+  .serviceCard1 {
+    grid-area: 1 / 1 / 3 / 2; /* Large card: spans 2 rows, column 1 */
+  }
+
+  .serviceCard2 {
+    grid-area: 1 / 2 / 2 / 3; /* Medium card: row 1, column 2 */
+  }
+
+  .serviceCard3 {
+    grid-area: 2 / 2 / 3 / 3; /* Medium card: row 2, column 2 */
+  }
+
+  .serviceCard6 {
+    grid-area: 3 / 1 / 4 / 2; /* Data card: row 3, column 1 */
+  }
+
+  .serviceCard4 {
+    grid-area: 3 / 2 / 4 / 3; /* Medium card: row 3, column 2 */
+  }
+
+  .serviceSection {
+    padding: var(--space-huge) var(--space-lg);
+  }
+
+  .serviceHeadline {
+    font-size: var(--font-size-lg);
+  }
+}
+
+/* Mobile (1-column stack) */
+@media (max-width: 767px) {
+  .serviceGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: var(--grid-gap-sm);
+  }
+
+  .serviceCard1,
+  .serviceCard2,
+  .serviceCard3,
+  .serviceCard4,
+  .serviceCard5,
+  .serviceCard6 {
+    grid-area: auto; /* Reset all grid areas */
+    min-height: 400px;
+  }
+
+  .serviceCardLarge {
+    grid-row: auto; /* Reset span */
+  }
+
+  .serviceSection {
+    padding: var(--space-xxl) var(--space-lg);
+  }
+
+  .serviceHeader {
+    margin-bottom: var(--space-xl);
+  }
+
+  .serviceHeadline {
+    font-size: var(--font-size-md);
+  }
+
+  .serviceSubheadline {
+    font-size: var(--font-size-sm);
+  }
+
+  .keyline {
+    margin-bottom: var(--space-xl);
+  }
+
+  .serviceCardContent {
+    padding: var(--space-lg);
+  }
+
+  .serviceCardTitle {
+    font-size: var(--font-size-md);
+  }
+
+  .serviceCardArrow {
+    width: 40px;
+    height: 40px;
+    top: var(--space-md);
+    right: var(--space-md);
+    opacity: 0.8; /* Show on mobile */
+    transform: scale(1);
+  }
+
+  .dataCardTitle {
+    font-size: var(--font-size-md);
+  }
+
+  .dataCardNumber {
+    font-size: var(--font-size-xl);
+  }
+
+  .dataCardStats {
+    gap: var(--space-md);
+  }
+
+  .serviceCta {
+    margin-top: var(--space-xxl);
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1280px) {
+  .serviceGrid {
+    gap: var(--grid-gap-lg);
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+.serviceCard:focus-visible {
+  outline: 2px solid var(--mb-blue);
+  outline-offset: 4px;
+  z-index: calc(var(--z-base) + 2);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .serviceCard,
+  .serviceCardImage,
+  .serviceCardOverlay,
+  .serviceCardTitle,
+  .serviceCardArrow,
+  .serviceCardFeatures,
+  .dataCard,
+  .dataCardCta svg {
+    transition: none !important;
+  }
+
+  .serviceCard:hover {
+    transform: none;
+  }
+
+  .serviceCard:hover .serviceCardImage {
+    transform: none;
+  }
+
+  .dataCard:hover {
+    transform: none;
+  }
+}

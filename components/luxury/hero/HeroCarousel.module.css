@@ -1,0 +1,492 @@
+/*
+ * Hero Carousel Styles
+ * Mercedes-Benz Stage Design Implementation
+ */
+
+/* ========================================
+   CAROUSEL CONTAINER
+   ======================================== */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+  background-color: var(--mb-black);
+}
+
+.slidesContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* ========================================
+   INDIVIDUAL SLIDE
+   ======================================== */
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 700ms var(--ease-in-out), visibility 700ms;
+  z-index: var(--z-base);
+}
+
+/* Active slide */
+.slideActive {
+  opacity: 1;
+  visibility: visible;
+  z-index: calc(var(--z-base) + 1);
+}
+
+/* Previous and next slides (for preloading) */
+.slidePrev,
+.slideNext {
+  z-index: var(--z-base);
+}
+
+/* Video background */
+.slideVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: var(--z-base);
+  transition: opacity 700ms var(--ease-in-out);
+}
+
+/* Gradient overlay */
+.slideOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: calc(var(--z-base) + 1);
+  pointer-events: none;
+}
+
+/* ========================================
+   SLIDE CONTENT
+   ======================================== */
+
+.slideContent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xxl) var(--space-lg);
+  z-index: calc(var(--z-base) + 2);
+}
+
+.slideContentInner {
+  max-width: var(--container-lg);
+  width: 100%;
+  text-align: center;
+  animation: slideContentFadeIn 1s var(--ease-out) 0.3s both;
+}
+
+@keyframes slideContentFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Eyebrow text */
+.slideEyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  color: var(--mb-blue);
+  margin-bottom: var(--space-md);
+}
+
+/* Title */
+.slideTitle {
+  font-family: var(--font-headline);
+  font-size: clamp(32px, 4.5vw, 56px);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+  color: var(--mb-white);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-lg);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Subtitle */
+.slideSubtitle {
+  font-family: var(--font-body);
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight: var(--font-weight-regular);
+  color: var(--mb-silver);
+  line-height: var(--line-height-normal);
+  margin-bottom: var(--space-md);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Description */
+.slideDescription {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CTA Button */
+.slideCta {
+  margin-top: var(--space-xl);
+}
+
+.slideButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm) var(--space-xl);
+  font-family: var(--font-headline);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--mb-white);
+  background-color: transparent;
+  border: 1px solid var(--mb-white);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-out);
+  white-space: nowrap;
+}
+
+.slideButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--mb-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================
+   DECORATIVE ELEMENTS
+   ======================================== */
+
+.slideDecorative {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: calc(var(--z-base) + 3);
+  pointer-events: none;
+}
+
+/* Mercedes Stage Bars - Hidden per user request */
+.slideStageTop,
+.slideStageBottom {
+  display: none;
+}
+
+/* ========================================
+   NAVIGATION ARROWS
+   ======================================== */
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 64px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--mb-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: var(--z-dropdown);
+  transition: all var(--duration-normal) var(--ease-out);
+  backdrop-filter: blur(10px);
+}
+
+.arrow:hover:not(:disabled) {
+  background-color: var(--mb-white);
+  color: var(--mb-black);
+  border-color: var(--mb-white);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.arrowPrev {
+  left: var(--space-xl);
+}
+
+.arrowNext {
+  right: var(--space-xl);
+}
+
+/* ========================================
+   SLIDE INDICATORS
+   ======================================== */
+
+.indicators {
+  position: absolute;
+  bottom: var(--space-xxl);
+  right: var(--space-xxl);
+  display: flex;
+  gap: var(--space-md);
+  z-index: var(--z-dropdown);
+}
+
+.indicator {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: var(--space-xs) var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  transition: all var(--duration-normal) var(--ease-out);
+  position: relative;
+}
+
+.indicator::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--mb-white);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.indicator:hover {
+  color: var(--mb-white);
+}
+
+.indicatorActive {
+  color: var(--mb-white);
+}
+
+.indicatorActive::after {
+  transform: scaleX(1);
+}
+
+.indicator:disabled {
+  cursor: not-allowed;
+}
+
+.indicatorNumber {
+  display: block;
+}
+
+/* ========================================
+   PROGRESS BAR
+   ======================================== */
+
+.progressBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: var(--z-dropdown);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: var(--mb-blue);
+  animation: progressGrow linear;
+  transform-origin: left;
+  width: 100%;
+  transform: scaleX(0);
+}
+
+@keyframes progressGrow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Mobile (Portrait) */
+@media (max-width: 767px) {
+  .carousel {
+    min-height: 500px;
+    height: 100svh; /* Use svh for better mobile support */
+  }
+
+  .slideContent {
+    padding: var(--space-xl) var(--space-lg);
+  }
+
+  .slideTitle {
+    font-size: clamp(32px, 8vw, 48px);
+    margin-bottom: var(--space-md);
+  }
+
+  .slideSubtitle {
+    font-size: clamp(16px, 4vw, 20px);
+    margin-bottom: var(--space-sm);
+  }
+
+  .slideDescription {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-lg);
+  }
+
+  /* Smaller arrows on mobile */
+  .arrow {
+    width: 48px;
+    height: 48px;
+  }
+
+  .arrowPrev {
+    left: var(--space-md);
+  }
+
+  .arrowNext {
+    right: var(--space-md);
+  }
+
+  /* Move indicators higher */
+  .indicators {
+    bottom: var(--space-xl);
+    gap: var(--space-sm);
+  }
+
+  .indicator {
+    font-size: var(--font-size-xs);
+    padding: var(--space-xs);
+  }
+
+  /* Hide stage bars on mobile for more space */
+  .slideStageTop,
+  .slideStageBottom {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .carousel {
+    min-height: 600px;
+  }
+
+  .slideTitle {
+    font-size: clamp(48px, 7vw, 64px);
+  }
+
+  .arrowPrev {
+    left: var(--space-lg);
+  }
+
+  .arrowNext {
+    right: var(--space-lg);
+  }
+
+  .indicators {
+    bottom: var(--space-xxl);
+  }
+}
+
+/* Desktop Large */
+@media (min-width: 1280px) {
+  .slideContentInner {
+    max-width: var(--container-xl);
+  }
+
+  .arrowPrev {
+    left: var(--space-huge);
+  }
+
+  .arrowNext {
+    right: var(--space-huge);
+  }
+}
+
+/* Landscape mobile phones */
+@media (max-width: 767px) and (orientation: landscape) {
+  .carousel {
+    min-height: 400px;
+  }
+
+  .slideContent {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .slideTitle {
+    font-size: clamp(28px, 6vw, 40px);
+    margin-bottom: var(--space-sm);
+  }
+
+  .slideDescription {
+    display: none; /* Hide description in landscape for space */
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+/* Focus styles for keyboard navigation */
+.arrow:focus-visible,
+.indicator:focus-visible {
+  outline: 2px solid var(--mb-blue);
+  outline-offset: 4px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .slide,
+  .slideContentInner,
+  .arrow,
+  .indicator,
+  .progressFill {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .slide {
+    transition: opacity 0ms, visibility 0ms;
+  }
+}

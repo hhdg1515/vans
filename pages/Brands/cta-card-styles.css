@@ -1,0 +1,96 @@
+/* ================================
+   CTA CARD (See More on Instagram)
+   Add these to BrandDetail.module.css
+   ================================ */
+
+.caseStudyCardCta {
+  background: linear-gradient(135deg,
+    rgba(176, 38, 255, 0.15) 0%,
+    rgba(0, 0, 0, 0.4) 100%);
+  border: 2px dashed rgba(176, 38, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.caseStudyCardCta:hover {
+  background: linear-gradient(135deg,
+    rgba(176, 38, 255, 0.25) 0%,
+    rgba(0, 0, 0, 0.6) 100%);
+  border-color: var(--mb-purple);
+  border-style: solid;
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(176, 38, 255, 0.3);
+}
+
+.ctaCardContent {
+  text-align: center;
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.ctaIcon {
+  color: var(--mb-purple);
+  margin-bottom: var(--spacing-sm);
+  transition: transform var(--transition-base);
+}
+
+.caseStudyCardCta:hover .ctaIcon {
+  transform: scale(1.15) rotate(5deg);
+}
+
+.ctaTitle {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-tight);
+  margin: 0;
+  background: linear-gradient(135deg, var(--mb-white) 0%, var(--mb-purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ctaSubtitle {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 280px;
+  margin: 0;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: 12px 24px;
+  background-color: var(--mb-purple);
+  color: var(--mb-black);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  border-radius: 2px;
+  margin-top: var(--spacing-sm);
+  transition: all var(--transition-base);
+}
+
+.caseStudyCardCta:hover .ctaButton {
+  background-color: var(--mb-white);
+  transform: translateX(4px);
+}
+
+.ctaButton svg {
+  transition: transform var(--transition-base);
+}
+
+.caseStudyCardCta:hover .ctaButton svg {
+  transform: translateX(4px);
+}

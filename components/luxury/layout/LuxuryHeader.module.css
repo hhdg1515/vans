@@ -1,0 +1,372 @@
+/*
+ * Luxury Header Styles
+ * Fixed header with Mercedes Stage Design
+ */
+
+/* ========================================
+   HEADER CONTAINER
+   ======================================== */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-sticky);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: transparent;
+  transition: background-color var(--duration-normal) var(--ease-out),
+    box-shadow var(--duration-normal) var(--ease-out);
+}
+
+.headerScrolled {
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Mercedes Stage Bar */
+.stageBar {
+  width: 100%;
+  height: var(--mb-stage-bar);
+  background-color: var(--mb-black);
+  border-bottom: none;
+}
+
+/* ========================================
+   HEADER CONTENT
+   ======================================== */
+
+.headerContent {
+  padding: var(--space-lg) var(--space-lg);
+}
+
+.headerContainer {
+  max-width: var(--container-xxl);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+}
+
+.headerRight {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+/* ========================================
+   LOGO
+   ======================================== */
+
+.logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-right: auto;
+  flex-shrink: 0;
+}
+
+.logoText {
+  display: flex;
+  align-items: center;
+}
+
+.logoMain {
+  font-family: var(--font-headline);
+  font-size: 32px;
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+  color: var(--mb-white);
+  line-height: 1;
+}
+
+.logo:hover .logoMain {
+  color: var(--mb-blue);
+}
+
+/* ========================================
+   LANGUAGE SWITCHER
+   ======================================== */
+
+.languageSwitcher {
+  flex-shrink: 0;
+}
+
+.langButton {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-xs) var(--space-sm);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.langActive {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--mb-white);
+  transition: color var(--duration-normal) var(--ease-out);
+}
+
+.langSeparator {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 2px;
+}
+
+.langInactive {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--duration-normal) var(--ease-out);
+}
+
+.langButton:hover .langInactive {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.langButton:hover .langActive {
+  color: var(--mb-silver);
+}
+
+.navLink {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--mb-white);
+  text-decoration: none;
+  position: relative;
+  padding: var(--space-xs) 0;
+  transition: color var(--duration-normal) var(--ease-out);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--mb-blue);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.navLink:hover {
+  color: var(--mb-blue);
+}
+
+.navLink:hover::after,
+.navLinkActive::after {
+  transform: scaleX(1);
+}
+
+.navLinkActive {
+  color: var(--mb-blue);
+}
+
+/* ========================================
+   HEADER CTA
+   ======================================== */
+
+.headerCta {
+  flex-shrink: 0;
+}
+
+/* ========================================
+   MOBILE MENU TOGGLE
+   ======================================== */
+
+.mobileMenuToggle {
+  display: none;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.mobileMenuToggle:hover {
+  border-color: var(--mb-white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 24px;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--mb-white);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.mobileMenuToggle:hover .hamburger span {
+  background-color: var(--mb-blue);
+}
+
+/* ========================================
+   MOBILE MENU
+   ======================================== */
+
+.mobileMenu {
+  position: fixed;
+  top: calc(var(--mb-stage-bar) + 1px);
+  right: 0;
+  width: 100%;
+  max-width: 400px;
+  height: calc(100vh - var(--mb-stage-bar) - 1px);
+  background-color: var(--mb-black);
+  border-left: var(--mb-keyline) solid var(--mb-white);
+  transform: translateX(100%);
+  transition: transform var(--duration-normal) var(--ease-out);
+  overflow-y: auto;
+  z-index: calc(var(--z-sticky) + 1);
+}
+
+.mobileMenuOpen {
+  transform: translateX(0);
+}
+
+.mobileNav {
+  padding: var(--space-xl) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.mobileNavLink {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+  color: var(--mb-white);
+  text-decoration: none;
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: color var(--duration-normal) var(--ease-out);
+  display: block;
+}
+
+.mobileNavLink:hover {
+  color: var(--mb-blue);
+}
+
+.mobileNavLinkActive {
+  color: var(--mb-blue);
+}
+
+.mobileMenuCta {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobileMenuCta .btn {
+  width: 100%;
+  text-align: center;
+}
+
+/* Mobile Menu Overlay */
+.mobileMenuOverlay {
+  position: fixed;
+  top: calc(var(--mb-stage-bar) + 1px);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: var(--z-sticky);
+  backdrop-filter: blur(4px);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+  .nav {
+    display: none;
+  }
+
+  .mobileMenuToggle {
+    display: flex;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .headerContent {
+    padding: var(--space-md) var(--space-lg);
+  }
+
+  .logoMain {
+    font-size: var(--font-size-base);
+  }
+
+  .logoSub {
+    font-size: 10px;
+  }
+
+  .mobileMenu {
+    max-width: 100%;
+  }
+
+  .mobileNavLink {
+    font-size: var(--font-size-md);
+  }
+}
+
+/* Desktop Large */
+@media (min-width: 1280px) {
+  .nav {
+    gap: var(--space-xxl);
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+.navLink:focus-visible,
+.mobileMenuToggle:focus-visible,
+.mobileNavLink:focus-visible {
+  outline: 2px solid var(--mb-blue);
+  outline-offset: 4px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .header,
+  .navLink::after,
+  .mobileMenu,
+  .mobileMenuToggle,
+  .hamburger span {
+    transition: none !important;
+  }
+}

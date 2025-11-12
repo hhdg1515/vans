@@ -1,0 +1,187 @@
+/* Gallery Carousel Styles */
+
+.gallerySection {
+  padding: var(--space-massive) var(--space-lg);
+  background-color: var(--mb-black);
+}
+
+.galleryHeader {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--space-xxl);
+}
+
+.galleryEyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  color: var(--mb-blue);
+  margin-bottom: var(--space-md);
+}
+
+.galleryHeadline {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-black);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+  color: var(--mb-white);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-lg);
+}
+
+.gallerySubheadline {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  color: var(--mb-silver);
+  line-height: var(--line-height-relaxed);
+}
+
+.keyline {
+  width: 120px;
+  height: var(--mb-keyline);
+  background-color: var(--mb-white);
+  margin: 0 auto var(--space-xxl);
+}
+
+/* Gallery Grid */
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--grid-gap-md);
+  max-width: var(--container-xxl);
+  margin: 0 auto var(--space-xl);
+}
+
+.galleryCard {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.galleryCard:hover {
+  transform: scale(1.05);
+}
+
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.galleryCard:hover .galleryImage {
+  transform: scale(1.1);
+}
+
+.galleryOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-md);
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity var(--duration-normal) var(--ease-out);
+}
+
+.galleryCard:hover .galleryOverlay {
+  opacity: 1;
+}
+
+.galleryModel {
+  font-family: var(--font-headline);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--mb-white);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Navigation */
+.galleryNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xl);
+  margin-top: var(--space-xl);
+}
+
+.galleryArrow {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: var(--mb-white);
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.galleryArrow:hover {
+  border-color: var(--mb-white);
+  background-color: rgba(255,255,255,0.1);
+}
+
+.galleryIndicators {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.galleryIndicator {
+  background: transparent;
+  border: none;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  padding: var(--space-xs) var(--space-sm);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  transition: color var(--duration-normal) var(--ease-out);
+  position: relative;
+}
+
+.galleryIndicator::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--mb-white);
+  transform: scaleX(0);
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.galleryIndicatorActive {
+  color: var(--mb-white);
+}
+
+.galleryIndicatorActive::after {
+  transform: scaleX(1);
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+  .galleryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .galleryGrid {
+    grid-template-columns: 1fr;
+  }
+  .gallerySection {
+    padding: var(--space-xxl) var(--space-lg);
+  }
+}
